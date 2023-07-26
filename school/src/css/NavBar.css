@@ -7,9 +7,44 @@ body{
 	font-style: inherit;
 }
 
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+.page-width{
+    width: calc(100% - 5rem);
+    padding: 15px 20px;
+    margin: 0 auto;
+}
+
+.navigation-content{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Manrope', sans-serif;
+}
+
+ .navigation-emblem{
+    display: flex; 
+    align-items: center;
+    font-size: 34px;
+}
+
+.navigation-title{
+    font-family: 'Raleway', sans-serif;
+}
+
+.navigation-list{
+    display: flex;
+    list-style: none;
+}
+
+.navigation-list li{
+    margin: 0px 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+

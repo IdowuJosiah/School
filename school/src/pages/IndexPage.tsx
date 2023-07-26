@@ -1,9 +1,10 @@
 import React from 'react'
+import NavBar from '../components/NavBar'
 
 const IndexPage = () => {
   return (
-    <div>
-      
+    <div className='main-container'>
+      <NavBar/>
     </div>
   )
 }
