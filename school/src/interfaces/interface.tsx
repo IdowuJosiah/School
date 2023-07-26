@@ -7,4 +7,7 @@ export interface navigation {
 export interface dropdownItems {
     itemOne: string,
     itemTwo: string
+    itemThree?: string,
+    itemFour?:string,
+    itemFive?: string,
 }

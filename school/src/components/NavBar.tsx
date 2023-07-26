@@ -8,14 +8,21 @@ const NavBar = () => {
         {
             title: 'About us',
             path: '/about',
+            children: {
+                itemOne: 'About us',
+                itemTwo: "Director's message",
+                itemThree: 'Team',
+                itemFour: 'Careers'
+            }
         },
 
         {
             title: 'School',
             path: '/school',
             children: {
-                itemOne: 'secondary',
-                itemTwo: 'nursery'
+                itemOne:'Creche',
+                itemTwo: 'Nursery' ,
+                itemThree: 'Primary',
             },
         },
 
