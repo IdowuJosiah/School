@@ -71,7 +71,13 @@ const NavBar = () => {
 
         {
             title: 'Contact',
-            path: '/contact'
+            path: '/contact',
+            children:[
+                {
+                    itemOne: 'Contact Us',
+                    itemTwo: 'Parents Feedback'
+                }
+            ]
         },
     ]
   return (
