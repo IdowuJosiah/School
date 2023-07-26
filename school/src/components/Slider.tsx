@@ -1,29 +1,22 @@
 import React, {useState, useEffect} from 'react'
-import '../scss/Slider.scss'
+import {slideShow} from "../interfaces/interface";
+import "../css/Slider.css"
 
 const Slider = () => {
 
-    let slideOutWords = [
+    const slideShowItems: slideShow[] = [
         {
-            text:  "Practice puts brains in your muscles." ,
-            mentionedBy: '~ Sam Snead'
+            background : "./national-cancer-institute-xDSD3Vmzh70-unsplash.jpg",
+            bannerText: "Welcome To Our School"
         },
-
         {
-            text:  " Exercise should be regarded as tribute to the heart. ", 
-            mentionedBy: ' ~ Gene Tunney'
+            background : "./tim-mossholder-WE_Kv_ZB1l0-unsplash.jpg",
+            bannerText: "An adventure awaits you in each class"
         },
-
         {
-            text:  " The pain you feel today will be the strength you feel tomorrow. ",
-            mentionedBy: '~ Ritu Ghatourey'
-        },
-
-        {
-            text:  " BLOOD, SWEAT AND RESPECT. FIRST TWO YOU GIVE. LAST ONE YOU EARN. ",
-            mentionedBy: '~ Dwayne “THE ROCK” Johnson'
-        },
-
+            background : "./kenny-eliason-zFSo6bnZJTw-unsplash.jpg",
+            bannerText: " CLick Here to Register"
+        }
     ]
 
     let [index, setIndex] = useState(0);
@@ -33,7 +26,7 @@ const Slider = () => {
         setTimeout(
           () =>
             setIndex((prevIndex) =>
-              prevIndex === slideOutWords.length - 1 ? 0 : prevIndex + 1
+              prevIndex === slideShowItems.length - 1 ? 0 : prevIndex + 1
             ),
           delay
         );
@@ -49,10 +42,15 @@ const Slider = () => {
        style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
        >
         {
-            slideOutWords.map((quote, index)=> {
+            slideShowItems.map((quote, index)=> {
                 return  <div className="slide" key={index}>
-                      <q className='quote'>{quote.text}</q>
-                      <p>{quote.mentionedBy}</p>
+                      <div className='slide-background'>
+                          <img src={quote.background}/>
+                      </div>
+                      <div className="slide-banner">
+                          <p>{quote.bannerText}</p>
+                      </div>
+
                 </div>
             })
         }
