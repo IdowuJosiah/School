@@ -33,12 +33,24 @@ const NavBar = () => {
 
         {
             title: 'Curriculum',
-            path: '/curriculum'
+            path: '/curriculum',
+            children: [
+                {
+                    itemOne: 'curriculum',
+                    itemTwo: 'Enrichment Activity'
+                }
+            ]
         },
 
         {
             title: 'Admissions',
-            path: '/admissions'
+            path: '/admissions',
+            children:[
+                {
+                    itemOne: 'Addmisions',
+                    itemTwo: 'Apply For Admissions'
+                }
+            ]
         },
 
         {
@@ -48,7 +60,13 @@ const NavBar = () => {
 
         {
             title: 'Gallery',
-            path: '/gallery'
+            path: '/gallery',
+            children :[
+                {
+                    itemOne: 'Cultural Day',
+                    itemTwo: 'Inter House Sport Day'
+                }
+            ]
         },
 
         {
