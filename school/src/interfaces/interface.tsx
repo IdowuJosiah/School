@@ -1,14 +1,10 @@
-export interface navigation {
+export interface linkItemType {
     title: string,
     path: string
-    children?: dropdownItems []
 }
 
-export interface dropdownItems {
-    itemOne: string
-    itemTwo: string
-    itemThree?: string,
-    itemFour?:string,
-    itemFive?: string,
+export interface navigation extends linkItemType{
+    children?: linkItemType[]
 }
+
 

@@ -40,11 +40,21 @@ body{
 .navigation-list{
     display: flex;
     list-style: none;
+    position: relative;
 }
-
 .navigation-list li{
     margin: 0px 15px;
     font-weight: bold;
     cursor: pointer;
+}.dropdown-items{
+    position: absolute;
+    display: flex;
+    top: 60px;
+    right: 5px;
+}
+.dropdown-items li{
+    margin: 0px 20px;
+    cursor: pointer;
+    list-style: none;
 }
 

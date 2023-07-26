@@ -1,6 +1,7 @@
-import React from 'react'
+
 import { navigation } from '../interfaces/interface'
 import '../css/NavBar.css'
+
 
 const NavBar = () => {
     
@@ -10,10 +11,23 @@ const NavBar = () => {
             path: '/about',
             children: [
                 {
-                    itemOne: 'About us',
-                    itemTwo: "Director's message",
-                    itemThree: 'Team',
-                    itemFour: 'Careers'
+                    title: 'About Us',
+                    path:'/aboutus'
+                },
+
+                {
+                    title: 'Directors Message',
+                    path:'/directorsmessage'
+                },
+
+                {
+                    title: 'Team',
+                    path:'/team'
+                },
+
+                {
+                    title: 'Career',
+                    path:'/career'
                 }
                 
             ]
@@ -24,10 +38,15 @@ const NavBar = () => {
             path: '/school',
             children: [
                 {
-                    itemOne:'Creche',
-                    itemTwo: 'Nursery' ,
-                    itemThree: 'Primary',
-                }
+                   title:'Creche',
+                   path:'/creche'
+                },
+
+                {
+                    title:'Nursery',
+                    path:'/nursery'
+                 }
+            
             ],
         },
 
@@ -36,8 +55,8 @@ const NavBar = () => {
             path: '/curriculum',
             children: [
                 {
-                    itemOne: 'curriculum',
-                    itemTwo: 'Enrichment Activity'
+                    title: 'Curiculum',
+                    path: '/curriculum'
                 }
             ]
         },
@@ -47,15 +66,25 @@ const NavBar = () => {
             path: '/admissions',
             children:[
                 {
-                    itemOne: 'Addmisions',
-                    itemTwo: 'Apply For Admissions'
+                    title:'Admission',
+                    path:'/Admission'
+                },
+
+                {
+                    title:'Apply For Admission',
+                    path:'/Applyforadmission'
                 }
             ]
         },
 
         {
             title: 'Virtual tour',
-            path: '/tour'
+            path:'/tour',
+            children:[
+                {   title:' Virtual Tour',
+                    path:'/tour'
+                }
+            ]
         },
 
         {
@@ -63,8 +92,13 @@ const NavBar = () => {
             path: '/gallery',
             children :[
                 {
-                    itemOne: 'Cultural Day',
-                    itemTwo: 'Inter House Sport Day'
+                    title:'Cultural Day',
+                    path: '/culturalday'
+                },
+
+                {
+                    title:'Inter house Sport Day',
+                    path:'/interhousesportday'
                 }
             ]
         },
@@ -74,12 +108,19 @@ const NavBar = () => {
             path: '/contact',
             children:[
                 {
-                    itemOne: 'Contact Us',
-                    itemTwo: 'Parents Feedback'
+                    title: 'Contact Us',
+                    path:',contactus'
+                },
+
+                {
+                    title: 'Parents Feedback',
+                    path:'/parentfeedback'
                 }
             ]
         },
     ]
+
+    console.log(navigationItems)
   return (
     <nav className='navigation-bar'>
         <div className="page-width">
@@ -98,6 +139,24 @@ const NavBar = () => {
                         })
                     }
                 </ul>
+
+              <ul className='dropdown-items'>
+                    {
+                        navigationItems.map((data, dataIndex)=> {
+                            return <div 
+                                    key={dataIndex}>
+                                {data.children?.map((dropdownItem, dropdownIndex) => {
+                                    return <li key={dropdownIndex}>
+                                        {dropdownItem.title}
+                                    </li>
+                                })}
+                            </div>
+                        })
+                    }
+              </ul>
+                
+
+            
 
             </div>
         </div>
