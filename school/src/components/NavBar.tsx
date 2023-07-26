@@ -7,12 +7,16 @@ const NavBar = () => {
     const navigationItems: navigation[] = [
         {
             title: 'About us',
-            path: '/about'
+            path: '/about',
         },
 
         {
             title: 'School',
-            path: '/school'
+            path: '/school',
+            children: {
+                itemOne: 'secondary',
+                itemTwo: 'nursery'
+            },
         },
 
         {
