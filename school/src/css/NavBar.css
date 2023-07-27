@@ -46,19 +46,25 @@ body{
     margin: 0px 25px;
     font-weight: bold;
     cursor: pointer;
+    position: relative;
 }
 
 
 .dropdown-items{
     position: absolute;
-    display: flex;
-    top: 60px;
-    right: 5px;
+    padding-left: 0;
+    top: 100%;
+    right: 0;
     z-index: 10000;
+    display: none;
+}
+
+.visible:hover .dropdown-items{
+    display: block;
 }
 
 .dropdown-items li{
-    margin: 0px 9px;
+    margin: 0;
     padding: 10px;
     cursor: pointer;
     background: red;

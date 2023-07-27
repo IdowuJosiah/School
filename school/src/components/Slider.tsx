@@ -45,7 +45,7 @@ const Slider = () => {
             slideShowItems.map((slide, index)=> {
                 return  <div className="slide" key={index}>
                         
-                          <img className='slide-image' src={slide.background}/>
+                          <img className='slide-image' src={slide.background} alt='#'/>
                           
                           <div className="slide-overlay">
                               <div className='slide-banner'>

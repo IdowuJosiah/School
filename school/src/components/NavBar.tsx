@@ -1,14 +1,17 @@
-
 import { navigation } from '../interfaces/interface'
 import '../css/NavBar.css'
+import { useState } from 'react'
+
 
 
 const NavBar = () => {
+
     
     const navigationItems: navigation[] = [
         {
             title: 'About us',
             path: '/about',
+            isVisible: false,
             children: [
                 {
                     title: 'About Us',
@@ -36,6 +39,7 @@ const NavBar = () => {
         {
             title: 'School',
             path: '/school',
+            isVisible: false,
             children: [
                 {
                    title:'Creche',
@@ -53,6 +57,7 @@ const NavBar = () => {
         {
             title: 'Curriculum',
             path: '/curriculum',
+            isVisible: false,
             children: [
                 {
                     title: 'Curriculum',
@@ -64,6 +69,7 @@ const NavBar = () => {
         {
             title: 'Admissions',
             path: '/admissions',
+            isVisible: false,
             children:[
                 {
                     title:'Admission',
@@ -80,6 +86,7 @@ const NavBar = () => {
         {
             title: 'Virtual tour',
             path:'/tour',
+            isVisible: false,
             children:[
                 {   title:' Virtual Tour',
                     path:'/tour'
@@ -90,6 +97,7 @@ const NavBar = () => {
         {
             title: 'Gallery',
             path: '/gallery',
+            isVisible: false,
             children :[
                 {
                     title:'Cultural Day',
@@ -106,6 +114,7 @@ const NavBar = () => {
         {
             title: 'Contact',
             path: '/contact',
+            isVisible: false,
             children:[
                 {
                     title: 'Contact Us',
@@ -120,6 +129,9 @@ const NavBar = () => {
         },
     ]
 
+    
+  
+
     console.log(navigationItems)
   return (
     <nav className='navigation-bar'>
@@ -133,28 +145,28 @@ const NavBar = () => {
                 <ul className='navigation-list'>
                     {
                         navigationItems.map((item, index) => {
-                            return <li key={index}>
+                            return <li key={index} className={'main-list-items'}>
                                 {item.title}
+
+                                {
+                                    <ul 
+                                    className={`dropdown-items ${item.isVisible ? 'visible' : ''} `}
+                                    >
+                                          {
+                                              item.children?.map((data, dataIndex)=> {
+                                                  return <li key={dataIndex}>
+                                                  {data.title}
+                                              </li>
+                                              })
+                                          }
+                                    </ul>
+                                }
                             </li>
                         })
                     }
                 </ul>
 
-              <ul className='dropdown-items'>
-                    {
-                        navigationItems.map((data, dataIndex)=> {
-                            return <div 
-                                    key={dataIndex}
-                                    >
-                                {data.children?.map((dropdownItem, dropdownIndex) => {
-                                    return <li key={dropdownIndex}>
-                                        {dropdownItem.title}
-                                    </li>
-                                })}
-                            </div>
-                        })
-                    }
-              </ul>
+              
                 
 
             
