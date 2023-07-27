@@ -43,19 +43,25 @@ body{
     position: relative;
 }
 .navigation-list li{
-    margin: 0px 15px;
+    margin: 0px 25px;
     font-weight: bold;
     cursor: pointer;
-}.dropdown-items{
+}
+
+
+.dropdown-items{
     position: absolute;
     display: flex;
     top: 60px;
     right: 5px;
     z-index: 10000;
 }
+
 .dropdown-items li{
-    margin: 0px 20px;
+    margin: 0px 9px;
+    padding: 10px;
     cursor: pointer;
+    background: red;
     list-style: none;
 }
 

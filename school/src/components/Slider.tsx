@@ -20,7 +20,7 @@ const Slider = () => {
     ]
 
     let [index, setIndex] = useState(0);
-    let delay = 3000
+    let delay = 4000
 
     useEffect(() => {
         setTimeout(
@@ -38,19 +38,22 @@ const Slider = () => {
   return (
     <div className="slideshow">
       <div
-       className="slideshowSlider"
+       className="slideshowSlider "
        style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
        >
         {
-            slideShowItems.map((quote, index)=> {
+            slideShowItems.map((slide, index)=> {
                 return  <div className="slide" key={index}>
-                      <div className='slide-background'>
-                          <img src={quote.background}/>
-                      </div>
-                      <div className="slide-banner">
-                          <p>{quote.bannerText}</p>
-                      </div>
-
+                        
+                          <img className='slide-image' src={slide.background}/>
+                          
+                          <div className="slide-overlay">
+                              <div className='slide-banner'>
+                                    <p>{slide.bannerText}</p>
+                                <button> Register</button>
+                              </div>
+                            
+                          </div>
                 </div>
             })
         }

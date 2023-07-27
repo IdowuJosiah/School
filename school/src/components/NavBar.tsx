@@ -55,7 +55,7 @@ const NavBar = () => {
             path: '/curriculum',
             children: [
                 {
-                    title: 'Curiculum',
+                    title: 'Curriculum',
                     path: '/curriculum'
                 }
             ]
@@ -144,7 +144,8 @@ const NavBar = () => {
                     {
                         navigationItems.map((data, dataIndex)=> {
                             return <div 
-                                    key={dataIndex}>
+                                    key={dataIndex}
+                                    >
                                 {data.children?.map((dropdownItem, dropdownIndex) => {
                                     return <li key={dropdownIndex}>
                                         {dropdownItem.title}

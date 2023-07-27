@@ -8,26 +8,42 @@
 .slideshowSlider {
     white-space: nowrap;
     transition: ease 1000ms;
-    height: 80vh;
+    height: 100vh;
 }
 .slide-background{
     height: 100%;
 }
+
 .slide {
     display: inline-block;
-
+    position: relative;
     height: 100%;
     width: 100%;
 }
 .slide img{
     height: 100%;
     width: 100%;
+    object-fit: cover;
 }
-.slide-background{
+
+.slide-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0px 0px 0px 50px ;
+}
+
+.slide-banner{
+    width: 350px;
+    height: 200px;
+    border-radius: 10px;
+    background-color:rgb(24, 75, 152) ;
 
 }
-.slide-banner{
-    position: relative;
-    top: -50px;
-}
+
 
