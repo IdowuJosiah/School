@@ -1,12 +1,11 @@
 import { navigation } from '../interfaces/interface'
 import '../css/NavBar.css'
 import { useState } from 'react'
+import {cloneDeep} from 'lodash'
 
 
 
 const NavBar = () => {
-
-    
     const navigationItems: navigation[] = [
         {
             title: 'About us',
@@ -128,12 +127,15 @@ const NavBar = () => {
             ]
         },
     ]
+    const [navItems, setNavItems] = useState <navigation[]> (navigationItems)
 
-    
-  
+
+
 
     console.log(navigationItems)
   return (
+
+
     <nav className='navigation-bar'>
         <div className="page-width">
             <div className="navigation-content">
@@ -144,13 +146,27 @@ const NavBar = () => {
 
                 <ul className='navigation-list'>
                     {
-                        navigationItems.map((item, index) => {
-                            return <li key={index} className={'main-list-items'}>
+                        navItems.map((item, index) => {
+                            function Toggle(index:number):void{
+
+                                let clonedArray = cloneDeep(navItems)
+                                clonedArray[index].isVisible = !clonedArray[index].isVisible
+                                            setNavItems(clonedArray)
+                                  //   item.isVisible = true
+
+
+
+                                 console.log(navigationItems)
+                                console.log()
+                            }
+                            return <li key={index}
+                                       onClick={(event)=>Toggle(index)}
+                                       className={'main-list-items'}>
                                 {item.title}
 
                                 {
                                     <ul 
-                                    className={`dropdown-items ${item.isVisible ? 'visible' : ''} `}
+                                    className={`dropdown-items ${item.isVisible ? 'active' : ''} `}
                                     >
                                           {
                                               item.children?.map((data, dataIndex)=> {

@@ -62,7 +62,9 @@ body{
 .visible:hover .dropdown-items{
     display: block;
 }
-
+.active{
+    display: block;
+}
 .dropdown-items li{
     margin: 0;
     padding: 10px;
