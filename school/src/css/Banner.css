@@ -24,7 +24,7 @@ body{
     justify-content: space-between;
     margin: 0 auto;
     width: calc(100% - 5rem);
-    height: calc(90vh - 5rem);
+    height: calc(100vh - 5rem);
 }
 
 .entrance-image{
@@ -44,13 +44,12 @@ body{
 .entrance-text{
    /* align-items: flex-start;
     display: -webkit-box;
-    display: -ms-flexbox;
+    display: -ms-flexbox;*/
     display: flex;
-    flex-basis: 45%;
     flex-direction: column;
-    justify-content: center;*/
+    justify-content: center;
     padding: 0px 3rem;
-    width: 50%;
+    width: 55%;
     height: 100%;
 }
 
