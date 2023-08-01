@@ -5,7 +5,7 @@ import React from "react";
 const IndexPageApplyAdmission = () => {
     return(
         <div className="index-apply-for-admission">
-            <div className="main-container">
+            <div className="index-apply-main-container">
                 <div className="container">
                     <div className="text">
                         <div className="innertext">

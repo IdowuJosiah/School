@@ -12,7 +12,7 @@ body{
     width: 100%;
     position: relative;
 }
-.comp-container img{
+.comp-div img{
     max-width: 100%;
 }
 .comp-text{

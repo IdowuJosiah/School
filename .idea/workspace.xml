@@ -7,7 +7,9 @@
     <list default="true" id="b533c037-1550-4224-be30-268cdf4e815e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/school/src/components/Comp.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/school/src/components/Comp.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/components/IndexPageApplyAdmission.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/school/src/components/IndexPageApplyAdmission.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/school/src/css/Comp.css" beforeDir="false" afterPath="$PROJECT_DIR$/school/src/css/Comp.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/css/IndexPageApplyAdmission.css" beforeDir="false" afterPath="$PROJECT_DIR$/school/src/css/IndexPageApplyAdmission.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +66,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1690836459258</updated>
-      <workItem from="1690836461387" duration="14187000" />
+      <workItem from="1690836461387" duration="15775000" />
     </task>
     <servers />
   </component>
