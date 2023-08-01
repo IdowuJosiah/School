@@ -7,7 +7,7 @@ const Comp = () => {
             <img alt="banner" src="./PHOTO-2023-07-17-20-25-38.jpg"/>
             <div className="comp-text">
                 <h2>
-                    CREATION A SOLID FOUNDATION
+                    CREATING A SOLID FOUNDATION
                 </h2>
             </div>
         </div>
