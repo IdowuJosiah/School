@@ -8,7 +8,7 @@
 body{
     font-family: inherit;
 }
-.comp-container{
+.comp-div{
     width: 100%;
     position: relative;
 }
