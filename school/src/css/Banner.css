@@ -24,16 +24,16 @@ body{
     justify-content: space-between;
     margin: 0 auto;
     width: calc(100% - 5rem);
-    height: calc(60vh - 5rem);
+    height: calc(90vh - 5rem);
 }
 
 .entrance-image{
  /*   flex-basis: 45%;*/
-      width: 45%;
+      width: 40%;
       height: 100%;
       border-radius: 5px;
       overflow: hidden;
-      box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.2);
+      box-shadow: 1px 1px 4px 1.5px rgba(0, 0, 0, 0.2);
 }
 
 .entrance-image img{

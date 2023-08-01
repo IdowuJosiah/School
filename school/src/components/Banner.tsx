@@ -1,5 +1,6 @@
 import "../css/Banner.css"
 import React from "react";
+import Button from "./Button";
 
 const Banner = () => {
 
@@ -26,7 +27,7 @@ const Banner = () => {
                  Plus, it's a chance for kids to explore and nurture their interests outside of the regular school curriculum.
                 </p>
                 <div>
-                    <a href="www.google.com"> <button>Apply Here</button> </a>
+                    <a href="www.google.com"> <Button/> </a>
                 </div>
             </div>
         </div>
