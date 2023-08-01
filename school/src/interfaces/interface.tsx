@@ -7,7 +7,9 @@ export interface linkItemType {
 export interface navigation extends linkItemType{
     children?: linkItemType[]
 }
-
+export interface flyer {
+    eBanner : string
+}
 export interface slideShow {
     background: string
     bannerText: string
