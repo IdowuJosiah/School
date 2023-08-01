@@ -32,6 +32,7 @@ const Slider = () => {
         );
     
         return () => {};
+        // eslint-disable-next-line
       }, [index]);
 
 
