@@ -12,9 +12,9 @@ const Banner = () => {
                 <img alt="banner" src="./fly.png"/>
             </div>
             <div className="entrance-text">
-                <h2>
+                <header>
                     2023 SUMMER SCHOOL SESSION
-                </h2>
+                </header>
 
                 <p>
                 It's that time of the year again! Use this opportunity to help them develop new skills, make new friends, and stay active. 

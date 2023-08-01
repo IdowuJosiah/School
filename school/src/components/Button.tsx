@@ -1,5 +1,6 @@
 import React from 'react'
 import '../css/Button.scss'
+import { BiSun} from "react-icons/bi";
 
 const Button = () => {
   return (
@@ -8,6 +9,7 @@ const Button = () => {
     className='button'
     >
         Register
+        <BiSun/>
     </button>
   )
 }
