@@ -15,7 +15,7 @@ const Slider = () => {
         },
         {
             background : "./kenny-eliason-zFSo6bnZJTw-unsplash.jpg",
-            bannerText: " CLick Here to Register"
+            bannerText: " Inspiring Confidence & Encouraging Self Expression"
         }
     ]
 

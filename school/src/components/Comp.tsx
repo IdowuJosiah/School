@@ -16,9 +16,10 @@ const Comp = () => {
                 <div className="mission-container">
                     <div className="mission-text">
                             <span className="mission-header">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Aliquid amet consequuntur corporis fugit incidunt itaque laboriosam
-                                modi quae quaerat quasi quia quicksand, sed similique voluptatibus!
+                                Mission: our mission is to harness the potential in every pupil
+                                by inspiring a love of learning,
+                                through providing excellent education and strong moral
+                                values in a safe and healthy learning environment
                             </span>
                             <ul>
                                 <li>
@@ -45,9 +46,9 @@ const Comp = () => {
                             </ul>
                     </div>
                     <div className="mission-image">
-                        <div>
 
-                        </div>
+                            <img src="./PHOTO-2023-07-17-20-28-14 (2).jpg"/>
+
                     </div>
                 </div>
 
