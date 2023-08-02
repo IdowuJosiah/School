@@ -15,8 +15,8 @@ const Programs = () => {
                      </h1>
                  </div>
                 <div className="programs">
-                    <div className="nursery">
-                            <div className="nursery-container">
+                    <div className="different-school-programs">
+                            <div className="different-school-programs-container">
                                 <h2>NURSERY SCHOOL</h2>
                                 <p>A strong focus on core academic competencies
                                     and the development of students
@@ -24,8 +24,8 @@ const Programs = () => {
                                 <a href="www.google.com"><button>REGISTER HERE</button></a>
                             </div>
                     </div>
-                    <div className="primary">
-                            <div className="primary-container">
+                    <div className="different-school-programs">
+                            <div className="different-school-programs-container">
                                 <h2>PRIMARY SCHOOL</h2>
                                 <p>A strong focus on core academic competencies
                                     and the development of students

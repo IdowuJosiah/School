@@ -21,8 +21,6 @@ body{
 }
 
 
-
-
 .container{
     display: flex;
     width: calc(100% - 5rem);

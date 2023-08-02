@@ -12,27 +12,60 @@ body{
     width: 100%;
     margin-right: auto;
     margin-left: auto;
+    height: 70vh;
 }
 
 .programs-container{
-    width:100%
+    width:100%;
+    height: 100%;
 }
-
 
 .programs-header{
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 30%;
+}
+.programs-header p{
+    font-family: Manrope;
+    font-size: 1.3em;
+    letter-spacing: 1px;
+}
+
+.programs-header h1{
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+    font-size: 2em;
 }
 
 .programs{
+    height: 25vh;
     display: flex;
     max-width: 100%;
     align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
-.nursery{
-    max-width: 40%;
+.different-school-programs{
+    max-width: 50%;
+    display: flex;
+    height: 12rem;
+    justify-content: center;
+    align-items: center;
+}
+.different-school-programs-container{
+    width: 75%;
+    height: 100%;
+    background: cornflowerblue;
+    padding: 1em;
+    border-radius: 8px;
+}
+.different-school-programs-container h2 {
+    font-family: 'Manrope', sans-serif;
+    letter-spacing: 1px;
+    height: 3rem;
+}
+.different-school-programs-container p{
+    letter-spacing: 1px;
+    height: 3rem;
 }
