@@ -39,6 +39,13 @@ body{
     font-weight: bold;
     font-family: 'Manrope', sans-serif;
 }
+.mission-list{
+    list-style: none;
+    margin-left: 15px;
+}
+.mission-list li{
+    margin-bottom: 1rem;
+}
 .mission-image{
     max-width: 50%;
     margin-right: auto;

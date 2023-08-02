@@ -1,5 +1,6 @@
 import React from "react";
 import "../css/Comp.css"
+import {AiFillCheckCircle} from "react-icons/ai"
 
 const Comp = () => {
     return(
@@ -21,27 +22,27 @@ const Comp = () => {
                                 through providing excellent education and strong moral
                                 values in a safe and healthy learning environment
                             </span>
-                            <ul>
+                            <ul className="mission-list">
                                 <li>
-                                    Leaders of great character
+                                    <AiFillCheckCircle/> Building children of great character
                                 </li>
                                 <li>
-                                    Collaborative and Independent workers
+                                    <AiFillCheckCircle/> Collaborative and Independent workers
                                 </li>
                                 <li>
-                                    Creative and critical thinkers
+                                    <AiFillCheckCircle/>  Creative and critical thinkers
                                 </li>
                                 <li>
-                                    Quality producers and responsible consumers of Information and Technology
+                                    <AiFillCheckCircle/> Quality producers and responsible consumers of Information and Technology
                                 </li>
                                 <li>
-                                    Globally, culturally and socially empathetic
+                                    <AiFillCheckCircle/> Globally, culturally and socially empathetic
                                 </li>
                                 <li>
-                                    Cultured
+                                    <AiFillCheckCircle/>  Cultured
                                 </li>
                                 <li>
-                                    Prepared for a life of success
+                                    <AiFillCheckCircle/> Prepared for a life of success
                                 </li>
                             </ul>
                     </div>
