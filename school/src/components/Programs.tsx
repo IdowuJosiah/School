@@ -18,6 +18,10 @@ const Programs = () => {
                     <div className="nursery">
                             <div className="nursery-container">
                                 <h2>NURSERY SCHOOL</h2>
+                                <p>A strong focus on core academic competencies
+                                    and the development of students
+                                </p>
+                                <a href="www.google.com"><button>REGISTER HERE</button></a>
                             </div>
                     </div>
                     <div className="primary">
