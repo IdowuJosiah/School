@@ -8,3 +8,31 @@
 body{
     font-family: inherit;
 }
+.programs-main-container{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.programs-container{
+    width:100%
+}
+
+
+.programs-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.programs{
+    display: flex;
+    max-width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.nursery{
+    max-width: 40%;
+}
