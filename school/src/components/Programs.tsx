@@ -15,15 +15,19 @@ const Programs = () => {
                      </h1>
                  </div>
                 <div className="programs">
-                    <div
-                    className="creche">
-
-                    </div>
                     <div className="nursery">
-
+                            <div className="nursery-container">
+                                <h2>NURSERY SCHOOL</h2>
+                            </div>
                     </div>
                     <div className="primary">
-
+                            <div className="primary-container">
+                                <h2>PRIMARY SCHOOL</h2>
+                                <p>A strong focus on core academic competencies
+                                    and the development of students
+                                </p>
+                                <a href="www.google.com"><button>REGISTER HERE</button></a>
+                            </div>
                     </div>
                 </div>
             </div>

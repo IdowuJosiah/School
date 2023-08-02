@@ -24,7 +24,7 @@ const Comp = () => {
                             </span>
                             <ul className="mission-list">
                                 <li>
-                                    <AiFillCheckCircle/> Building children of great character
+                                    <AiFillCheckCircle /> Building children of great character
                                 </li>
                                 <li>
                                     <AiFillCheckCircle/> Collaborative and Independent workers
