@@ -6,11 +6,7 @@ import Button from "./ButtonApply";
 const IndexPageApplyAdmission = () => {
     return (
         <div className="index-apply-for-admission">
-<<<<<<< Updated upstream
             <div className="index-apply-main-container">
-=======
-            <div className="apply-container">
->>>>>>> Stashed changes
                 <div className="container">
                     <div className="text">
                         <div className="innertext">
