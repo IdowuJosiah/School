@@ -21,7 +21,7 @@ const IndexPageApplyAdmission = () => {
 
                     </div>
                     <div className="image">
-                        <img alt="banner" src="./indexpageimage3.jpg"/>
+                        <img alt="banner" src="./GEORGE BUKOLA PRY 1.jpg"/>
                     </div>
                 </div>
             </div>
