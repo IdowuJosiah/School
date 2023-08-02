@@ -15,7 +15,20 @@ $purple: rgb(107, 91, 255);
     color: #fff;
     background: $purple;
     border: 1.5px solid transparent;
-   
+    display: flex;
+    align-items: center;
+    
+    
+    svg{
+        margin-left: 5px;
+        color: yellow;  
+        
+    }
+}
+
+.button:hover svg{
+    transform: rotate(90deg);
+    transition: ease-in-out .2s;
 }
 
 /*

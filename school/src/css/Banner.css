@@ -38,7 +38,7 @@ body{
       height: 100%;
       border-radius: 5px;
       overflow: hidden;
-      box-shadow: 1px 1px 4px 1.5px rgba(0, 0, 0, 0.2);
+      box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.3);
 }
 
 .entrance-image img{
@@ -58,8 +58,11 @@ body{
     height: 100%;
 }
 
-.entrance-text h2{
+.entrance-text header{
     font-family: 'Manrope', sans-serif;
+    font-weight: bold;
+    font-size: 34px;
+    width: 80%;
 }
 
 .entrance-text p{
@@ -67,4 +70,11 @@ body{
     font-weight: normal;
     font-size: 14.5px;
     margin: 10px 0px 20px 0;
+    color: rgba(0, 0, 0, 0.8);
+    width: 85%;
+}
+
+.entrance-text a{
+    text-decoration: none;
+
 }
