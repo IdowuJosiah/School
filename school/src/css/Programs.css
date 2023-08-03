@@ -13,6 +13,8 @@ body{
    /* margin-right: auto;
     margin-left: auto;*/
     height: 70vh;
+    
+    font-family: 'Manrope',sans-serif;
 }
 
 .programs-container{
@@ -25,49 +27,46 @@ body{
  margin: 0px 0px 40px 0;
 }
 .programs-header p{
-    font-family: 'Manrope',sans-serif;
     font-size: 1.3em;
     letter-spacing: 1px;
+    color: rgb(142, 45, 234);
 }
 
 .programs-header h1{
     font-family: 'Raleway', sans-serif;
     letter-spacing: 1px;
     font-size: 2em;
+    color:  rgb(31, 183, 105);
 }
 
 .programs{
     display: flex;
-    width: 100%;
-    justify-content: space-between;
+    width: calc(100% - 5rem);
+    justify-content: space-around;
+    margin: 0 auto;
    
 }
 
 .different-school-programs{
-    width: 50%;
-    display: flex;
-   /* height: 12rem;*/
-    justify-content: center;
-    align-items: center;
-}
-.different-school-programs-container{
-    width: 75%;
+    width: 40%;
     background: cornflowerblue;
     padding: 30px;
     border-radius: 8px;
     color:#fff;
 }
-.different-school-programs-container h2 {
+
+.different-school-programs h2 {
     font-family: 'Manrope', sans-serif;
     letter-spacing: 1px;
    
 }
-.different-school-programs-container p{
+.different-school-programs p{
     letter-spacing: 1px;
     margin: 20px 0;
+    font-size: 13px;
     
 }
 
-.different-school-programs-container a{
+.different-school-programs a{
     text-decoration: none;
 }

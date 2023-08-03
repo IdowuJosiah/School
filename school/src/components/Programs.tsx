@@ -17,22 +17,22 @@ const Programs = () => {
                  </div>
                 <div className="programs">
                     <div className="different-school-programs">
-                            <div className="different-school-programs-container">
+                          
                                 <h2>NURSERY SCHOOL</h2>
                                 <p>A strong focus on core academic competencies
                                     and the development of students
                                 </p>
                                 <a href="www.google.com"> <Button/> </a>
-                            </div>
+                            
                     </div>
                     <div className="different-school-programs">
-                            <div className="different-school-programs-container">
+                       
                                 <h2>PRIMARY SCHOOL</h2>
                                 <p>A strong focus on core academic competencies
                                     and the development of students
                                 </p>
                                 <a href="www.google.com"> <Button/> </a>
-                            </div>
+                           
                     </div>
                 </div>
             </div>
