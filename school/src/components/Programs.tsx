@@ -1,5 +1,6 @@
 import React from "react";
 import "../css/Programs.css"
+import Button from "./ButtonRegister";
 
 
 const Programs = () => {
@@ -21,7 +22,7 @@ const Programs = () => {
                                 <p>A strong focus on core academic competencies
                                     and the development of students
                                 </p>
-                                <a href="www.google.com"><button>REGISTER HERE</button></a>
+                                <a href="www.google.com"> <Button/> </a>
                             </div>
                     </div>
                     <div className="different-school-programs">
@@ -30,7 +31,7 @@ const Programs = () => {
                                 <p>A strong focus on core academic competencies
                                     and the development of students
                                 </p>
-                                <a href="www.google.com"><button>REGISTER HERE</button></a>
+                                <a href="www.google.com"> <Button/> </a>
                             </div>
                     </div>
                 </div>

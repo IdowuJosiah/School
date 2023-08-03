@@ -10,8 +10,8 @@ body{
 }
 .programs-main-container{
     width: 100%;
-    margin-right: auto;
-    margin-left: auto;
+   /* margin-right: auto;
+    margin-left: auto;*/
     height: 70vh;
 }
 
@@ -21,13 +21,11 @@ body{
 }
 
 .programs-header{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 30%;
+ text-align: center;
+ margin: 0px 0px 40px 0;
 }
 .programs-header p{
-    font-family: Manrope;
+    font-family: 'Manrope',sans-serif;
     font-size: 1.3em;
     letter-spacing: 1px;
 }
@@ -39,33 +37,37 @@ body{
 }
 
 .programs{
-    height: 25vh;
     display: flex;
-    max-width: 100%;
-    align-items: center;
-    justify-content: space-around;
+    width: 100%;
+    justify-content: space-between;
+   
 }
 
 .different-school-programs{
-    max-width: 50%;
+    width: 50%;
     display: flex;
-    height: 12rem;
+   /* height: 12rem;*/
     justify-content: center;
     align-items: center;
 }
 .different-school-programs-container{
     width: 75%;
-    height: 100%;
     background: cornflowerblue;
-    padding: 1em;
+    padding: 30px;
     border-radius: 8px;
+    color:#fff;
 }
 .different-school-programs-container h2 {
     font-family: 'Manrope', sans-serif;
     letter-spacing: 1px;
-    height: 3rem;
+   
 }
 .different-school-programs-container p{
     letter-spacing: 1px;
-    height: 3rem;
+    margin: 20px 0;
+    
+}
+
+.different-school-programs-container a{
+    text-decoration: none;
 }
