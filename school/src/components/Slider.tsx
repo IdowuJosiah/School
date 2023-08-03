@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import {slideShow} from "../interfaces/interface";
 import "../css/Slider.css"
+import Button from './ButtonRegister';
 
 const Slider = () => {
 
@@ -50,8 +51,10 @@ const Slider = () => {
                           
                           <div className="slide-overlay">
                               <div className='slide-banner'>
-                                    <p>{slide.bannerText}</p>
-                                <button> Register</button>
+                                    
+                                     <p className='slide-text'>{slide.bannerText}</p>
+                                  
+                                    <Button/>
                               </div>
                             
                           </div>

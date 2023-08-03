@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
+
 .slideshow {
     margin: 0 auto;
     overflow: hidden;
@@ -39,11 +41,20 @@
 }
 
 .slide-banner{
-    width: 350px;
-    height: 200px;
-    border-radius: 10px;
-    background-color:rgb(24, 75, 152) ;
+    padding: 20px;
+    font-size: 40px;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 10px; 
+    background-color: rgba(97, 24, 152, 0.5) ;
+    width: 500px;
 
+}
+
+p{
+    margin: 0px  0px 20px 0;
+    width: 70%;
+    color: #fff;
+    
 }
 
 
