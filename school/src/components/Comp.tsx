@@ -9,9 +9,9 @@ const Comp = () => {
                 <img alt="banner" src="./PHOTO-2023-07-17-20-25-38.jpg"/>
                 <div className="comp-overlay">
                     <div className="comp-text">
-                        <h2>
-                            CREATING A SOLID FOUNDATION
-                        </h2>    
+                        
+                            Creating a Solid foundation
+                         
                     </div>
                 </div>
                 
@@ -19,11 +19,14 @@ const Comp = () => {
             <div className="mission">
                 <div className="mission-container">
                     <div className="mission-text">
+                        <header>MISSION</header>
                             <span className="mission-header">
-                                Mission: our mission is to harness the potential in every pupil
+                               <q> 
+                                Our mission is to harness the potential in every pupil
                                 by inspiring a love of learning,
                                 through providing excellent education and strong moral
                                 values in a safe and healthy learning environment
+                                </q>
                             </span>
                             <ul className="mission-list">
                                 <li>
