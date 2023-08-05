@@ -8,3 +8,35 @@
 body{
     font-family: inherit;
 }
+.index-virtual-tour-section{
+    width: 100%;
+    height: 80vh;
+}
+.index-virtual-tour-container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.index-virtual-tour-text{
+    width: 50%;
+    height: 100%;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.index-virtual-tour-text h1{
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+    font-size: 2.5em;
+    line-height: 3rem;
+
+}
+.index-virtual-tour-image{
+    width: 50%;
+    height: 100%;
+}
+.index-virtual-tour-image img{
+    width: 100%;
+    height: 100%;
+}
