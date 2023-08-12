@@ -1,24 +1,29 @@
 import "../css/Counter.css"
-import {useRef} from "react";
-import {useState, useEffect} from "react";
+import {schoolNumbers} from "../interfaces/interface";
 
 const Counter = () => {
-    const [actualValue] = useState(400)
-    const [counter, setCounter] = useState(0)
-    useEffect(() => {
-        if(counter === 0){
-            setTimeout(function (){
-                setCounter(counter + 1)
-            },10)
+    const schoolDetails: schoolNumbers[] =[
+        {
+            title: "Years of creating excellence",
+            number: 10,
+        },
+        {
+            title: "Buildings",
+            number: 2
+        },
+        {
+            title:"Students Enrolled",
+            number:200
+        },
+        {
+            title:"Qualified Teachers",
+            number: 15
         }
-        if (counter === actualValue){
-            setCounter(actualValue)
-        }
-    } )
+    ]
     return(
-        <div>
-            <section>
-                <div>
+        <div className="section">
+            <section className="quote">
+                <div className="quote-container">
                     <h1>
                         "The child is made of one hundred. The child has a hundred languages,
                         a hundred hands, a hundred thoughts, a hundred ways of thinking, of playing, of speaking."
@@ -28,9 +33,20 @@ const Counter = () => {
                     </p>
                 </div>
             </section>
-            <section>
-                <div>
-                    {counter}
+            <section className="counter">
+                <div className="counter-container">
+                    {
+                        schoolDetails.map((details, index) =>{
+                            return <div key={index}>
+                                    <ul>
+                                        <li>
+                                            <p className="number">{details.number}</p><p className="title">{details.title}</p>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                        })
+                    }
                 </div>
             </section>
         </div>

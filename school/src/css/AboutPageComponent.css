@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+body{
+    font-family: inherit;
+}
+.about-page-width{
+    width: calc(100% - 15rem);
+    padding: 30px 20px;
+    margin: 0 auto;
+}
+.about-page-header h2{
+    font-family: 'Manrope', sans-serif;
+    font-size: 3rem;
+    height: 5rem;
+}
+.about-page-header-container div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 70vh;
+}
+.about-page-header-container img{
+    width: 100%;
+    height: 100%;
+}
+.about-article p{
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    font-family: Manrope;
+}
+.about-footer-section{
+    display: flex;
+    justify-content: space-between;
+}
+.about-list{
+    width: 50%;
+}
+.about-image{
+    width: 50%;
+}
+.about-image img{
+    width: 100%;
+}
+.about-list p{
+    font-size: 1.8rem;
+    font-family: 'Manrope', sans-serif;
+    margin-bottom: 1rem;
+}
+.about-list li{
+    margin-bottom: 1rem;
+    font-family: 'Manrope', sans-serif;
+    list-style: none;
+
+}

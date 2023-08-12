@@ -7,7 +7,7 @@ const Slider = () => {
 
     const slideShowItems: slideShow[] = [
         {
-            background : "./national-cancer-institute-xDSD3Vmzh70-unsplash.jpg",
+            background : "./3c15d55b-a063-431f-84d6-ced2f31f680d.JPG",
             bannerText: "Welcome To Our School"
         },
         {
@@ -15,7 +15,7 @@ const Slider = () => {
             bannerText: "An adventure awaits you in each class"
         },
         {
-            background : "./kenny-eliason-zFSo6bnZJTw-unsplash.jpg",
+            background : "./74d433cf-cebd-40d1-a999-a1e66859cba5.JPG",
             bannerText: " Inspiring Confidence & Encouraging Self Expression"
         }
     ]

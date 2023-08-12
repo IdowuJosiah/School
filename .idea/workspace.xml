@@ -5,13 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b533c037-1550-4224-be30-268cdf4e815e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/school/src/components/Counter.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school/src/css/Counter.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/src/components/AboutPageComponent.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/src/components/ButtonSlider.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/src/components/Faq.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/src/components/Footer.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/src/components/ParentsReview.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/src/css/AboutPageComponent.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/src/css/Faq.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/src/css/Footer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/src/css/ParentsReview.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school/src/pages/AboutPage.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/school/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/school/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/school/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/school/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/school/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/components/Comp.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/school/src/components/Comp.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/components/Counter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/school/src/components/Counter.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/school/src/components/IndexPageVirtualTourSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/school/src/components/IndexPageVirtualTourSection.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/school/src/css/IndexPageVirtualTourSection.css" beforeDir="false" afterPath="$PROJECT_DIR$/school/src/css/IndexPageVirtualTourSection.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/components/NavBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/school/src/components/NavBar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/components/Slider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/school/src/components/Slider.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/css/Counter.css" beforeDir="false" afterPath="$PROJECT_DIR$/school/src/css/Counter.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/css/NavBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/school/src/css/NavBar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/css/Slider.css" beforeDir="false" afterPath="$PROJECT_DIR$/school/src/css/Slider.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/school/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/interfaces/interface.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/school/src/interfaces/interface.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/school/src/pages/IndexPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/school/src/pages/IndexPage.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,8 +39,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
         <option value="CSS File" />
       </list>
     </option>
@@ -44,6 +61,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
@@ -71,11 +89,39 @@
       <option name="presentableId" value="Default" />
       <updated>1690836459258</updated>
       <workItem from="1690836461387" duration="29524000" />
-      <workItem from="1691091654522" duration="5383000" />
+      <workItem from="1691091654522" duration="20756000" />
+      <workItem from="1691325471242" duration="55783000" />
+      <workItem from="1691542483081" duration="16298000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/school/src/interfaces/interface.tsx</url>
+          <line>27</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/school/src/interfaces/interface.tsx</url>
+          <line>24</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/school/src/components/Footer.tsx</url>
+          <line>70</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/school/src/components/Footer.tsx</url>
+          <line>53</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

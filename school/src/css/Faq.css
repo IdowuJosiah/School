@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+body {
+    font-family: inherit;
+}
+.faq-section{
+    padding: 3rem;
+}
+.accordion{
+    width: 500px;
+}
+.item{
+    background: #c9dcc9;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.question{
+    height: 5rem;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding: 5px 10px;
+    font-family: 'Manrope', sans-serif;
+}
+.answer{
+    height: 8rem;
+    background: aquamarine;
+    display: none;
+    font-family: 'Manrope', sans-serif;
+    transition: all 5s cubic-bezier(0,1,0,1);
+}
+.answer-active{
+    display: flex;
+    padding: 2rem 1rem;
+    transition: all 5s cubic-bezier(1,0,1,0);
+
+}

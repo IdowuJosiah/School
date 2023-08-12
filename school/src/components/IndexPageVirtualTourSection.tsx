@@ -15,7 +15,8 @@ const IndexPageVirtualTourSection  = () => {
                     </div>
                 </div>
                 <div className="index-virtual-tour-image">
-                        <img src="./PHOTO-2023-07-17-20-49-24 10.jpg"/>
+                        <img alt="tour"
+                            src="./PHOTO-2023-07-17-20-49-24 10.jpg"/>
                 </div>
             </div>
         </section>

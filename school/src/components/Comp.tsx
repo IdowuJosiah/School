@@ -54,7 +54,7 @@ const Comp = () => {
                     </div>
                     <div className="mission-image">
 
-                            <img src="./PHOTO-2023-07-17-20-28-14 (2).jpg"/>
+                            <img alt="logo" src="./PHOTO-2023-07-17-20-28-14 (2).jpg"/>
 
                     </div>
                 </div>

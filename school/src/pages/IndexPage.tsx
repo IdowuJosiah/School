@@ -7,17 +7,24 @@ import Comp from "../components/Comp";
 import Programs from "../components/Programs";
 import IndexPageVirtualTourSection from "../components/IndexPageVirtualTourSection"
 import Counter from "../components/Counter";
+import ParentsReview from "../components/ParentsReview";
+import Footer from "../components/Footer";
+import Faq from "../components/Faq"
 const IndexPage = () => {
   return (
     <div className='main-container'>
-      <NavBar/>
-      <Slider/>
+        <NavBar/>
+        <Slider/>
         <Banner/>
         <IndexPageApplyAdmission/>
         <Comp/>
         <Programs/>
         <IndexPageVirtualTourSection/>
         <Counter/>
+        <ParentsReview/>
+        <Faq/>
+        <Footer/>
+
     </div>
   )
 }

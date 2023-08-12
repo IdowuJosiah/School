@@ -14,7 +14,7 @@ body{
 }
 
 .page-width{
-    width: calc(100% - 5rem);
+    width: calc(100% - 4rem);
     padding: 15px 20px;
     margin: 0 auto;
 }
@@ -32,9 +32,14 @@ body{
     align-items: center;
     font-size: 34px;
 }
-
 .navigation-title{
-    font-family: 'Raleway', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navigation-title img{
+    width: 5rem;
+    height: 5rem;
 }
 
 .navigation-list{
@@ -66,10 +71,11 @@ body{
     display: block;
 }
 .dropdown-items li{
-    margin: 0;
+    margin-bottom: 5px;
     padding: 10px;
     cursor: pointer;
     background: red;
     list-style: none;
+    width: 200%;
 }
 

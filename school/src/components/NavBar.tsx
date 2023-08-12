@@ -2,6 +2,8 @@ import { navigation } from '../interfaces/interface'
 import '../css/NavBar.css'
 import { useState } from 'react'
 import {cloneDeep} from 'lodash'
+import { Link } from "react-router-dom"
+import React from "react";
 
 
 
@@ -14,7 +16,7 @@ const NavBar = () => {
             children: [
                 {
                     title: 'About Us',
-                    path:'/aboutus'
+                    path:'/about'
                 },
 
                 {
@@ -27,10 +29,10 @@ const NavBar = () => {
                     path:'/team'
                 },
 
-                {
-                    title: 'Career',
-                    path:'/career'
-                }
+              //  {
+             //       title: 'Career',
+              //      path:'/career'
+            //    }
                 
             ]
         },
@@ -117,7 +119,7 @@ const NavBar = () => {
             children:[
                 {
                     title: 'Contact Us',
-                    path:',contactus'
+                    path:'/contactus'
                 },
 
                 {
@@ -141,7 +143,7 @@ const NavBar = () => {
             <div className="navigation-content">
                 <div className='navigation-emblem'>
                    
-                    <header className='navigation-title'>BALABLU</header>
+                    <header className='navigation-title'><Link to="/"><img alt="logo" src="./School logo.JPG"/></Link></header>
                 </div>
 
                 <ul className='navigation-list'>
@@ -150,6 +152,7 @@ const NavBar = () => {
                             function Toggle(index:number):void{
 
                                 let clonedArray = cloneDeep(navItems)
+
                                 clonedArray[index].isVisible = !clonedArray[index].isVisible
                                             setNavItems(clonedArray)
                                   //   item.isVisible = true
@@ -171,7 +174,7 @@ const NavBar = () => {
                                           {
                                               item.children?.map((data, dataIndex)=> {
                                                   return <li key={dataIndex}>
-                                                  {data.title}
+                                                      <Link to={data.path}>{data.title}</Link>
                                               </li>
                                               })
                                           }

@@ -3,6 +3,24 @@ export interface linkItemType {
     path: string
     isVisible?: boolean
 }
+export interface schoolNumbers{
+    number:number
+
+    title: string
+
+}
+export interface reviewDetails {
+    parentImage: string
+
+    parentReview: string
+
+    parentName: string
+}
+export interface questions{
+
+    question: string
+    answer: string
+}
 
 export interface navigation extends linkItemType{
     children?: linkItemType[]
@@ -13,6 +31,13 @@ export interface flyer {
 export interface slideShow {
     background: string
     bannerText: string
+
+}
+export interface footer{
+    title: string
+    path : string
+
+
 
 }
 
