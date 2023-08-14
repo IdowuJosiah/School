@@ -7,7 +7,7 @@ interface props{
     moveSlide: () => void
 }
 const ButtonSlider = ({direction, moveSlide}:props) => {
-    console.log(direction,moveSlide)
+    //console.log(direction,moveSlide)
     return(
         <div className="buttonslider-icon"
              onClick={moveSlide}>

@@ -5,49 +5,51 @@ import {AiFillFacebook} from "react-icons/ai"
 import {AiOutlineInstagram} from "react-icons/ai"
 import {AiOutlineTwitter} from "react-icons/ai"
 import {AiOutlineCopyrightCircle} from "react-icons/ai"
+import { Link } from "react-router-dom"
+
 
 const Footer = () => {
 
         const footerNav : footer[] =[
             {
                 title: "Home",
-                path: "./"
+                path: "/"
             },
-            {
-                title: "Calendars",
-                path: "./"
-            },
+          //  {
+         //       title: "Calendars",
+       //         path: "./"
+      //      },
             {
                 title: "Admissions",
-                path: "./"
+                path: "/admissions"
             },
             {
                 title: "Nursery",
-                path: "./"
+                path: "/nursery"
             },
             {
                 title: "Primary",
-                path: "./"
+                path: "/primary"
             },
             {
                 title: "About Honey Rock Schhols",
-                path: "./"
+                path: "/about"
             },
-            {
-                title: "Order Uniforms",
-                path: "./"
-            },
+       //     {
+      //          title: "Order Uniforms",
+     //           path: "/order"
+      //      },
             {
                 title: "Parent's Feedback",
-                path: "./"
+                path: "/feedback"
             },
-            {
-                title: "Careers",
-                path: "./"
-            },
+        //    {
+      //          title: "Careers",
+      //          path: "./"
+      //      },
             {
                 title: "Take a Virtual Tour",
-                path: "./"
+                path: "/tour"
             },
         ]
 
@@ -60,8 +62,9 @@ const Footer = () => {
                             return(
                                 <div className="footer-nav-list">
                                     <ul>
-                                        <li>
-                                            {item.title}
+                                        <li key={index}>
+
+                                       <Link to={item.path}>{item.title}</Link>
                                         </li>
                                     </ul>
                                 </div>

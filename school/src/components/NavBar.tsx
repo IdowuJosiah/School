@@ -21,7 +21,7 @@ const NavBar = () => {
 
                 {
                     title: 'Directors Message',
-                    path:'/directorsmessage'
+                    path:'/directors-message'
                 },
 
                 {
@@ -79,7 +79,7 @@ const NavBar = () => {
 
                 {
                     title:'Apply For Admission',
-                    path:'/Applyforadmission'
+                    path:'/apply-for-admission'
                 }
             ]
         },

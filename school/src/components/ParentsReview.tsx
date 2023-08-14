@@ -39,9 +39,10 @@ const ParentsReview = () => {
         if(slideIndex !== reviews.length){
             setSlideIndex(slideIndex - 1)
         }
-        else if(slideIndex === reviews.length){
-            setSlideIndex(1)
+        else if(slideIndex < 0){
+            setSlideIndex(5)
         }
+        console.log(slideIndex)
     }
 
     const nextSlide = ()=>{
@@ -51,6 +52,7 @@ const ParentsReview = () => {
         else if(slideIndex === reviews.length){
             setSlideIndex(1)
         }
+        console.log(slideIndex)
 
        // console.log(reviews)
     }
