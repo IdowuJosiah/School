@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
 *{
     margin: 0;
     box-sizing: border-box;
@@ -8,24 +9,38 @@
 body{
     font-family: inherit;
 }
-.section{
-    height: 100vh;
-    width: 100%;
-}
+
 .quote{
-    background: green;
+    background: rgba(0, 0, 0, 0.1);
     padding: 5rem;
     display: flex;justify-content: center;
-    height: 50vh;
+    /*height: 50vh;*/
+    font-family: 'Lato', sans-serif;
+   
 }
 .quote-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 80%;
 }
+
+.quote-container  h1{
+    font-size: 35px;
+    margin: 20px 0;
+}
+
 .quote-container p{
     text-align: center;
+    margin: 15px 0px 0px 0px;
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+.quote-container svg{
+    margin: none;
+    font-size: 35px;
+    color: rgb(31,183,105);
+   
 }
 .counter{
     width: 100%;
@@ -47,10 +62,13 @@ body{
 }
 .number{
     font-size: 2.5rem;
+    font-weight: bold;
+    color: rgb(107, 91, 255);
     font-family: 'Manrope', sans-serif;
+    margin: 10px 0;
 }
 .title{
     font-family: 'Raleway', sans-serif;
-    font-size: 1.4rem;
+    font-size: 14.5px;
     text-align: center;
 }

@@ -18,15 +18,20 @@ const IndexPage = () => {
         <Banner/>
         <IndexPageApplyAdmission/>
         <Comp/>
-        <Programs/>
+        <Programs/> 
         <IndexPageVirtualTourSection/>
         <Counter/>
         <ParentsReview/>
-        <Faq/>
-        <Footer/>
-
     </div>
   )
+
+  /*      */
+
+  /**
+     
+        <Faq/>
+        <Footer/>
+   */
 }
 
 export default IndexPage

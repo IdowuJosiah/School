@@ -25,7 +25,7 @@ const Comp = () => {
                                 Our mission is to harness the potential in every pupil
                                 by inspiring a love of learning,
                                 through providing excellent education and strong moral
-                                values in a safe and healthy learning environment
+                                values in a safe and healthy learning environment.
                                 </q>
                             </span>
                             <ul className="mission-list">

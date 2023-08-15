@@ -1,5 +1,6 @@
 import "../css/Counter.css"
 import {schoolNumbers} from "../interfaces/interface";
+import { BiSolidQuoteAltLeft, BiSolidQuoteAltRight } from "react-icons/bi";
 
 const Counter = () => {
     const schoolDetails: schoolNumbers[] =[
@@ -24,10 +25,14 @@ const Counter = () => {
         <div className="section">
             <section className="quote">
                 <div className="quote-container">
+                    <BiSolidQuoteAltLeft/>
                     <h1>
-                        "The child is made of one hundred. The child has a hundred languages,
-                        a hundred hands, a hundred thoughts, a hundred ways of thinking, of playing, of speaking."
+                      
+                        The child is made of one hundred. The child has a hundred languages,
+                        a hundred hands, a hundred thoughts, a hundred ways of thinking, of playing, of speaking.
+                       
                     </h1>
+                    <BiSolidQuoteAltRight/>
                     <p>
                         Margaret McMillan
                     </p>

@@ -1,5 +1,6 @@
 import React from "react";
 import "../css/IndexPageVirtualTourSection.css"
+import Button from "./ButtonTour";
 
 const IndexPageVirtualTourSection  = () => {
     return(
@@ -7,11 +8,10 @@ const IndexPageVirtualTourSection  = () => {
             <div className="index-virtual-tour-container">
                 <div className="index-virtual-tour-text">
                     <h1>
-                        We understand that great things do not just happen
-                        , they are the result of tenacity and pushing forward.
+                        We understand that great things do not just happen, they are the result of tenacity and pushing forward.
                     </h1>
                     <div>
-                        <a href="www.google.com"><button>Take A Tour</button></a>
+                        <a href="www.google.com"><Button/></a>
                     </div>
                 </div>
                 <div className="index-virtual-tour-image">
