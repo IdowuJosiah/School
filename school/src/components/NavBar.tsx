@@ -151,10 +151,21 @@ const NavBar = () => {
                         navItems.map((item, index) => {
                             function Toggle(index:number):void{
 
-                                let clonedArray = cloneDeep(navItems)
+                                let clonedArray = cloneDeep(navItems);
+                                clonedArray = clonedArray.map((arrayItem, itemIndex) => {
+                                    if (itemIndex !== index) {
+                                        arrayItem.isVisible = false
+                                    } else {
+                                        arrayItem.isVisible = !arrayItem.isVisible
+                                    }
 
-                                clonedArray[index].isVisible = !clonedArray[index].isVisible
+                                    return arrayItem
+                                })
+
+                                // clonedArray[index].isVisible = !clonedArray[index].isVisible
+                                             
                                             setNavItems(clonedArray)
+
                                   //   item.isVisible = true
 
 

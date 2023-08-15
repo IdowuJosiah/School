@@ -11,7 +11,7 @@ const  AboutPageComponent = () =>{
                             Why Honey Rock School?
                     </h2>
                     <div>
-                            <img src="./74d433cf-cebd-40d1-a999-a1e66859cba5.JPG"/>
+                            <img alt="guh" src="./74d433cf-cebd-40d1-a999-a1e66859cba5.JPG"/>
                     </div>
                 </div>
 
@@ -87,7 +87,7 @@ const  AboutPageComponent = () =>{
                 </div>
                 <div className="about-image">
                     <p>
-                        <img src="./ab961ccd-3e00-468f-86ab-4c83f383a1fa.JPG"/>
+                        <img alt="jhgg" src="./ab961ccd-3e00-468f-86ab-4c83f383a1fa.JPG"/>
                     </p>
                 </div>
             </div>

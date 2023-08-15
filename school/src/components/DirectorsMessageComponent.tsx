@@ -7,7 +7,7 @@ const DirectorsMessageComponent = () => {
             <div className="director-container">
                 <header className="director-header director-page-width ">
                     <div className="director-header-container">
-                        <img src="c62fe96f-d63d-44b9-bbf5-6167c6f49de2.JPG"/>
+                        <img alt="hb" src="c62fe96f-d63d-44b9-bbf5-6167c6f49de2.JPG"/>
                     </div>
                 </header>
                 <article className="director-page-width">
@@ -19,7 +19,7 @@ const DirectorsMessageComponent = () => {
                             and we are indeed glad that our children continue to surpass expectations
                         </p>
                         <p className="director-image">
-                            <img src="./Screenshot_20230702_140639_Instagram.jpg"/>
+                            <img alt="kjghd" src="./Screenshot_20230702_140639_Instagram.jpg"/>
                         </p>
                     </div>
                     <div className="director-article-footer">

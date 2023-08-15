@@ -5,7 +5,7 @@ import {reviewDetails} from "../interfaces/interface";
 import ButtonSlider from "./ButtonSlider"
 
 const ParentsReview = () => {
-    const [slideIndex, setSlideIndex] = useState<number>(1)
+    const [slideIndex, setSlideIndex] = useState<number>(0)
 
 
     const reviews: reviewDetails[]=[
@@ -36,33 +36,35 @@ const ParentsReview = () => {
         },
     ]
     const prevSlide = ()=>{
-        if(slideIndex !== reviews.length){
+        if(slideIndex > 0){
             setSlideIndex(slideIndex - 1)
-        }
-        else if(slideIndex < 0){
-            setSlideIndex(5)
-        }
+      }
+   //     else if(slideIndex < 0){
+   //         setSlideIndex(1)
+    //    }  
         console.log(slideIndex)
     }
 
     const nextSlide = ()=>{
-        if(slideIndex !== reviews.length){
+        if(slideIndex < 4){
             setSlideIndex(slideIndex + 1)
         }
-        else if(slideIndex === reviews.length){
-            setSlideIndex(1)
-        }
+    //    else if(slideIndex === reviews.length){
+   //         setSlideIndex(1)
+    //    }
         console.log(slideIndex)
 
        // console.log(reviews)
     }
-
+        function dotClick (index:number):void {
+           setSlideIndex(index)
+        }
     return(
         <section className="parent-review">
                 <div className="parent-review-container">
                     {reviews.map((review, index)=>{
                         return <div
-                            className={slideIndex === index + 1 ? "slide-active slider-container" : "parent-review-slide"}
+                            className={slideIndex === index  ? "slide-active slider-container" : "parent-review-slide"}
                             key={index}>
 
                             <p className="parent-image"><img alt="parents-images" src={review.parentImage}/></p>
@@ -74,14 +76,16 @@ const ParentsReview = () => {
                     })
                     }
                 </div>
-                <div className="buttonslider">
+                <div 
+                     className="buttonslider">
                     <ButtonSlider moveSlide={prevSlide} direction={"prev"}/>
                     <ButtonSlider moveSlide={nextSlide} direction={"next"}/>
                 </div>
-                <div className="container-dots">
+                <div 
+                    className="container-dots">
                     {Array.from({length:5}).map((item, index)=>(
-                        <div
-                            className={slideIndex === index + 1 ? "dot dot-active": "dot"}>
+                        <div onClick={() => dotClick(index)}
+                            className={slideIndex === index  ? "dot dot-active": "dot"}>
                         </div>
                     ))
 
