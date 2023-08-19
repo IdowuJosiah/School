@@ -59,6 +59,9 @@ const  AboutPageComponent = () =>{
                     </p>
                 </div>
             </article>
+            <section >
+
+            </section>
             <div className="about-footer-section about-page-width">
                 <div className="about-list">
                     <p>
