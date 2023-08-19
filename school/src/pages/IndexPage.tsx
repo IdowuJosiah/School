@@ -10,6 +10,7 @@ import Counter from "../components/Counter";
 import ParentsReview from "../components/ParentsReview";
 import Footer from "../components/Footer";
 import Faq from "../components/Faq"
+import Line from '../components/Line';
 const IndexPage = () => {
   return (
     <div className='main-container'>
@@ -21,7 +22,10 @@ const IndexPage = () => {
         <Programs/> 
         <IndexPageVirtualTourSection/>
         <Counter/>
+        <Line/>
         <ParentsReview/>
+        <Line/>
+        <Faq/>
     </div>
   )
 
@@ -29,7 +33,7 @@ const IndexPage = () => {
 
   /**
      
-        <Faq/>
+      
         <Footer/>
    */
 }

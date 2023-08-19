@@ -16,24 +16,25 @@ const Faq = () => {
     }
     const data: questions[] =[
         {
-            question:"WHAT CURRICULUM DOES THE SCHOOL FOLLOW?",
+            question:"What curriculum does the school follow?",
             answer:"The School follows the Nigerian and British Curriculum."
         },
         {
-            question:"WHAT'S THE SCHOOL DURATION?",
+            question:"How long are students in school for?",
             answer:"From 8:00am - 3:00pm."
         },
         {
-            question:"WHAT'S THE AGE RANGE?",
+            question:"What's the age range for both the Nursery and Primary Schools?",
             answer:"From 3 Months - 11.5 Years."
         },
         {
-            question:"RELIGION?",
+            question:"What religion is practiced at HoneyRock Schools?",
             answer:"Honey Rock School is a Christian School but everyone is treated equally."
         },
     ]
     return(
         <section className="faq-section">
+            <header>Frequently Asked Questions</header>
             <div className="accordion"
                     >
                 {data.map((item,index)=> {
