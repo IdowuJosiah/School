@@ -21,7 +21,7 @@ const Slider = () => {
     ]
 
     let [index, setIndex] = useState(0);
-    let delay = 4000
+    let delay = 14000
 
     useEffect(() => {
         setTimeout(
@@ -50,12 +50,16 @@ const Slider = () => {
                           <img className='slide-image' src={slide.background} alt='#'/>
                           
                           <div className="slide-overlay">
+                           
                               <div className='slide-banner'>
+                                      
                                     
-                                     <p className='slide-text'>{slide.bannerText}</p>
+                                     <div className='slide-text'>{slide.bannerText}</div>
+                                     
                                   
                                     <Button/>
                               </div>
+                            
                             
                           </div>
                 </div>
