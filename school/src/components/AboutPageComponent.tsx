@@ -1,6 +1,6 @@
 import React from "react" ;
 import "../css/AboutPageComponent.css";
-
+import {BsLightbulb} from "react-icons/bs"
 
 const  AboutPageComponent = () =>{
     return(
@@ -10,6 +10,11 @@ const  AboutPageComponent = () =>{
                     <h2>
                             Why Honey Rock School?
                     </h2>
+
+                    <p className="quick-introduction">
+                        We provide a nurturing environment for holistic learning and growth, encouraging a diverse and inclusive community that 
+                        fosters lifelong friendships.
+                    </p>
                     <div>
                             <img alt="guh" src="./74d433cf-cebd-40d1-a999-a1e66859cba5.JPG"/>
                     </div>
@@ -66,21 +71,27 @@ const  AboutPageComponent = () =>{
                     </p>
                     <ul>
                         <li>
+                            <BsLightbulb/>
                             Individual with strong character
                         </li>
                         <li>
+                            <BsLightbulb/>
                             Perpetual seeker of knowledge
                         </li>
                         <li>
+                            <BsLightbulb/>
                             Producer of high-quality work
                         </li>
                         <li>
+                            <BsLightbulb/>
                             Efficient collaborator
                         </li>
                         <li>
+                            <BsLightbulb/>   
                             Autonomous achiever
                         </li>
                         <li>
+                            <BsLightbulb/>
                             Equipped for a prosperous life
                         </li>
                     </ul>

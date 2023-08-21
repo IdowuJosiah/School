@@ -13,6 +13,20 @@ body{
     padding: 30px 20px;
     margin: 0 auto;
 }
+
+
+.about-page-container{
+    font-family: 'Manrope', sans-serif;
+}
+
+.quick-introduction{
+    font-size: 27px;
+    font-weight: bold;
+    color: #2ab66e;
+    width: 75%;
+    margin: 0px 0px 20px 0px;
+}
+
 .about-page-header h2{
     font-family: 'Manrope', sans-serif;
     font-size: 3rem;
@@ -27,16 +41,24 @@ body{
 .about-page-header-container img{
     width: 100%;
     height: 100%;
+    border-radius: 7px;
+
+}
+
+.about-article {
+    background-image: linear-gradient(to right, #6B5BFF, #29cb77);
+    color: #fff;
 }
 .about-article p{
     margin-bottom: 2rem;
-    font-size: 1.2rem;
+    font-size: 16px;
     line-height: 2rem;
     font-family: Manrope;
 }
 .about-footer-section{
     display: flex;
     justify-content: space-between;
+  
 }
 .about-list{
     width: 50%;
@@ -46,15 +68,27 @@ body{
 }
 .about-image img{
     width: 100%;
+    border-radius: 7px;
 }
 .about-list p{
     font-size: 1.8rem;
     font-family: 'Manrope', sans-serif;
     margin-bottom: 1rem;
+    font-weight: bold;
+    color:  rgb(7, 105, 147);
 }
 .about-list li{
     margin-bottom: 1rem;
     font-family: 'Manrope', sans-serif;
     list-style: none;
+    display: flex;
+    align-items: center;
+    font-weight: 800;
 
+}
+
+.about-list li svg{
+    color: rgb(198, 102, 6);
+    font-size: 20px;
+    
 }
