@@ -26,6 +26,7 @@ const IndexPage = () => {
         <ParentsReview/>
         <Line/>
         <Faq/>
+        <Footer/>
     </div>
   )
 
@@ -34,7 +35,7 @@ const IndexPage = () => {
   /**
      
       
-        <Footer/>
+        
    */
 }
 
