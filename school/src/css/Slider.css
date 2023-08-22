@@ -49,9 +49,12 @@
     height: 300px;
 }
 
+/*.width-text{
+    width: 70%;
+}*/
 .slide-banner .slide-text{
     margin: 0px  0px 20px 0;
-    width: 70%;
+    max-width: 100%;
     color: #fff;
 }
 

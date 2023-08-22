@@ -1,5 +1,7 @@
 import React from "react";
 import "../css/DirectorsMessageComponent.css"
+import {FaQuoteLeft} from "react-icons/fa"
+import { FaQuoteRight } from "react-icons/fa";
 
 const DirectorsMessageComponent = () => {
     return(
@@ -13,10 +15,12 @@ const DirectorsMessageComponent = () => {
                 <article className="director-page-width">
                     <div className="director-article">
                         <p className="director-article-text">
+                        <FaQuoteLeft/>
                             It gives me great joy to welcome you to the official website of The Kids’ Court School – the best place for your child!
                             Over the years, we have prided ourselves in providing the very best international
                             education to nursery and primary school children in the Lagos metropolis,
-                            and we are indeed glad that our children continue to surpass expectations
+                            and we are indeed glad that our children continue to surpass expectations.
+                        <FaQuoteRight/>
                         </p>
                         <p className="director-image">
                             <img alt="kjghd" src="./Screenshot_20230702_140639_Instagram.jpg"/>
@@ -24,9 +28,11 @@ const DirectorsMessageComponent = () => {
                     </div>
                     <div className="director-article-footer">
                         <p>
+                          
                             Our community is also made up of vibrant teachers and parents who are very much partners
                             committed to working together
                             on the journey of providing an excellent education to their children.
+                          
                         </p>
                         <p>
                             I invite you to explore all aspects of this website and contact us should
@@ -39,7 +45,7 @@ const DirectorsMessageComponent = () => {
                             Dr. Abimbola Banu-Ogundere
                         </p>
                         <p>
-                            (Director, Kids’ Court School)
+                            Director, Kids’ Court School
                         </p>
                     </div>
                 </article>

@@ -115,9 +115,11 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="copyright">
-                    <div>
-                     <span><AiOutlineCopyrightCircle/></span> 2023. HONEY ROCK SCHOOLS. ALL RIGHT RESERVED. <span>PRIVACY POLICY</span>
-                    </div>
+                   <div>
+                   2023 HONEY ROCK SCHOOLS. ALL RIGHT RESERVED. 
+                   </div>
+                   <AiOutlineCopyrightCircle/>
+                    
                 </div>
             </div>
 
