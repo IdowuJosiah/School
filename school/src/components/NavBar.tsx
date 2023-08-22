@@ -24,10 +24,10 @@ const NavBar = () => {
                     path:'/directors-message'
                 },
 
-                {
-                    title: 'Team',
-                    path:'/team'
-                },
+          //    {
+          //        title: 'Team',
+          //        path:'/team'
+          //    },
 
               //  {
              //       title: 'Career',
@@ -42,14 +42,14 @@ const NavBar = () => {
             path: '/school',
             isVisible: false,
             children: [
-                {
-                   title:'Creche',
-                   path:'/creche'
-                },
+          //      {
+         //          title:'Creche',
+         //          path:'/creche'
+          //      },
 
                 {
-                    title:'Nursery',
-                    path:'/nursery'
+                    title:'Nursery - Primary',
+                    path:'/nursery-primary'
                  }
             
             ],

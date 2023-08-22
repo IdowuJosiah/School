@@ -73,7 +73,7 @@ body {
     margin: 10px 0px 0px 0px;
 }
 
-span{
+.question span{
     color: rgb(31,183,105);
     font-size: 20px;
     font-weight: bold;

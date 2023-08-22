@@ -59,9 +59,6 @@ const  AboutPageComponent = () =>{
                     </p>
                 </div>
             </article>
-            <section >
-
-            </section>
             <div className="about-footer-section about-page-width">
                 <div className="about-list">
                     <p>
@@ -94,6 +91,29 @@ const  AboutPageComponent = () =>{
                     </p>
                 </div>
             </div>
+            <section className="the-team" >
+                <h2>
+                    THE TEAM
+                </h2>
+                <div className="the-team-container about-page-width">
+                    <div className="school-director">
+                        <p>
+                            <img alt="team" src="./aiony-haust-3TLl_97HNJo-unsplash.jpg"/><div className="team-title"> <span>Honey Rock School Director</span><span>Pastor Aduke Obey</span> </div>
+                        </p>
+                    </div>
+                    <div className="head-of-schools">
+                        <div className="head-of-schools-container">
+                            <p>
+                                <img alt="team" src="./albert-dera-ILip77SbmOE-unsplash.jpg" /><div className="team-title"> <span>Honey Rock School Director</span><span>Pastor Aduke Obey</span> </div>
+                            </p>
+                            <p>
+                                <img alt="team" src="./alyona-grishina-JQGxnrGOkEI-unsplash.jpg"/><div className="team-title"> <span>Honey Rock School Director</span><span>Pastor Aduke Obey</span> </div>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
         </div>
     )
 }

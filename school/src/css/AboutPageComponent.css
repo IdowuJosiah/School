@@ -58,3 +58,57 @@ body{
     list-style: none;
 
 }
+
+.school-director{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 15rem;
+}
+.school-director p{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.school-director p img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+.head-of-schools{
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+}
+
+.head-of-schools-container{
+    width: 65%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.head-of-schools p{
+    width: 40%;
+    height: 50%;
+}
+.head-of-schools p img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.team-title{
+    display: flex;
+    flex-direction: column;
+}
+.team-title span{
+    text-align: center;
+}
