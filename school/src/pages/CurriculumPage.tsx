@@ -1,14 +1,15 @@
 import React from "react";
+import CurriculumPageComponent from "../components/CurriculumPageComponent";
 import NavBar from "../components/NavBar";
-import NurseryPrimaryComponent from "../components/NurseryPrimaryComponent";
 import Footer from "../components/Footer";
-const NurseryPrimary = () => {
+
+const CurriculumPage = () =>{
     return(
         <div>
             <NavBar/>
-            <NurseryPrimaryComponent/>
+            <CurriculumPageComponent/>
             <Footer/>
         </div>
     )
 }
-export default NurseryPrimary
+export default CurriculumPage
