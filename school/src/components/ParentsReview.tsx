@@ -43,7 +43,7 @@ const ParentsReview = () => {
    //         setSlideIndex(1)
     //    }  
         console.log(slideIndex)
-    }
+    }  
 
     const nextSlide = ()=>{
         if(slideIndex < 4){
