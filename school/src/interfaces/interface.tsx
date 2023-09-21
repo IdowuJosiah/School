@@ -1,3 +1,5 @@
+import exp from "constants";
+
 export interface linkItemType {
     title: string,
     path: string
@@ -8,6 +10,9 @@ export interface schoolNumbers{
 
     title: string
 
+}
+export interface images {
+    image: string
 }
 export interface reviewDetails {
     parentImage: string

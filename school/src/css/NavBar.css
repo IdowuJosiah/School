@@ -60,13 +60,13 @@ body{
     position: absolute;
     padding-left: 0;
     top: 100%;
-    right: 0;
-    z-index: 10000;
+    right: .5em;
     display: none;
 }
-
-.visible:hover .dropdown-items{
-    display: block;
+.main-list-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .active{
     display: block;
@@ -75,7 +75,6 @@ body{
     margin-bottom: 5px;
     padding: 10px;
     cursor: pointer;
-    background: red;
     list-style: none;
     width: 200%;
 }
