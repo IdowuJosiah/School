@@ -69,12 +69,12 @@ const NavBar = () => {
 
         {
             title: 'Admissions',
-            path: '/admissions',
+            path: '/admission',
             isVisible: false,
             children:[
                 {
                     title:'Admission',
-                    path:'/Admission'
+                    path:'/admission'
                 },
 
                 {
@@ -83,17 +83,17 @@ const NavBar = () => {
                 }
             ]
         },
-
-        {
-            title: 'Virtual tour',
-            path:'/tour',
-            isVisible: false,
-            children:[
-                {   title:' Virtual Tour',
-                    path:'/tour'
-                }
-            ]
-        },
+//
+ //       {
+ //           title: 'Virtual tour',
+  //          path:'/tour',
+ //           isVisible: false,
+ //           children:[
+  //              {   title:' Virtual Tour',
+  //                  path:'/tour'
+  //              }
+   //         ]
+   //     },
 
         {
             title: 'Gallery',
@@ -101,14 +101,14 @@ const NavBar = () => {
             isVisible: false,
             children :[
                 {
-                    title:'Cultural Day',
-                    path: '/culturalday'
+                    title:'Honey Rock Gallery',
+                    path: '/gallery'
                 },
 
-                {
-                    title:'Inter house Sport Day',
-                    path:'/interhousesportday'
-                }
+             //   {
+            //        title:'Inter house Sport Day',
+           //         path:'/interhousesportday'
+             //   }
             ]
         },
 
@@ -124,7 +124,7 @@ const NavBar = () => {
 
                 {
                     title: 'Parents Feedback',
-                    path:'/parentfeedback'
+                    path:'/parent-feedback'
                 }
             ]
         },
@@ -175,8 +175,11 @@ const NavBar = () => {
                             }
                             return <li key={index}
                                        onClick={(event)=>Toggle(index)}
+                                    //   onMouseOver={(event)=>Toggle(index)}
                                        className={'main-list-items'}>
-                                {item.title}
+                                <p>
+                                    {item.title}
+                                </p>
 
                                 {
                                     <ul 

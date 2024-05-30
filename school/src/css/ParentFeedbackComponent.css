@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+body{
+    font-family: 'Manrope', sans-serif;
+}
+.parent-feedback-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7rem;
+}
+.parent-feedback-text{
+}
+.parent-feedback-text p{
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+
+}

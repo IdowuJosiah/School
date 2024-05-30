@@ -16,21 +16,17 @@ const IndexPage = () => {
     <div className='main-container'>
         <NavBar/>
         <Slider/>
-        <Banner/>
         <IndexPageApplyAdmission/>
         <Comp/>
-        <Programs/> 
+        <Programs/>
         <IndexPageVirtualTourSection/>
         <Counter/>
-        <Line/>
-        <ParentsReview/>
-        <Line/>
-        <Faq/>
-        <Footer/>
+
     </div>
   )
 
-  /*      */
+  /*           <Banner/>
+   */
 
   /**
      

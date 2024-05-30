@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+body{
+    font-family: 'Manrope', sans-serif;
+}
+.admission-page-width{
+    width: calc(100% - 12rem);
+    padding: 30px 20px;
+    margin: 0 auto;
+}
+.admission-header{
+    height: 35rem;
+    display: flex;
+    justify-content: center;
+}
+.admission-header img{
+    height: 100%;
+}
+.admission-body{
+    height: 7rem;
+    display: flex;justify-content: center;align-items: center;
+}.admission-body h2{
+    font-size: 3rem;
+ }
+ .enrollment-list li{
+     margin-bottom: 1.5rem;
+ }
+ .enrollment-list h3{
+     font-size: 1.5rem;
+     line-height: 4rem;
+     color: #010E3A;
+ }

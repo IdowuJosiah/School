@@ -55,18 +55,17 @@ body{
     position: relative;
 }
 
-
 .dropdown-items{
     position: absolute;
     padding-left: 0;
     top: 100%;
-    right: 0;
-    z-index: 10000;
+    right: .5em;
     display: none;
 }
-
-.visible:hover .dropdown-items{
-    display: block;
+.main-list-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .active{
     display: block;
@@ -75,8 +74,29 @@ body{
     margin-bottom: 5px;
     padding: 10px;
     cursor: pointer;
-    background: red;
     list-style: none;
     width: 200%;
 }
-
+@media screen and (min-width :350px) and (max-width : 500px) {
+    .page-width{
+        width: calc(100% - 2rem);
+        padding: 10px 15px;
+        margin: 0 auto;
+    }
+    .navigation-emblem{
+        font-size: 20px;
+    }
+    .navigation-title img{
+        height: 3rem;
+        width: 3rem;
+    }
+    .main-list-items{
+        font-size: 8px;
+    }
+    .navigation-list{
+        gap :15px;
+    }
+    .navigation-list li{
+        margin: 0;
+    }
+}
