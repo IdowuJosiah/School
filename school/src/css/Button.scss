@@ -37,3 +37,9 @@ $purple: rgb(107, 91, 255);
     color: $purple;
     border: 1.5px solid $purple;
 }*/
+@media screen and (min-width :350px) and (max-width : 500px) {
+    .button{
+        font-size: 9px;
+        padding: 8px 16px;
+    }
+}

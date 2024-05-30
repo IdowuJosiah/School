@@ -124,7 +124,7 @@ const NavBar = () => {
 
                 {
                     title: 'Parents Feedback',
-                    path:'/parentfeedback'
+                    path:'/parent-feedback'
                 }
             ]
         },

@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
-*{
-    margin: 0;
-    box-sizing: border-box;
-    padding: 0;
-}
 body{
     font-family: inherit;
 }
@@ -12,8 +7,7 @@ body{
     width: 100%;
    /* margin-right: auto;
     margin-left: auto;*/
-    height: 70vh;
-    
+    padding: 50px;
     font-family: 'Manrope',sans-serif;
 }
 
@@ -81,7 +75,7 @@ body{
     letter-spacing: 1px;
    
 }
-.different-school-programs p{
+.different-school-programs h2{
     letter-spacing: 1px;
     margin: 20px 0;
     font-size: 13px;
@@ -91,4 +85,24 @@ body{
 
 .different-school-programs a{
     text-decoration: none;
+}
+@media screen and (min-width :350px) and (max-width : 500px) {
+    .programs{
+        width: calc(100% - 2.5rem);
+    }
+    .programs-main-container{
+        padding: 5px;
+    }
+    .different-school-programs{
+        width: 47%;
+        height: 220px;
+    }
+    .different-school-programs h2{
+        font-size: 12px;
+    }
+    .different-school-programs p{
+        font-size: 9px;
+        line-height: 13px;
+        margin-bottom: 1rem;
+    }
 }

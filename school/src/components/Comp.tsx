@@ -21,12 +21,12 @@ const Comp = () => {
                     <div className="mission-text">
                         <header>MISSION</header>
                             <span className="mission-header">
-                               <q> 
+                               <p>
                                 Our mission is to harness the potential in every pupil
                                 by inspiring a love of learning,
                                 through providing excellent education and strong moral
                                 values in a safe and healthy learning environment.
-                                </q>
+                                </p>
                             </span>
                             <ul className="mission-list">
                                 <li>
