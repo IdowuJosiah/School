@@ -73,41 +73,45 @@ const Footer = () => {
                     </div>
                     <div className="footer-contact-details">
                         <p className="footer-contact-header">CONTACT US</p>
-                        <div className="footer-contact-nursery">
-                            <h2>NURSERY</h2>
-                            <p className="address">18A Jimoh Balogun Street,
-                                Off Cmd Road, Off Aladelola Street,
-                                Ikosi-Ketu Lagos-Nigeria
-                            </p>
-                            <p className="telephone">
-                                <p>+2348081274082</p>
-                                <p>+2348081274082</p>
-                            </p>
-                        </div>
-                        <div className="footer-contact-nursery">
-                            <h2>PRIMARY</h2>
-                            <p className="address">No 37b Aladelola street,
-                                Off Ikosi Road,
-                                Ikosi-Ketu Lagos-Nigeria
-                            </p>
-                            <p className="telephone">
-                                <p>+2348081274082</p>
-                                <p>+2348081274082</p>
-                            </p>
-                        </div>
-                        <div className="footer-contact-social">
-                            <ul>
-                                <li>
-                                    <AiFillFacebook/>
-                                </li>
-                                <li>
-                                    <AiOutlineInstagram/>
-                                </li>
-                                <li>
-                                    <AiOutlineTwitter/>
-                                </li>
-                            </ul>
-                        </div>
+                        <section className="footer-contact-body">
+                            <div className="footer-contact-nursery">
+                                <h2>NURSERY</h2>
+                                <p className="address">18A Jimoh Balogun Street,
+                                    Off Cmd Road, Off Aladelola Street,
+                                    Ikosi-Ketu Lagos-Nigeria
+                                </p>
+                                <p className="telephone">
+                                    <p>+2348081274082</p>
+                                    <p>+2348081274082</p>
+                                </p>
+                            </div>
+                            <div className="footer-contact-nursery">
+                                <h2>PRIMARY</h2>
+                                <p className="address">No 37b Aladelola street,
+                                    Off Ikosi Road,
+                                    Ikosi-Ketu Lagos-Nigeria
+                                </p>
+                                <p className="telephone">
+                                    <p>+2348081274082</p>
+                                    <p>+2348081274082</p>
+                                </p>
+                                <div className="footer-contact-social">
+                                    <ul>
+                                        <li>
+                                            <AiFillFacebook/>
+                                        </li>
+                                        <li>
+                                            <AiOutlineInstagram/>
+                                        </li>
+                                        <li>
+                                            <AiOutlineTwitter/>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </section>
+
                     </div>
                     <div className="footer-school-logo">
                         <span><img alt="logo"
@@ -116,9 +120,9 @@ const Footer = () => {
                 </div>
                 <div className="copyright">
                    <div>
-                   2023 HONEY ROCK SCHOOLS. ALL RIGHT RESERVED. 
+                  <span>2023 HONEY ROCK SCHOOLS. ALL RIGHT RESERVED.</span><span><AiOutlineCopyrightCircle/></span>
                    </div>
-                   <AiOutlineCopyrightCircle/>
+
                     
                 </div>
             </div>

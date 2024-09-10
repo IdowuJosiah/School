@@ -4,7 +4,7 @@ import "../css/CurriculumPageComponent.css"
 const CurriculumPageComponent = () => {
     return(
         <div>
-            <section className="curriculum-header curriculum-page-width" >
+            <section className="curriculum-header curriculum-page-width-one" >
                 <div>
                     <img
                         src="./PHOTO-2023-07-17-20-25-40.jpg"

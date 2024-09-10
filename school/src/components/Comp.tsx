@@ -29,27 +29,27 @@ const Comp = () => {
                                 </p>
                             </span>
                             <ul className="mission-list">
-                                <li>
-                                    <AiFillCheckCircle /> Building children of great character
-                                </li>
-                                <li>
-                                    <AiFillCheckCircle/> Collaborative and Independent workers
-                                </li>
-                                <li>
-                                    <AiFillCheckCircle/>  Creative and critical thinkers
-                                </li>
-                                <li>
-                                    <AiFillCheckCircle/> Quality producers and responsible consumers of Information and Technology
-                                </li>
-                                <li>
-                                    <AiFillCheckCircle/> Globally, culturally and socially empathetic
-                                </li>
-                                <li>
-                                    <AiFillCheckCircle/>  Cultured
-                                </li>
-                                <li>
+                                <div>
+                                    <AiFillCheckCircle /> <span>Building children of great character</span>
+                                </div>
+                                <div>
+                                    <AiFillCheckCircle/> <span>Collaborative and Independent workers</span>
+                                </div>
+                                <div>
+                                    <AiFillCheckCircle/> <span> Creative and critical thinkers</span>
+                                </div>
+                                <div className="weird-div">
+                                    <div><AiFillCheckCircle/></div> <div> Quality producers and responsible consumers of Information and Technology </div>
+                                </div>
+                                <div>
+                                    <AiFillCheckCircle/> <span>Globally, culturally and socially empathetic</span>
+                                </div>
+                                <div>
+                                    <AiFillCheckCircle/>  <span>Cultured</span>
+                                </div>
+                                <div>
                                     <AiFillCheckCircle/> Prepared for a life of success
-                                </li>
+                                </div>
                             </ul>
                     </div>
                     <div className="mission-image">

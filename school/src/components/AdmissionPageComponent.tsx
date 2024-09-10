@@ -4,7 +4,7 @@ const AdmissionPageComponent = () => {
     return(
         <div className="admission-page-width">
             <header className="admission-header">
-                <img alt="header-image" src="back-school-stationery-education-element-empty-banner-cartoon-yellow-background-3d-illustration.jpg"/>
+                <img alt="header-image" src="./admission.jpg"/>
             </header>
             <div className="admission-body">
                 <h2>

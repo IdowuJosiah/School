@@ -1,11 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&family=Raleway:wght@800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 
 
 body{
-	font-style: inherit;
-    font-family: 'Manrope', sans-serif;
+    font-family: 'Lexend', sans-serif;
 }
 
 *{
@@ -25,7 +22,6 @@ body{
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    font-family: 'Manrope', sans-serif;
 }
 
  .navigation-emblem{
@@ -83,6 +79,10 @@ body{
         padding: 10px 15px;
         margin: 0 auto;
     }
+
+
+
+
     .navigation-emblem{
         font-size: 20px;
     }

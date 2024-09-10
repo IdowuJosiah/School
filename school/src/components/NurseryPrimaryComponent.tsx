@@ -4,7 +4,7 @@ import "../css/NurseryPrimaryComponent.css"
 const NurseryPrimaryComponent = () => {
     return(
         <div className="school">
-            <section className="school-header school-page-width" >
+            <section className="school-header school-page-width-one" >
                 <div>
                     <img
                         src="./PHOTO-2023-07-17-20-25-40.jpg"

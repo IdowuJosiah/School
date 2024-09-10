@@ -1,13 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
 *{
     margin: 0;
     box-sizing: border-box;
     padding: 0;
 }
-body{
-    font-family: 'Manrope', sans-serif;
-}
+
 .curriculum-page-width{
     width: calc(100% - 12rem);
     padding: 30px 20px;
@@ -53,4 +51,70 @@ body{
 .curriculum-image div img{
     width: 100%;
     height: 350px;
+}
+
+
+
+@media screen and (min-width:350px) and (max-width: 750px) {
+
+
+
+
+
+
+
+
+    .curriculum-page-width{
+        width: calc(100% - 1rem);
+        padding: 10px 20px;
+    }
+    .curriculum-header{
+        height: 25rem;
+    }
+    .curriculum-header div{
+        width: 100%;
+        height: 100%;
+    }
+    .curriculum-header div img{
+        width: 100%;
+        height: 100%;
+    }
+
+
+
+    .curriculum-nursery-header p{
+        line-height: 2rem;
+        font-size: 14px;
+    }
+    .curriculum-nursery-header{
+        padding: 0;
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+    .curriculum-nursery-list p{
+        margin-bottom: 0;
+        padding: 0;
+        font-size: 14px;
+        line-height: 2rem;
+
+    }
+    .curriculum-nursery-list li{
+        line-height: 2rem;
+        font-size: 14px;
+    }
+
+
+
+    .curriculum-image{
+        display: flex;
+        justify-content: space-between;
+    }
+    .curriculum-image div{
+        width: 48%;
+
+    }
+    .curriculum-image div img{
+        width: 100%;
+        height: 200px;
+    }
 }

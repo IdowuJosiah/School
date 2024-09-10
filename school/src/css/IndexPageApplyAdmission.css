@@ -7,9 +7,6 @@
     padding: 0;
 }
 
-body{
-    font-family: inherit;
-}
 
 
 .index-apply-main-container{
@@ -80,7 +77,8 @@ body{
 
 @media screen and (min-width :350px) and (max-width : 500px) {
     .container{
-        width: calc(100% - 2.5rem);
+        width: calc(100% - 1rem);
+        margin: 15px auto;
 
     }
     .innertext header{
