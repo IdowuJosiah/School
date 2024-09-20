@@ -1,5 +1,5 @@
 import { navigation } from '../interfaces/interface'
-import '../css/NavBar.css'
+import '../css/NavBar.scss'
 import { useState } from 'react'
 import {cloneDeep} from 'lodash'
 import { Link } from "react-router-dom"
@@ -119,7 +119,7 @@ const NavBar = () => {
             children:[
                 {
                     title: 'Contact Us',
-                    path:'/contactus'
+                    path:'/contact-us'
                 },
 
                 {

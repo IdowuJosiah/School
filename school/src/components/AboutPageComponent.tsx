@@ -7,17 +7,13 @@ const  AboutPageComponent = () =>{
         <div className="about-page-container">
             <header className="about-page-header">
                 <div className="about-page-header-container">
-                    {/*<h2>*/}
-                    {/*        Why Honey Rock School?*/}
-                    {/*</h2>*/}
-
-                    {/*<p className="quick-introduction">*/}
-                    {/*    We provide a nurturing environment for holistic learning and growth, encouraging a diverse and inclusive community that */}
-                    {/*    fosters lifelong friendships.*/}
-                    {/*</p>*/}
-                    <div>
-                            <img alt="guh" src="./PHOTO-2023-07-17-20-25-38.jpg"/>
+                    <div className="aphc">
+                        <img alt="guh" src="./PHOTO-2023-07-17-20-25-38.jpg"/>
+                        <h2 className="bannner-overlay">
+                            Why Honey Rock School?
+                        </h2>
                     </div>
+
                 </div>
 
             </header>

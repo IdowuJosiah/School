@@ -10,7 +10,7 @@ const Slider = () => {
             bannerText: "Welcome To Our School",
         },
         {
-            background: "./3c15d55b-a063-431f-84d6-ced2f31f680d.JPG",
+            background: "./landingpage.jpg",
             bannerText: "An adventure awaits you in each class",
         },
         {

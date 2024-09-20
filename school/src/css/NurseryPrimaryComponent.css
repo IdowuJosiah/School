@@ -11,7 +11,7 @@
     margin: 0 auto;
 }
 .school-header{
-    height: 25rem;
+    height: 90vh;
 }
 .school-header div{
     width: 100%;
@@ -63,7 +63,7 @@
         padding: 30px 10px;
     }
     .school-header{
-        height: 25rem;
+        height: 25vh;
     }
 
 

@@ -1,17 +1,17 @@
 import React from "react"
-import "../css/AdmissionPageComponent.css"
+import "../css/AdmissionPageComponent.scss"
 const AdmissionPageComponent = () => {
     return(
-        <div className="admission-page-width">
-            <header className="admission-header">
-                <img alt="header-image" src="./admission.jpg"/>
-            </header>
-            <div className="admission-body">
-                <h2>
-                    STEPS TO APPLY FOR ADMISSION
-                </h2>
+        <div className="">
+            <div className="admission-header-container">
+                <header className="admission-header">
+                    <img alt="header-image" src="./admission.jpg"/>
+                    <h2 className="bannner-overlay">
+                        STEPS TO APPLY FOR ADMISSION
+                    </h2>
+                </header>
             </div>
-            <div className="enrollment-process">
+            <div className="enrollment-process admission-page-width">
                 <ul className="enrollment-list">
                     <li>
                         <h3>
