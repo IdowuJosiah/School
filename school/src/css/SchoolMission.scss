@@ -1,0 +1,63 @@
+.school-objectives{
+        
+    .objective{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        margin: 35px 0px 35px 0px;
+        font-family: 'Urbanist', sans-serif;
+
+        .objective-content{
+            width: 55%;
+            font-weight: 500;
+            font-size: 15px;
+
+            .missions{
+                list-style: none;
+                line-height: 35px;
+
+                .mission{
+                    display: flex;
+                    align-items: center;
+
+                    svg{
+                        margin: 0px 15px 0px 0px;
+                    }
+                }
+            }
+
+            .objective-header{
+                font-weight: 600;
+                font-size: 24px;
+                font-family: 'Montserrat', sans-serif;
+            }
+
+            .objective-description{
+                margin: 25px 0px;
+                line-height: 30px;
+            }
+
+         
+        }
+
+        .objective-image{
+            width: 35%;
+            // height: 600px;
+            border-radius: 10px;
+            object-fit: contain;
+            overflow: hidden;
+        }
+    }
+
+    .vision-container{
+        flex-direction: row-reverse;
+        // margin: 35px 0px 0px 0px;
+    }
+}
+
+.page-width{
+    width: calc(100% - 4rem);
+    padding: 15px 20px;
+    margin: 0 auto;
+}

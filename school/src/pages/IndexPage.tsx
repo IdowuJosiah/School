@@ -5,7 +5,8 @@ import Slider from "../components/Slider";
 import Values from '../components/Values';
 // import IndexPageApplyAdmission from "../components/IndexPageApplyAdmission";
 import SchoolMission from "../components/SchooolMission";
-// import Programs from "../components/Programs";
+import Programs from "../components/Programs";
+import Footer from '../components/Footer';
 // import IndexPageVirtualTourSection from "../components/IndexPageVirtualTourSection"
 // import Counter from "../components/Counter";
 // import ParentsReview from "../components/ParentsReview";
@@ -19,9 +20,11 @@ const IndexPage = () => {
         <Slider/>
         <Values/>
         <SchoolMission/>
+        <Programs/>
+        <Footer/>
         {/* <IndexPageApplyAdmission/>
      
-        <Programs/>
+      
         <IndexPageVirtualTourSection/>
         <Counter/> */}
 

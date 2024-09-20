@@ -1,0 +1,62 @@
+.page-width{
+    width: calc(100% - 4rem);
+    padding: 15px 20px;
+    margin: 0 auto;
+}
+
+.programme-section{
+
+    .programme-section-header{
+        font-size: 24px;
+        font-weight: 700;
+        margin: 0px 0px 35px 0px;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .programmes{
+        display: flex;
+        justify-content: space-between;
+
+        .program{
+            width: 47%;
+            padding: 35px 15px;
+            border-radius: 10px;
+            color: rgb(0,0,0);
+            background: rgba(120, 84, 247, 0.1);
+            border: 2px solid rgba(120, 84, 247, 0.05);
+            font-family: 'Montserrat', sans-serif;
+
+
+            .program-header{
+                font-weight: 600;
+            }
+
+            .program-description{
+                margin: 15px 0px;
+                font-size: 14px;
+                line-height: 25px;
+            }
+
+            .enroll-link{
+                text-decoration: none;
+
+                .enroll-button{
+                    background: none;
+                    color: rgba(247, 84, 87, 1);
+                    font-size: 14px;
+                    font-weight: 600;
+                    border: none;
+                    font-family: 'Montserrat', sans-serif;
+                    display: inline-flex;
+                    align-items: center;
+                    cursor: pointer;
+
+                    .caret{
+                        font-size: 20px;
+                    }
+
+                }
+            }
+        }
+    }
+}

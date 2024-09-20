@@ -1,0 +1,78 @@
+
+.footer-section{
+    font-family: 'Montserrat', sans-serif;
+    padding: 45px 0px 35px 0px;
+    background: rgb(0,0,0);
+    color: #fff;
+    margin: 35px 0px 0px 0px;
+   
+
+    .page-width{
+        width: calc(100% - 4rem);
+        padding: 15px 20px;
+        margin: 0 auto;
+ 
+    }
+
+    .footer-container{
+        display: flex;
+        justify-content: space-between;
+        // align-items: center;
+
+        .footer-logo{
+            width: 70px;
+            // height: 100px;
+            margin: 0px 0px 25px 0px;
+        }
+    
+        
+        .links{
+            line-height: 35px;
+        }
+    
+        .footer-item{
+            font-size: 14px;
+            width: 32%;
+            // background: green;
+            display: flex;
+            flex-direction: column;
+
+            .footer-item-header{
+                font-size: 16px;
+                font-weight: 600;
+                margin: 0px 0px 25px 0px;
+            }
+
+            .nursery{
+                margin: 25px 0px;
+            }
+    
+            .location{
+                list-style: none;
+                line-height: 30px;
+            }
+
+            .link{
+                text-decoration: none;
+                color: #fff;
+            }
+
+            .link:hover{
+                color: rgb(107,99,255);
+            }
+
+            .social-media{
+                display: flex;
+                font-size: 50px;
+                align-items: center;
+
+                svg{
+                    margin: 0px 20px 0px 0px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+  
+}

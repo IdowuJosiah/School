@@ -15,13 +15,14 @@
         justify-content: space-between;
         
         .value{
-            padding: 25px 15px;
+            padding: 35px 15px;
             border-radius: 10px;
-            background: pink;
+            // background: pink;
             width: 31%;
             text-align: left;
             color: rgb(0,0,0);
             background: rgba(120, 84, 247, 0.1);
+            border: 2px solid rgba(120, 84, 247, 0.05);
 
         
             .value-header{
