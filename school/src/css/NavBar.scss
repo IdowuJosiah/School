@@ -1,14 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 
-body{
-    font-family: 'Lexend', sans-serif;
-}
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 .page-width{
     width: calc(100% - 4rem);
@@ -21,21 +12,23 @@ body{
     width: 100%;
     justify-content: space-between;
     align-items: center;
+    font-family: 'Urbanist', sans-serif;
 }
 
  .navigation-emblem{
     display: flex; 
     align-items: center;
-    font-size: 34px;
+    // font-size: 34px;
 }
 .navigation-title{
     display: flex;
     align-items: center;
     justify-content: center;
+   
 }
 .navigation-title img{
-    width: 5rem;
-    height: 5rem;
+    width: 45px;
+    height: 45px;
 }
 
 .navigation-list{
@@ -45,7 +38,9 @@ body{
 }
 .navigation-list li{
     margin: 0px 25px;
-    font-weight: bold;
+    // font-weight: bold;
+    font-size: 15px;
+    font-weight: 600;
     cursor: pointer;
     position: relative;
 }

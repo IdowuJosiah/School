@@ -10,7 +10,7 @@ import React from "react";
 const NavBar = () => {
     const navigationItems: navigation[] = [
         {
-            title: 'About us',
+            title: 'About Us',
             path: '/about',
             isVisible: false,
             children: [
