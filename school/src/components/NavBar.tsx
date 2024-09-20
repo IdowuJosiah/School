@@ -141,10 +141,7 @@ const NavBar = () => {
     <nav className='navigation-bar'>
         <div className="page-width">
             <div className="navigation-content">
-                <div className='navigation-emblem'>
-                   
-                    <header className='navigation-title'><Link to="/"><img alt="logo" src="./School logo.JPG"/></Link></header>
-                </div>
+               
 
                 <ul className='navigation-list'>
                     {

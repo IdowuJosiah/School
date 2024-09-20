@@ -36,7 +36,7 @@ export interface flyer {
 export interface slideShow {
     background: string
     bannerText: string
-
+    bannerTextDescription: string
 }
 export interface footer{
     title: string

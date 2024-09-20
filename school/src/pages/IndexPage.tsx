@@ -2,8 +2,9 @@ import React from 'react'
 import NavBar from '../components/NavBar'
 // import Banner from '../components/Banner'
 import Slider from "../components/Slider";
+import Values from '../components/Values';
 // import IndexPageApplyAdmission from "../components/IndexPageApplyAdmission";
-// import Comp from "../components/Comp";
+import SchoolMission from "../components/SchooolMission";
 // import Programs from "../components/Programs";
 // import IndexPageVirtualTourSection from "../components/IndexPageVirtualTourSection"
 // import Counter from "../components/Counter";
@@ -16,8 +17,10 @@ const IndexPage = () => {
     <div className='main-container'>
         <NavBar/>
         <Slider/>
+        <Values/>
+        <SchoolMission/>
         {/* <IndexPageApplyAdmission/>
-        <Comp/>
+     
         <Programs/>
         <IndexPageVirtualTourSection/>
         <Counter/> */}
