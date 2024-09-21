@@ -5,14 +5,14 @@ import Slider from "../components/Slider";
 import '../css/NavBar.scss'
 import Values from '../components/Values';
 // import IndexPageApplyAdmission from "../components/IndexPageApplyAdmission";
-// import SchoolMission from "../components/SchooolMission";
-// import Programs from "../components/Programs";
+import SchoolMission from "../components/SchooolMission";
+import Programs from "../components/Programs";
 // import Footer from '../components/Footer';
-// import Testimonials from '../components/Testimonials';
+import Testimonials from '../components/Testimonials';
 // import IndexPageVirtualTourSection from "../components/IndexPageVirtualTourSection"
 // import Counter from "../components/Counter";
 // import ParentsReview from "../components/ParentsReview";
-// import Footer from "../components/Footer";
+import Footer from "../components/Footer";
 // import Faq from "../components/Faq"
 // import Line from '../components/Line';
 const IndexPage = () => {
@@ -21,12 +21,16 @@ const IndexPage = () => {
         <NavBar/>
         <Slider/>
         <Values/>
-        {/* 
-       
         <SchoolMission/>
         <Programs/>
         <Testimonials/>
-        <Footer/> */}
+        <Footer/>
+        {/* 
+       
+     
+      
+      
+         */}
         {/* <IndexPageApplyAdmission/>
      
       

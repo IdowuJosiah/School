@@ -18,7 +18,7 @@ const SchoolMission = () => {
                         <li className="mission"> <FiCheck/>Building children of great character</li>
                         <li className="mission"> <FiCheck/>Collaborative and Independent workers</li>
                         <li className="mission"> <FiCheck/>Creative and critical thinkers</li>
-                        <li className="mission"> <FiCheck/>Quality producers and responsible consumers of Information and Technology</li>
+                        {/* <li className="mission"> <FiCheck/>Quality producers and responsible consumers of Information and Technology</li> */}
                         <li className="mission"> <FiCheck/>Globally, culturally and socially empathetic</li>
                         <li className="mission"> <FiCheck/>Cultured</li>
                         <li className="mission"> <FiCheck/>Prepared for a life of success</li>
@@ -39,7 +39,7 @@ const SchoolMission = () => {
                         <li className="mission"> <FiCheck/>Building children of great character</li>
                         <li className="mission"> <FiCheck/>Collaborative and Independent workers</li>
                         <li className="mission"> <FiCheck/>Creative and critical thinkers</li>
-                        <li className="mission"> <FiCheck/>Quality producers and responsible consumers of Information and Technology</li>
+                        {/* <li className="mission"> <FiCheck/>Quality producers and responsible consumers of Information and Technology</li> */}
                         <li className="mission"> <FiCheck/>Globally, culturally and socially empathetic</li>
                         <li className="mission"> <FiCheck/>Cultured</li>
                         <li className="mission"> <FiCheck/>Prepared for a life of success</li>

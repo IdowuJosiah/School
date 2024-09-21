@@ -18,7 +18,7 @@
             padding: 35px 15px;
             border-radius: 10px;
             // background: pink;
-            width: 31%;
+          
             text-align: left;
             color: rgb(0,0,0);
             background: rgba(120, 84, 247, 0.1);
@@ -40,8 +40,38 @@
   
 }
 
-.page-width{
-    width: calc(100% - 4rem);
-    padding: 15px 20px;
-    margin: 0 auto;
+
+
+@media (min-width: 720px) {
+  
+    .value{
+        width: 31%;
+    }
+
+    .page-width{
+        width: calc(100% - 4rem);
+        padding: 15px 20px;
+        margin: 0 auto;
+    }
 }
+
+@media (max-width: 720px) {
+    .value{
+        width: 100%;
+    }
+
+    .value:nth-child(2){
+        margin: 15px 0px;
+    }
+
+    .value-container{
+        flex-direction: column;
+    }
+
+    .page-width{
+        width: calc(100% - 4rem);
+        // padding: 15px 20px;
+        margin: 0 auto;
+    }
+}
+

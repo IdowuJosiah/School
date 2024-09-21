@@ -60,7 +60,6 @@
     // z-index: 5;
     color: #8E82FF;
     
-    
 
     @media (max-width: 720px) {
         display: block; // Accordion button visible below 720px
@@ -185,7 +184,7 @@
 
 
     // Adjust individual list items for mobile view
-    li {
+    .main-list-items {
         text-align: center;
         margin: 15px 0;
         width: 100%; // Full width
@@ -248,7 +247,7 @@
 
 @media (min-width: 720px) {
     .dropdown-items.active{
-        display: none;
+        display: block;
     }
 
     .page-width {
