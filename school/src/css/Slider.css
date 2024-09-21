@@ -8,7 +8,7 @@
 .slideshowSlider {
     white-space: nowrap;
     transition: ease 1000ms;
-    height: 100vh;
+  
 }
 
 .slide-background {
@@ -51,12 +51,12 @@
     height: 100%;
     display: flex;
     align-items: center;
-    padding: 0 0 0 50px;
+ 
 }
 
 .slide-banner {
    
-    line-height: 40px;
+
     color: #fff;
 }
 
@@ -67,14 +67,15 @@
     white-space: pre-line;
     font-weight: 700;
     font-family: 'Montserrat', sans-serif;
+    line-height: 40px;
 }
 
 .slide-banner .slide-text-description {
     font-size: 15px;
-    width: 100%;
-    max-width: 100%; /* Ensure it respects the parent width */
     margin: 10px 0px 20px 0px;
     font-family: 'DM Sans', sans-serif;
+    word-break: break-word;
+    white-space: pre-line;
 }
 
 @media screen and (min-width: 350px) and (max-width: 500px) {
@@ -84,7 +85,25 @@
         height: auto; /* Set auto to let content adjust height */
     }
     
-    .slideshow {
-        height: 30vh;
+ 
+}
+
+@media (min-width: 720px) {
+    .slideshowSlider{
+        height: 100vh
+    }
+
+    .slide-overlay{
+        padding: 0 50px 0 50px;
+    }
+}
+
+@media (max-width: 720px) {
+    .slideshowSlider{
+        height: 600px;
+    }
+
+    .slide-overlay{
+        padding: 0 20px 0 20px;
     }
 }

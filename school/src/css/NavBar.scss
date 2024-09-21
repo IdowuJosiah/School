@@ -1,106 +1,263 @@
-// @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 
 
-.page-width{
-    width: calc(100% - 4rem);
-    padding: 15px 20px;
-    margin: 0 auto;
+.navigation-bar{
+    position: relative;
+
+    .accordion-toggle{
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 5;
+    }
 }
 
-.navigation-content{
-    display: flex;
-    width: 100%;
-    justify-content: right;
-    padding: 7.5px 0px;
-    // align-items:flex-end;
+// Navigation Bar
+.navigation-content {
+ 
     font-family: 'Urbanist', sans-serif;
     font-weight: 600;
+    // position: absolute;
+    // height: 100vh;
+    // transition: ease-in-out;
+    // animation: slideIn 0.4s;
+
+    @media (min-width: 1024px) {
+        justify-content: right;
+    }
+
+    @media (max-width: 1024px) {
+        justify-content: center;
+    }
+
+    @media (min-width: 720px) {
+        display: flex;
+        width: 100%;
+        padding: 7.5px 0;
+    }
+
+    @media (max-width: 720px) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+       
+        // background: green;
+        // z-index: 10;
+ 
+    }
 }
 
-//  .navigation-emblem{
-//     display: flex; 
-//     align-items: center;
-//     // font-size: 34px;
+// Accordion button (visible below 720px)
+.accordion-toggle {
+    // display: none;
+    background: none;
+    border: none;
+    font-size: 34px;
+    font-weight: 800;
+    cursor: pointer;
+    padding: 25px 25px;
+    // z-index: 5;
+    color: #8E82FF;
+    
+    
 
-//     img{
-//         width: 50px;
-//         height: 50px;
-//     }
-// }
-// .navigation-title{
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-   
-// }
+    @media (max-width: 720px) {
+        display: block; // Accordion button visible below 720px
+    }
+}
 
-.navigation-list{
+.navigation-list {
     display: flex;
     list-style: none;
     position: relative;
-}
-.navigation-list li{
-    margin: 0px 25px;
-    // font-weight: bold;
-    font-size: 14px;
-    letter-spacing: 0.1px;
-    font-weight: 600;
-    cursor: pointer;
-    position: relative;
+    z-index: 2;
+
+    @media (max-width: 720px) {
+        height: 100%;
+        justify-content: center;
+        transition: ease-in-out;
+        animation: slideIn 0.5s;
+    
+    }
+
+    li {
+        font-weight: 600;
+        cursor: pointer;
+        position: relative;
+        letter-spacing: 0.1px;
+
+        @media (min-width: 1024px) {
+            .nav-button {
+                margin: 0 25px;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .nav-button {
+                margin: 0 15px;
+            }
+        }
+
+        @media (max-width: 720px) {
+            .nav-button {
+                text-transform: uppercase;
+                font-size: 34px;
+                font-weight: 800;
+                // margin: 0px 0px 25px 0px;
+            }
+
+            .nav-button:hover{
+                color: rgba(120, 84, 247, 0.5);
+            }
+        }
+
+        @media (min-width: 720px) {
+            .nav-button {
+              
+                font-size: 14px;
+                font-weight: 600;
+            }
+        }
+
+ 
+
+        .nav-button {
+            background: none;
+            font-family: 'Urbanist', sans-serif;
+          
+            border: none;
+         
+            cursor: pointer;
+        }
+    }
+
+    .dropdown-items {
+        position: absolute;
+        top: 25px;
+        left: 0;
+        display: none;
+        font-size: 13.5px;
+        border-radius: 10px;
+        border: 2px solid rgba(120, 84, 247, 0.05);
+        width: 150px;
+        transition: ease-in-out;
+        animation: slideIn 0.4s;
+
+       
+
+        li {
+            padding: 10px;
+            cursor: pointer;
+            list-style: none;
+            background-color: rgb(255, 255, 255);
+
+            a {
+                text-decoration: none;
+                color: #8E82FF;
+            }
+        }
+    }
 }
 
-.dropdown-items{
-    position: absolute;
-    padding-left: 0;
-    top: 100%;
-    display: none;
+// Accordion functionality for screens below 720px
+@media (max-width: 720px) {
+
+   
+    .navigation-list {
+        display: none; // Hide navigation list by default
+    
+        // Show when the accordion is toggled
+        transition: ease-out;
+        animation: slideOut 0.5s;
+    
+        flex-direction: column;
+      
+        background-color: #fff; // White background for the dropdown
+    
+    }
+
+    .navigation-list.active {
+        display: flex; // Show when the accordion is toggled
+        transition: ease-in-out;
+        animation: slideIn 0.5s;
+    }
+
+
+    // Adjust individual list items for mobile view
+    li {
+        text-align: center;
+        margin: 15px 0;
+        width: 100%; // Full width
+    }
+
+    .dropdown-items {
+        position: static; // Ensure dropdown doesn't overflow
+        width: 100%; // Full width for dropdown items
+    }
+
+    .dropdown-items li {
+        width: 100%;
+    }
 }
-.main-list-items{
+
+// Keyframe for slide-in animation
+@keyframes slideIn {
+    0% {
+        transform: translateY(-100vh);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+@keyframes slideOut {
+    0% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(-100vh);
+    }
+}
+.main-list-items {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.active{
-    display: block;
-}
-.dropdown-items li{
-    margin-bottom: 5px;
-    padding: 10px;
-    cursor: pointer;
-    list-style: none;
-    width: 200%;
-    a{
-        text-decoration: none;
-        color: #8E82FF;
+
+@media (max-width: 720px) {
+    .dropdown-items{
+        display: none;
     }
 
-}
-
-
-@media screen and (min-width :350px) and (max-width : 500px) {
-    .page-width{
-        width: calc(100% - 1rem);
-        padding: 10px 10px;
+    .page-width {
+        width: calc(100% - 4rem);
+        // padding: 15px 20px;
         margin: 0 auto;
     }
 
+    .dropdown-items.active{
+        display: none;
+    }
 
+    .accordion-toggle{
+        display: block;
+    }
+}
 
+@media (min-width: 720px) {
+    .dropdown-items.active{
+        display: none;
+    }
 
-    .navigation-emblem{
-        font-size: 16px;
+    .page-width {
+        width: calc(100% - 4rem);
+        padding: 15px 20px;
+        margin: 0 auto;
     }
-    .navigation-title img{
-        height: 2rem;
-        width: 2rem;
-    }
-    .main-list-items{
-        font-size: 6px;
-    }
-    .navigation-list{
-        gap :15px;
-    }
-    .navigation-list li{
-        margin: 0;
+
+    .accordion-toggle{
+        display: none;
     }
 }

@@ -2,11 +2,13 @@ import React from 'react'
 import NavBar from '../components/NavBar'
 // import Banner from '../components/Banner'
 import Slider from "../components/Slider";
+import '../css/NavBar.scss'
 import Values from '../components/Values';
 // import IndexPageApplyAdmission from "../components/IndexPageApplyAdmission";
-import SchoolMission from "../components/SchooolMission";
-import Programs from "../components/Programs";
-import Footer from '../components/Footer';
+// import SchoolMission from "../components/SchooolMission";
+// import Programs from "../components/Programs";
+// import Footer from '../components/Footer';
+// import Testimonials from '../components/Testimonials';
 // import IndexPageVirtualTourSection from "../components/IndexPageVirtualTourSection"
 // import Counter from "../components/Counter";
 // import ParentsReview from "../components/ParentsReview";
@@ -19,9 +21,12 @@ const IndexPage = () => {
         <NavBar/>
         <Slider/>
         <Values/>
+        {/* 
+       
         <SchoolMission/>
         <Programs/>
-        <Footer/>
+        <Testimonials/>
+        <Footer/> */}
         {/* <IndexPageApplyAdmission/>
      
       

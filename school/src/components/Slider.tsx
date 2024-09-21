@@ -14,7 +14,8 @@ const Slider = () => {
         {
             background: sliderImage1,
             bannerText: "Welcome to Honey Rock",
-            bannerTextDescription: 'At Honey Rock School we foster growth, creativity and love for learning in every child'
+            bannerTextDescription: "At Honey Rock School we foster growth"    
+            + "creativity and love for learning in every child"
         },
         {
             background: sliderImage2,
