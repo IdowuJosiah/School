@@ -5,9 +5,7 @@
     box-sizing: border-box;
     padding: 0;
 }
-body{
-    font-family: 'Manrope', sans-serif;
-}
+
 .gallery-header{
     display: flex;
     justify-content: center;

@@ -8,6 +8,7 @@ import AdmissionPage from "./pages/AdmissionPage"
 import GalleryPage from "./pages/GalleryPage";
 import ParentFeedback from "./pages/ParentFeedback";
 import {Routes, Route} from "react-router";
+import ContactPage from "./pages/ContactPage";
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
           <Route path="admission" element={<AdmissionPage/>}/>
           <Route path="gallery" element={<GalleryPage/>}/>
           <Route path="parent-feedback" element={<ParentFeedback/>}/>
+          <Route path="contact-us" element={<ContactPage/>}/>
       </Routes>
 
   );

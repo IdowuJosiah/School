@@ -1,22 +1,24 @@
-$navigationTextSize : 13px;
+$navigationTextSize : 15px;
 $textSpacing : 1px;
-$purple: rgb(107, 91, 255);
+$purple: rgba(120, 84, 247, 1);
 
 
 .button{
-    font-family: 'Manrope', sans-serif;
+
     font-size: $navigationTextSize;
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: $textSpacing;
-    padding: 10px 20px;
+    padding: 7.5px 45px;
     outline: 0;
-    border-radius: 20px;
+    border-radius: 30px;
     cursor: pointer;
     color: #fff;
     background: $purple;
     border: 1.5px solid transparent;
     display: flex;
     align-items: center;
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
     
     
     svg{
@@ -37,9 +39,9 @@ $purple: rgb(107, 91, 255);
     color: $purple;
     border: 1.5px solid $purple;
 }*/
-@media screen and (min-width :350px) and (max-width : 500px) {
+@media screen and (min-width :350px) and (max-width : 720px) {
     .button{
-        font-size: 9px;
-        padding: 8px 16px;
+        font-size: 14px;
+        padding: 10px 25px;
     }
 }

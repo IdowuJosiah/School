@@ -1,0 +1,110 @@
+.testimonial-section {
+    width: 100%;
+    // overflow: hidden;
+    // display: flex;
+    // justify-content: center;
+
+    .testimonial-section-header{
+        font-size: 24px;
+        font-weight: 700;
+        margin: 35px 0px 35px 0px;
+        text-align: center;
+    }
+
+
+  }
+  
+  .testimonial-container {
+    margin: 35px 0px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .testimonial-slider {
+    display: flex;
+    transition: transform 0.5s ease;
+   // Add space between testimonials
+    // justify-content: space-between;
+  }
+  
+  .testimonial {
+    // Adjust width to account for the gap
+    padding: 50px 15px;
+    box-sizing: border-box;
+    // text-align: center;
+    font-size: 1.2em;
+    border: 2px solid rgba(120, 84, 247, 0.3);
+    border-radius: 10px; // Optional styling
+
+    .parent-info{
+        display: flex;
+        align-items: center;
+    
+        margin: 0px 0px 25px 0px;
+        .parent-image{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: rgba(217, 217, 217, 1);
+            margin: 0px 15px 0px 0px;
+        }
+        .parent-details{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+
+            .parent-job{
+                font-size: 13px;
+                margin: 5px 0px 0px 0px;
+                font-family: 'DM Sans', sans-serif;
+                // color: rgba(120, 84, 247, 0.8);
+            }
+        }
+      
+    }
+
+    .parent-feedback{
+        font-size: 14px;
+        line-height: 25px;
+        font-family: 'Work Sans';
+    }
+  
+  }
+  
+  /* Optional: Ensure testimonials are responsive */
+//   @media (max-width: 768px) {
+//     .testimonial {
+//       min-width: 100%; // Stack testimonials on smaller screens
+//     }
+//   }
+
+
+@media (min-width: 720px) {
+    .page-width{
+        width: calc(100% - 4rem);
+        padding: 15px 20px;
+        margin: 0 auto;
+    }
+
+    .testimonial{
+        min-width: 31%;
+    }
+
+    .testimonial-slider{
+        gap: 20px; 
+    }
+    
+}
+
+@media (max-width: 720px) {
+    .page-width{
+        width: calc(100% - 4rem);
+        // padding: 15px 20px;
+        margin: 0 auto;
+    }
+    
+    .testimonial{
+        min-width: 100%;
+    }
+}
+

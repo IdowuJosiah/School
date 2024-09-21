@@ -1,14 +1,17 @@
 import React from "react";
-import "../css/CurriculumPageComponent.css"
+import "../css/CurriculumPageComponent.scss"
 
 const CurriculumPageComponent = () => {
+
+    const fileUrl = "./GREEN TERM CALENDAR 2024-2025_064817.pdf"
     return(
         <div>
-            <section className="curriculum-header curriculum-page-width" >
-                <div>
-                    <img
-                        src="./PHOTO-2023-07-17-20-25-40.jpg"
-                    />
+            <section className="curriculum-header curriculum-page-width-one" >
+                <div className="aphc">
+                    <img  src="./PHOTO-2023-07-17-20-25-40.jpg"/>
+                    <h2 className="bannner-overlay">
+                        Curriculum
+                    </h2>
                 </div>
             </section>
             <section className=" curriculum-nursery curriculum-page-width">
@@ -97,6 +100,18 @@ const CurriculumPageComponent = () => {
                     </li>
 
                 </ol>
+            </section>
+            <section className="curriculum-page-width curriculum-file-button" >
+                <div>
+                    Download the Curriculum for the Green Term
+                </div>
+                <div className="download-file-button">
+                    {fileUrl && (
+                        <a href={fileUrl} download>
+                            <button>Download PDF</button>
+                        </a>
+                    )}
+                </div>
             </section>
         </div>
     )

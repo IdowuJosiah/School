@@ -7,9 +7,9 @@ const DirectorsMessageComponent = () => {
     return(
         <section>
             <div className="director-container">
-                <header className="director-header director-page-width ">
+                <header className="director-header director-page-width-one ">
                     <div className="director-header-container">
-                        <img alt="hb" src="c62fe96f-d63d-44b9-bbf5-6167c6f49de2.JPG"/>
+                        <img alt="hb" src="director.jpg"/>
                     </div>
                 </header>
                 <article className="director-page-width">

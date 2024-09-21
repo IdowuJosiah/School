@@ -5,9 +5,7 @@
     box-sizing: border-box;
     padding: 0;
 }
-body {
-    font-family: inherit;
-}
+
 .faq-section{
     width: calc(100% - 5rem);
     margin: 50px auto;

@@ -6,18 +6,14 @@ const  AboutPageComponent = () =>{
     return(
         <div className="about-page-container">
             <header className="about-page-header">
-                <div className="about-page-header-container about-page-width">'
-                    <h2>
+                <div className="about-page-header-container">
+                    <div className="aphc">
+                        <img alt="guh" src="./PHOTO-2023-07-17-20-25-38.jpg"/>
+                        <h2 className="bannner-overlay">
                             Why Honey Rock School?
-                    </h2>
-
-                    <p className="quick-introduction">
-                        We provide a nurturing environment for holistic learning and growth, encouraging a diverse and inclusive community that 
-                        fosters lifelong friendships.
-                    </p>
-                    <div>
-                            <img alt="guh" src="./74d433cf-cebd-40d1-a999-a1e66859cba5.JPG"/>
+                        </h2>
                     </div>
+
                 </div>
 
             </header>
@@ -107,18 +103,19 @@ const  AboutPageComponent = () =>{
                     THE TEAM
                 </h2>
                 <div className="the-team-container about-page-width">
-                    <div className="school-director">
-                        <p>
-                            <img alt="team" src="./aiony-haust-3TLl_97HNJo-unsplash.jpg"/><div className="team-title"> <span>Honey Rock School Director</span><span>Pastor Aduke Obey</span> </div>
-                        </p>
-                    </div>
                     <div className="head-of-schools">
                         <div className="head-of-schools-container">
                             <p>
-                                <img alt="team" src="./albert-dera-ILip77SbmOE-unsplash.jpg" /><div className="team-title"> <span>Honey Rock School Director</span><span>Pastor Aduke Obey</span> </div>
+                                 <div className="hos-borderline"><img alt="team" src="./aiony-haust-3TLl_97HNJo-unsplash.jpg"/></div>
+                                <div className="team-title"><span>Pastor Aduke Obey</span>  <span className="tt-line"></span> <span>Honey Rock School Director</span> </div>
                             </p>
                             <p>
-                                <img alt="team" src="./alyona-grishina-JQGxnrGOkEI-unsplash.jpg"/><div className="team-title"> <span>Honey Rock School Director</span><span>Pastor Aduke Obey</span> </div>
+                                 <div className="hos-borderline"><img alt="team" src="./albert-dera-ILip77SbmOE-unsplash.jpg" /></div>
+                                <div className="team-title"><span>Pastor Aduke Obey</span> <span className="tt-line"></span> <span>Honey Rock School Director</span> </div>
+                            </p>
+                            <p>
+                                  <div className="hos-borderline"><img alt="team" src="./alyona-grishina-JQGxnrGOkEI-unsplash.jpg"/></div>
+                                <div className="team-title"><span>Pastor Aduke Obey</span> <span className="tt-line"></span> <span>Honey Rock School Director</span> </div>
                             </p>
                         </div>
                     </div>

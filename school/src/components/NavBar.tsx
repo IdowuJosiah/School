@@ -1,213 +1,126 @@
-import { navigation } from '../interfaces/interface'
-import '../css/NavBar.css'
-import { useState } from 'react'
-import {cloneDeep} from 'lodash'
-import { Link } from "react-router-dom"
-import React from "react";
-
+import { navigation } from '../interfaces/interface';
+import '../css/NavBar.scss';
+import { useState } from 'react';
+import { cloneDeep } from 'lodash';
+import { Link } from 'react-router-dom';
+import React from 'react';
+import { GiHamburgerMenu } from "react-icons/gi";
 
 
 const NavBar = () => {
-    const navigationItems: navigation[] = [
-        {
-            title: 'About us',
-            path: '/about',
-            isVisible: false,
-            children: [
-                {
-                    title: 'About Us',
-                    path:'/about'
-                },
+  // navigation items
+  const navigationItems: navigation[] = [
+    {
+      title: 'About Us',
+      path: '/about',
+      isVisible: false,
+      children: [
+        { title: 'About Us', path: '/about' },
+        { title: 'Directors Message', path: '/directors-message' },
+      ],
+    },
+    {
+      title: 'School',
+      path: '/school',
+      isVisible: false,
+      children: [{ title: 'Nursery - Primary', path: '/nursery-primary' }],
+    },
+    {
+      title: 'Curriculum',
+      path: '/curriculum',
+      isVisible: false,
+      children: [{ title: 'Curriculum', path: '/curriculum' }],
+    },
+    {
+      title: 'Admissions',
+      path: '/admission',
+      isVisible: false,
+      children: [
+        { title: 'Admission', path: '/admission' },
+        { title: 'Apply For Admission', path: '/apply-for-admission' },
+      ],
+    },
+    {
+      title: 'Gallery',
+      path: '/gallery',
+      isVisible: false,
+      children: [{ title: 'Honey Rock Gallery', path: '/gallery' }],
+    },
+    {
+      title: 'Contact',
+      path: '/contact',
+      isVisible: false,
+      children: [
+        { title: 'Contact Us', path: '/contact-us' },
+        { title: 'Parents Feedback', path: '/parent-feedback' },
+      ],
+    },
+  ];
 
-                {
-                    title: 'Directors Message',
-                    path:'/directors-message'
-                },
+  const [navItems, setNavItems] = useState<navigation[]>(navigationItems);
+  const [isAccordionOpen, setIsAccordionOpen] = useState(false); // Accordion state
 
-          //    {
-          //        title: 'Team',
-          //        path:'/team'
-          //    },
+  // dropdown visibility
+  const handleToggle = (index: number): void => {
+    let clonedArray = cloneDeep(navItems);
+    clonedArray = clonedArray.map((item, itemIndex) => {
+      if (itemIndex === index) {
+        item.isVisible = !item.isVisible;
+      } else {
+        item.isVisible = false; // Close other dropdowns
+      }
+      return item;
+    });
 
-              //  {
-             //       title: 'Career',
-              //      path:'/career'
-            //    }
-                
-            ]
-        },
+    setNavItems(clonedArray);
+  };
 
-        {
-            title: 'School',
-            path: '/school',
-            isVisible: false,
-            children: [
-          //      {
-         //          title:'Creche',
-         //          path:'/creche'
-          //      },
+  // Toggle accordion visibility for small screens
+  const toggleAccordion = () => {
+    setIsAccordionOpen(!isAccordionOpen);
+  };
 
-                {
-                    title:'Nursery - Primary',
-                    path:'/nursery-primary'
-                 }
-            
-            ],
-        },
-
-        {
-            title: 'Curriculum',
-            path: '/curriculum',
-            isVisible: false,
-            children: [
-                {
-                    title: 'Curriculum',
-                    path: '/curriculum'
-                }
-            ]
-        },
-
-        {
-            title: 'Admissions',
-            path: '/admission',
-            isVisible: false,
-            children:[
-                {
-                    title:'Admission',
-                    path:'/admission'
-                },
-
-                {
-                    title:'Apply For Admission',
-                    path:'/apply-for-admission'
-                }
-            ]
-        },
-//
- //       {
- //           title: 'Virtual tour',
-  //          path:'/tour',
- //           isVisible: false,
- //           children:[
-  //              {   title:' Virtual Tour',
-  //                  path:'/tour'
-  //              }
-   //         ]
-   //     },
-
-        {
-            title: 'Gallery',
-            path: '/gallery',
-            isVisible: false,
-            children :[
-                {
-                    title:'Honey Rock Gallery',
-                    path: '/gallery'
-                },
-
-             //   {
-            //        title:'Inter house Sport Day',
-           //         path:'/interhousesportday'
-             //   }
-            ]
-        },
-
-        {
-            title: 'Contact',
-            path: '/contact',
-            isVisible: false,
-            children:[
-                {
-                    title: 'Contact Us',
-                    path:'/contactus'
-                },
-
-                {
-                    title: 'Parents Feedback',
-                    path:'/parent-feedback'
-                }
-            ]
-        },
-    ]
-    const [navItems, setNavItems] = useState <navigation[]> (navigationItems)
-
-
-
-
-    console.log(navigationItems)
   return (
+    <nav className="navigation-bar">
+         <button
+            type="button"
+            className="accordion-toggle"
+            onClick={toggleAccordion}
+          >
+           <GiHamburgerMenu/>
+          </button>
+      <div className="page-width">
+        <div className="navigation-content">
+          {/* Accordion toggle button (visible on small screens) */}
+         
 
+          <ul className={`navigation-list ${isAccordionOpen ? 'active' : 'inactive'}`}>
+            {navItems.map((item, index) => (
+              <li key={index} className="main-list-items">
+                <button
+                  type="button"
+                  onClick={() => handleToggle(index)}
+                  aria-expanded={item.isVisible}
+                  className="nav-button"
+                >
+                  {item.title}
+                </button>
 
-    <nav className='navigation-bar'>
-        <div className="page-width">
-            <div className="navigation-content">
-                <div className='navigation-emblem'>
-                   
-                    <header className='navigation-title'><Link to="/"><img alt="logo" src="./School logo.JPG"/></Link></header>
-                </div>
-
-                <ul className='navigation-list'>
-                    {
-                        navItems.map((item, index) => {
-                            function Toggle(index:number):void{
-
-                                let clonedArray = cloneDeep(navItems);
-                                clonedArray = clonedArray.map((arrayItem, itemIndex) => {
-                                    if (itemIndex !== index) {
-                                        arrayItem.isVisible = false
-                                    } else {
-                                        arrayItem.isVisible = !arrayItem.isVisible
-                                    }
-
-                                    return arrayItem
-                                })
-
-                                // clonedArray[index].isVisible = !clonedArray[index].isVisible
-                                             
-                                            setNavItems(clonedArray)
-
-                                  //   item.isVisible = true
-
-
-
-                                 console.log(navigationItems)
-                                console.log()
-                            }
-                            return <li key={index}
-                                       onClick={(event)=>Toggle(index)}
-                                    //   onMouseOver={(event)=>Toggle(index)}
-                                       className={'main-list-items'}>
-                                <p>
-                                    {item.title}
-                                </p>
-
-                                {
-                                    <ul 
-                                    className={`dropdown-items ${item.isVisible ? 'active' : ''} `}
-                                    >
-                                          {
-                                              item.children?.map((data, dataIndex)=> {
-                                                  return <li key={dataIndex}>
-                                                      <Link to={data.path}>{data.title}</Link>
-                                              </li>
-                                              })
-                                          }
-                                    </ul>
-                                }
-                            </li>
-                        })
-                    }
+                {/* Dropdown */}
+                <ul className={`dropdown-items ${item.isVisible ? 'active' : ''}`}>
+                  {item.children?.map((child, childIndex) => (
+                    <li key={childIndex}>
+                      <Link to={child.path}>{child.title}</Link>
+                    </li>
+                  ))}
                 </ul>
-
-              
-                
-
-            
-
-            </div>
+              </li>
+            ))}
+          </ul>
         </div>
+      </div>
     </nav>
-  )
-}
+  );
+};
 
-export default NavBar
+export default NavBar;

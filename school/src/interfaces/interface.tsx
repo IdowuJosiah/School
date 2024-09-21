@@ -34,9 +34,9 @@ export interface flyer {
     eBanner : string
 }
 export interface slideShow {
-    background: string
+    background: any
     bannerText: string
-
+    bannerTextDescription: string
 }
 export interface footer{
     title: string

@@ -1,13 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
 *{
     margin: 0;
     box-sizing: border-box;
     padding: 0;
 }
-body{
-    font-family: inherit;
-}
+
 .director-page-width{
     width: calc(100% - 10rem);
     padding: 30px 20px;
@@ -41,7 +39,7 @@ body{
 
     line-height: 2rem;
     font-size: 18px;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lexend', sans-serif;
 }
 .director-image{
     width: 35%;
@@ -60,7 +58,7 @@ body{
 
 .director-article-footer p{
     font-size: 18px;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lexend', sans-serif;
     line-height: 2rem;
     margin-bottom: 15px;
 }
@@ -71,4 +69,70 @@ body{
 
 .director-article-footer p:first-child{
     margin-top: 20px ;
+}
+
+
+@media screen and (min-width:350px) and (max-width: 750px) {
+
+    .director-page-width{
+        width: calc(100% - 1rem);
+        padding: 10px 20px;
+        margin: 0 auto;
+    }
+    .director-header{
+        height: 35vh;
+    }
+    .director-header-container{
+        height: 100%;
+        width:  100%;
+    }
+    .director-header-container img{
+        height: 100%;
+        width: 100%;
+    }
+    .director-article{
+        display: flex;
+        height: 300px;
+        justify-content: space-around;
+
+        /*box-shadow: 1px 3px 1px rgba(215, 187, 255, 0.4);*/
+    }
+    .director-article-text{
+        width: 60%;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .director-article-text{
+
+        line-height:20px;
+        font-size: 12px;
+        font-family: 'Lexend', sans-serif;
+    }
+    .director-image{
+        width: 35%;
+        height: 100%;
+
+    }
+    .director-image img{
+        height: 50%;
+        width: 100%;
+    }
+
+    .director-article-footer p{
+        font-size: 12px;
+        font-family: 'Lexend', sans-serif;
+        line-height: 18px;
+        margin-bottom: 15px;
+    }
+
+    .director-article-footer p:nth-child(4){
+        margin: 0;
+    }
+
+    .director-article-footer p:first-child{
+        margin-top: 10px ;
+    }
+
+
 }

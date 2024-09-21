@@ -1,13 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
 *{
     margin: 0;
     box-sizing: border-box;
     padding: 0;
 }
-body{
-    font-family: 'Manrope', sans-serif;
-}
+
 .parent-feedback-header{
     display: flex;
     justify-content: center;
@@ -21,3 +19,22 @@ body{
     margin-bottom: 2rem;
 
 }
+
+@media screen and (min-width: 350px) and (max-width: 750px) {
+
+    .parent-feedback-header{
+       font-size: 16px;
+        height: auto;
+        text-align: center;
+    }
+    .parent-feedback-text{
+    }
+    .parent-feedback-text p{
+        line-height: 20px;
+        margin-bottom: 15px;
+        font-size: 14px;
+
+    }
+
+}
+

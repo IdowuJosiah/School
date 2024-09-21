@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.admission-page-width{
+    width: calc(100% - 10rem);
+    padding: 30px 20px;
+    margin: 0 auto;
+}
+.admission-header{
+    height: 100%;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+}
+.admission-header-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40rem;
+
+}
+.bannner-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.51);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 400;
+    font-family: "Lexend", 'Courier New';
+    font-size: 45px;
+}
+.admission-header img{
+    height: 100%;
+    width: 100%;
+}
+.admission-body{
+    height: 7rem;
+    display: flex;justify-content: center;align-items: center;
+}.admission-body h2{
+    font-size: 3rem;
+ }
+ .enrollment-list li{
+     margin-bottom: 1.5rem;
+ }
+ .enrollment-list h3{
+     font-size: 1.5rem;
+     line-height: 4rem;
+     color: #010E3A;
+ }
+
+
+@media screen and (min-width:350px) and (max-width: 750px) {
+
+
+    .admission-page-width{
+        width: calc(100% - 1rem);
+        padding: 10px 10px;
+    }
+    .admission-header-container{
+        height: 20rem;
+    }
+    .bannner-overlay{
+        font-size: 20px;
+    }
+    .admission-header img{
+        height: 100%;
+    }
+    .admission-body{
+        height: auto;
+       padding: 10px 0;
+    }.admission-body h2{
+         font-size: 16px;
+     }
+    .enrollment-list li{
+        margin-bottom: 1.5rem;
+    }
+    .enrollment-list li p{
+        font-size: 13px;
+    }
+    .enrollment-list h3{
+        font-size: 15px;
+        line-height: 2rem;
+        color: #010E3A;
+    }
+
+
+
+}
