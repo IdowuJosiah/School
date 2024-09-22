@@ -1,0 +1,243 @@
+.school-banner-container{
+    position: relative;
+    height: 600px;
+    border-radius: 10px;
+    overflow: hidden;
+
+
+    .banner-image{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    .school-container-overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.1);
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        // font-size: 34px;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 50px 50px 100px 50px;
+        font-family: 'Montserrat', sans-serif;
+        // font-family: Montserrat', sans-serif;
+        // font-weight: 800;
+     
+
+        header{
+       
+            font-weight: 600;
+            letter-spacing: .7px;
+            // max-width: 40%;
+         
+        }
+
+        p{
+            margin: 20px 0px 50px 0px ;
+        }
+
+        button{
+            width: fit-content;
+            color: rgba(255, 255, 255, 1);
+            background: rgba(120, 84, 247, 1);
+            border-radius: 30px;
+            padding: 12.5px 50px;
+            cursor: pointer;
+            border: none;
+            outline: 0  ;
+            font-family: 'Work Sans', sans-serif;
+            display: flex;
+            align-items: center;
+            font-size: 15px;
+
+            svg{
+                font-size: 15px;
+                margin: 0px 0px 0px 5px;
+            }
+        }
+    }
+}
+.school-program-header{
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 75px 0px 25px 0px;
+    font-family:'Montserrat',sans-serif;
+
+
+    .caret{
+        margin: 0px 0px 0px 10px;
+    }
+
+    .caret.left{
+        margin: 0px 10px 0px 0px;
+    }
+}
+.school-program-container{
+    // margin: 100px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family:'Montserrat',sans-serif;
+
+  
+
+    // .school-program-image{
+    //     width: 40%;
+    //     img{
+    //         width: 100%;
+    //     }
+    // }
+
+    .school-program-text{
+        // width: 50%;
+
+        p{
+            margin: 20px 0px;
+            font-size: 14px;
+            line-height: 25px;
+        }
+
+        .feature-header{
+            font-weight: 600;
+            font-size: 16px;
+            margin: 0px 0px 15px 0px;
+        }
+
+        .welcome-header{
+            font-weight: 600;
+            font-size: 20px;
+        }
+
+        .features{
+            list-style: none;
+            font-size: 14px;
+
+            .feature{
+                display: flex;
+                align-items: center;
+                margin: 0px 0px 10px 0px;
+
+                img{
+                    margin: 0px 15px 0px 0px;
+                    max-width: 20px;
+                }
+
+                
+            }
+        }
+
+        .contact-button{
+            // width: fit-content;
+            color: rgba(255, 255, 255, 1);
+            background: rgba(120, 84, 247, 1);
+            border-radius: 30px;
+            padding: 12.5px 50px;
+            cursor: pointer;
+            border: 1px  solid transparent;
+            outline: 0  ;
+            font-family: 'Work Sans', sans-serif;
+            display: flex;
+            align-items: center;
+            font-size: 15px;
+            margin: 25px 0px 0px 0px;
+        }
+
+        .contact-button:hover{
+            background: none;
+            border: 1px solid rgba(120, 84, 247, 1);
+            color: rgba(120, 84, 247, 1);
+        }
+    }
+}
+
+
+
+.school-program-header.alt{
+  justify-content: right;
+}
+
+
+
+@media (min-width: 720px) {
+    .page-width{
+        width: calc(100% - 4rem);
+        padding: 15px 20px;
+        margin: 0 auto;
+    }
+    
+    .school-container-overlay{
+        header{
+            max-width: 40%;
+            font-size: 34px;
+            line-height: 50px;
+        }
+    }
+
+    
+    .school-program-image{
+        width: 40%;
+        img{
+            width: 100%;
+        }
+    }
+
+    .school-program-text{
+        width: 50%;
+    }
+
+    .school-program-container.alt{
+        flex-direction: row-reverse;
+    }
+
+    .contact-button{
+        width: fit-content;
+    }
+}
+
+@media (max-width: 720px) {
+    .page-width{
+        width: calc(100% - 4rem);
+        // padding: 15px 20px;
+        margin: 0 auto;
+    }
+
+    .school-container-overlay{
+        header{
+            // max-width: 40%;
+            font-size: 24px;
+            line-height: 35px;
+        }
+    }
+
+    .school-program-container{
+        flex-direction: column;
+    }
+
+    .school-program-container.alt{
+        flex-direction: column;
+    }
+  
+    .school-program-image{
+        width: 100%;
+        img{
+            width: 100%;
+            margin: 0px 0px 25px 0px;
+        }
+    }
+
+    .contact-button{
+        width: 100%;
+        justify-content: center;
+    }
+}
+

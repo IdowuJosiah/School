@@ -8,13 +8,13 @@ import '../css/AboutPageComponent.scss';
 const AboutPageComponent = () => {
   return (
     <div>
-      <section className='about-us-section page-width'>
-        <div className="banner-container">
+      <section className='about-us-section '>
+      <div className="banner-container">
           <img src={AboutBannerImage} className='banner-image' alt='about-banner' />
           <div className="banner-container-overlay">About Us</div>
         </div>
 
-        <div className="about-us-description">
+        <div className="about-us-description page-width">
           <header className='about-header'>Who We Are</header>
           <p className='about-us'>
           <span className='drop-cap'>H</span>oney Rock School, founded in 2013, is a nurturing educational institution dedicated to providing exceptional international education to young learners in Lagos, Nigeria.
