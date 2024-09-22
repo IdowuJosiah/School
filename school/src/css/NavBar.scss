@@ -137,11 +137,12 @@
         left: 0;
         display: none;
         font-size: 13.5px;
-        border-radius: 10px;
+        border-radius: 5px;
         border: 2px solid rgba(120, 84, 247, 0.05);
         width: 150px;
         transition: ease-in-out;
-        animation: slideIn 0.4s;
+        animation: slideIn .7s;
+        overflow: hidden;
 
        
 
@@ -179,7 +180,7 @@
     .navigation-list.active {
         display: flex; // Show when the accordion is toggled
         transition: ease-in-out;
-        animation: slideIn 0.5s;
+        animation: slideIn 1.5s;
     }
 
 
