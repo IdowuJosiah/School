@@ -40,19 +40,19 @@ const AboutPageComponent = () => {
           <header>Meet the Team</header>
           <div className="members-container">
             <div className="member-detail">
-              <img src={MemberImage} alt='member' className='member-image' style={{ marginTop: '25px' }} />
+              <img src={MemberImage} alt='member' className='member-image  x'  />
               <p className="member-name">Ngozi Nwosu</p>
               <p className="member-position">Executive Director/Principal</p>
             </div>
 
             <div className="member-detail">
-              <img src={MemberImage2} alt='member' className='member-image' style={{ marginTop: '50px' }} />
+              <img src={MemberImage2} alt='member' className='member-image y'  />
               <p className="member-name">Benjamin Ekubor</p>
               <p className="member-position">Head of School</p>
             </div>
 
             <div className="member-detail">
-              <img src={MemberImage} alt='member' className='member-image' style={{ marginTop: '75px' }} />
+              <img src={MemberImage} alt='member' className='member-image z'  />
               <p className="member-name">Ngozi Nwosu</p>
               <p className="member-position">Executive Director/Principal</p>
             </div>

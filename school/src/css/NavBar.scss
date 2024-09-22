@@ -1,13 +1,25 @@
 
 
 .navigation-bar{
-    position: relative;
+    // position: relative;
 
     .accordion-toggle{
         position: absolute;
-        top: 0;
-        right: 0;
+        top: 10px;
+        right: 10px;
         z-index: 5;
+    
+    }
+
+    img{
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 20px;
+        // z-index: 5;
+        // margin-right: auto;
     }
 }
 
@@ -32,6 +44,7 @@
     @media (min-width: 720px) {
         display: flex;
         width: 100%;
+        align-items: center;
         padding: 7.5px 0;
     }
 
@@ -46,6 +59,8 @@
         // z-index: 10;
  
     }
+
+   
 }
 
 // Accordion button (visible below 720px)
@@ -56,9 +71,16 @@
     font-size: 34px;
     font-weight: 800;
     cursor: pointer;
-    padding: 25px 25px;
+    padding: 15px 15px;
     // z-index: 5;
     color: #8E82FF;
+    // background:rgba(120, 84, 247, 0.5);
+    background: #FEFEFE;
+    border: 2px solid rgba(120, 84, 247, 0.05);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 
     @media (max-width: 720px) {
@@ -242,7 +264,14 @@
     }
 
     .accordion-toggle{
-        display: block;
+        display: flex;
+    }
+
+    .navigation-bar{
+        img{
+            display: none;
+          
+        }
     }
 }
 
@@ -261,3 +290,5 @@
         display: none;
     }
 }
+
+
