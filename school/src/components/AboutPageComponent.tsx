@@ -2,7 +2,7 @@ import React from 'react';
 import AboutBannerImage from '../assets/image (6).png';
 import MemberImage from '../assets/image (3).png';
 import MemberImage2 from '../assets/image (4).png';
-import studentImage from '../assets/image (5).png';
+import studentImage from '../assets/WhatsApp Image 2024-09-23 at 4.44.26 PM (2) 1.png';
 import '../css/AboutPageComponent.scss';
 
 const AboutPageComponent = () => {
@@ -23,17 +23,25 @@ const AboutPageComponent = () => {
           
           Our esteemed school has obtained official recognition and operating approval from both the Federal Ministry of Education and the Lagos State Ministry of Education. Additionally, we proudly hold accreditations from esteemed bodies like the Association of Private Educators in Nigeria and the Association of International School Educators of Nigeria.
 
-          We take great pride in offering our students an outstanding foundation for lifelong success. Our holistic approach empowers them to emerge as well-rounded individuals, equipped with the confidence, determination, and commitment to excel in an ever-changing global landscape.
+          We take great pride in offering our students an outstanding foundation for lifelong success. 
+         </p>
+
+      
+         <p>
+        Our holistic approach empowers them to emerge as well-rounded individuals, equipped with the confidence, determination, and commitment to excel in an ever-changing global landscape.
           
           At Honey Rock School, we seamlessly blend the Montessori, British, and Nigerian curricula, employing engaging and empowering teaching methods. This prepares our students for a future of accomplishment and significance on a global scale.
 
           Every student's educational journey at Honey Rock is marked by excellence, character development, and the highest academic standards. We are dedicated to crafting a rich educational experience that fosters personal growth and prepares students for the challenges of tomorrow.
 
-          Our state-of-the-art facilities include two purpose-built campuses, meticulously designed to prioritize safety and create an optimal learning environment. Our classrooms feature cutting-edge digital resources such as interactive whiteboards, while our dedicated ICT suite promotes digital literacy through computer-based learning.
-
-          The Honey Rock team comprises seasoned professionals who undergo continuous local and international training, ensuring that they remain at the forefront of modern educational demands. This commitment allows us to provide unparalleled guidance and support to our students, fostering their intellectual and personal growth.
         </p>
 
+        <p>
+          
+        Our state-of-the-art facilities include two purpose-built campuses, meticulously designed to prioritize safety and create an optimal learning environment. Our classrooms feature cutting-edge digital resources such as interactive whiteboards, while our dedicated ICT suite promotes digital literacy through computer-based learning.
+
+The Honey Rock team comprises seasoned professionals who undergo continuous local and international training, ensuring that they remain at the forefront of modern educational demands. This commitment allows us to provide unparalleled guidance and support to our students, fostering their intellectual and personal growth.
+        </p>
         </div>
       </section>
 

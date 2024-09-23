@@ -11,6 +11,7 @@ import MilkImage from '../assets/Milk.png';
 import ComputerImage from '../assets/Computer.png';
 import MathsImage from '../assets/Mathematics.png';
 import ScienceImage from '../assets/Chemical.png';
+import HandPrint from '../assets/Hand print.png'
 
 const curriculumFeatures = [
   {
@@ -98,7 +99,7 @@ const CurriculumPageComponent = () => {
           </p>
           <ul className='features'>
             {curriculumFeatures.map((feature, index) => (
-              <li className='feature' key={index}>
+              <li className='ftr' key={index}>
                 <img src={feature.img} className="ellipse" alt="ellipse"/>
                 <span>{feature.title}</span> {feature.description}
               </li>
@@ -109,17 +110,22 @@ const CurriculumPageComponent = () => {
         <div className="subject-content">
           <header className="subject-container-header">Nursery Subjects</header>
           <div className="subject-container">
-            {nurserySubjects.map((subject, index) => (
-              <div className="subject" key={index}>
-                <div className="subject-image-container">
-                  <img src={subject.img} className="subject-image" alt="subject-jpeg"/>
-                </div>
-                <div className="subject-text-container">
-                  <header className="subject-header">{subject.title}</header>
-                  <p className="subject-description">{subject.description}</p>
-                </div>
-              </div>
-            ))}
+          {nurserySubjects.map((subject, index) => (
+  <div className={`subject ${index === 2 ? 'styled-subject' : ''}`} key={index}>
+    {/* HandPrint Image */}
+    {index === 2 && (
+      <img src={HandPrint} alt="hand-print" className="hand-print" />
+    )}
+    <div className="subject-image-container">
+      <img src={subject.img} className="subject-image" alt="subject-jpeg" />
+    </div>
+    <div className="subject-text-container">
+      <header className="subject-header">{subject.title}</header>
+      <p className="subject-description">{subject.description}</p>
+    </div>
+  </div>
+))}
+
           </div>
 
           <header className="subject-container-header">Primary Subjects</header>

@@ -71,7 +71,7 @@
     font-size: 34px;
     font-weight: 800;
     cursor: pointer;
-    padding: 15px 15px;
+    padding: 10px 10px;
     // z-index: 5;
     color: #8E82FF;
     // background:rgba(120, 84, 247, 0.5);
@@ -155,16 +155,17 @@
 
     .dropdown-items {
         position: absolute;
-        top: 25px;
-        left: 0;
+        top: 21px;
+        left: 20px;
         display: none;
         font-size: 13.5px;
         border-radius: 5px;
         border: 2px solid rgba(120, 84, 247, 0.05);
         width: 150px;
         transition: ease-in-out;
-        animation: slideIn .7s;
+        animation: slideInItem .2s;
         overflow: hidden;
+        // z-index: 1000;
 
        
 
@@ -214,7 +215,7 @@
     }
 
     .dropdown-items {
-        position: static; // Ensure dropdown doesn't overflow
+        position: absolute; // Ensure dropdown doesn't overflow
         width: 100%; // Full width for dropdown items
     }
 
@@ -233,6 +234,16 @@
         transform: translateY(0px);
     }
 }
+
+@keyframes slideInItem {
+    0% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
 @keyframes slideOut {
     0% {
         transform: translateY(0px);
@@ -242,11 +253,13 @@
         transform: translateY(-100vh);
     }
 }
-.main-list-items {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+// .main-list-items {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+// }
+
+
 
 @media (max-width: 720px) {
     .dropdown-items{
@@ -276,10 +289,9 @@
 }
 
 @media (min-width: 720px) {
-    .dropdown-items.active{
-        display: block;
-    }
 
+
+ 
     .page-width {
         width: calc(100% - 4rem);
         padding: 15px 20px;
@@ -289,6 +301,22 @@
     .accordion-toggle{
         display: none;
     }
+
+    .main-list-items {
+ 
+
+        // Dropdown initially hidden
+        .dropdown-items {
+            display: none;
+        }
+    
+        // Show dropdown when hovering over main-list-items
+      .dropdown-items.active {
+            display: block;
+         
+        }
+    }
+    
 }
 
 

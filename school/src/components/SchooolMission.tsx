@@ -1,7 +1,7 @@
 import React from "react";
 import "../css/SchoolMission.scss"
-import missionImage from '../assets/PHOTO-2023-07-17-20-28-17.jpg'
-import visionImage from '../assets/image (1).png'
+import missionImage from '../assets/WhatsApp Image 2024-09-23 at 4.44.30 PM 1.png'
+import visionImage from '../assets/WhatsApp Image 2024-09-23 at 4.44.25 PM (2) 1.png'
 import { FiCheck } from "react-icons/fi";
 
 const SchoolMission = () => {
