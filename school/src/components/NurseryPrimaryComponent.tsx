@@ -13,17 +13,20 @@ import BookImage from '../assets/book_svgrepo.com.png'
 import ContentImage from '../assets/content_svgrepo.com.png'
 import VolleyBallImage from '../assets/volleyball-2_svgrepo.com.png'
 import MusicNotesImage from '../assets/music-notes_svgrepo.com.png'
+import BannerComponent from './BannerComponent';
 const NurseryPrimaryComponent = () => {
   return (
   <div>
-     <div className="school-banner-container">
-          <img src={AboutBannerImage} className='banner-image' alt='about-banner' />
-          <div className="school-container-overlay">
-            <header>Nurturing Growth from Nursery to Primary </header>
-            <p>Empowering Children with Knowledge, Creativity, and Confidence</p>
-            <button>Explore Our Programs <GiSteampunkGoggles/> </button>
-          </div>
-        </div>
+    <BannerComponent
+      title='Nurturing Growth from Nursery to Primary'
+      image={AboutBannerImage}
+      description='Empowering Children with Knowledge, Creativity, and Confidence'
+      buttonInformation={
+        <>
+          Explore Our Programs <GiSteampunkGoggles />
+        </>
+      } 
+    />
       <div className='page-width'>
        
 

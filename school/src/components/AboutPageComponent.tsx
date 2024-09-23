@@ -1,5 +1,5 @@
 import React from 'react';
-import AboutBannerImage from '../assets/image (2).png';
+import AboutBannerImage from '../assets/image (6).png';
 import MemberImage from '../assets/image (3).png';
 import MemberImage2 from '../assets/image (4).png';
 import studentImage from '../assets/image (5).png';
@@ -7,13 +7,15 @@ import '../css/AboutPageComponent.scss';
 
 const AboutPageComponent = () => {
   return (
-    <div>
+    <div >
       <section className='about-us-section '>
+      <div className="slider-page-width">
       <div className="banner-container">
           <img src={AboutBannerImage} className='banner-image' alt='about-banner' />
           <div className="banner-container-overlay">About Us</div>
         </div>
 
+      </div>
         <div className="about-us-description page-width">
           <header className='about-header'>Who We Are</header>
           <p className='about-us'>

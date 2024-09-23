@@ -46,7 +46,8 @@ const Slider = () => {
     }, [index]);
 
     return (
-        <div className="slideshow">
+        <div className="slider-page-width">
+               <div className="slideshow ">
             <div
                 className="slideshowSlider"
                 style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
@@ -70,6 +71,7 @@ const Slider = () => {
                     );
                 })}
             </div>
+        </div>
         </div>
     );
 };
