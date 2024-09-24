@@ -101,14 +101,14 @@ const NavBar = () => {
           <ul className={`navigation-list ${isAccordionOpen ? 'active' : 'inactive'}`}>
             {navItems.map((item, index) => (
               <li key={index} className="main-list-items">
-                <button
-                  type="button"
+                <li
+               
                   onClick={() => handleToggle(index)}
-                  aria-expanded={item.isVisible}
+               
                   className="nav-button"
                 >
-                  {item.title}
-                </button>
+                     <Link to={item.path}>{item.title}</Link>
+                </li>
 
                 {/* Dropdown */}
                 <ul className={`dropdown-items ${item.isVisible ? 'active' : ''}`}>
