@@ -146,10 +146,14 @@
         .nav-button {
             background: none;
             font-family: 'Urbanist', sans-serif;
-          
             border: none;
-         
+          
             cursor: pointer;
+
+            a{
+                text-decoration: none;
+                color: rgb(0,0,0);
+            }
         }
     }
 
@@ -318,5 +322,4 @@
     }
     
 }
-
 
