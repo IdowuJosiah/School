@@ -2,12 +2,14 @@ import { navigation } from '../interfaces/interface';
 import '../css/NavBar.scss';
 import { useState } from 'react';
 import { cloneDeep } from 'lodash';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom'; // Import useLocation for conditional rendering
 import React from 'react';
 import { GiHamburgerMenu } from "react-icons/gi";
-
+import logoImage from "../assets/School logo-Photoroom.png"; // Import the logo
 
 const NavBar = () => {
+  const location = useLocation(); // Get the current route
+
   // navigation items
   const navigationItems: navigation[] = [
     {
@@ -82,18 +84,20 @@ const NavBar = () => {
 
   return (
     <nav className="navigation-bar">
-         <button
-            type="button"
-            className="accordion-toggle"
-            onClick={toggleAccordion}
-          >
-           <GiHamburgerMenu/>
-          </button>
+      <button
+        type="button"
+        className="accordion-toggle"
+        onClick={toggleAccordion}
+      >
+        <GiHamburgerMenu />
+      </button>
+
+      {location.pathname !== '/' && (
+        <Link to="/"><img alt="logo" src={logoImage} /></Link>
+      )}
+
       <div className="page-width">
         <div className="navigation-content">
-          {/* Accordion toggle button (visible on small screens) */}
-         
-
           <ul className={`navigation-list ${isAccordionOpen ? 'active' : 'inactive'}`}>
             {navItems.map((item, index) => (
               <li key={index} className="main-list-items">

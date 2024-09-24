@@ -9,6 +9,7 @@
         font-weight: 700;
         margin: 35px 0px 35px 0px;
         text-align: center;
+        font-family: 'Montserrat', sans-serif;
     }
 
 
@@ -17,25 +18,25 @@
   .testimonial-container {
     margin: 35px 0px;
     width: 100%;
-    overflow: hidden;
-    position: relative;
-  }
-  
-  .testimonial-slider {
+    justify-content: space-between;
     display: flex;
-    transition: transform 0.5s ease;
-   // Add space between testimonials
-    // justify-content: space-between;
+    flex-wrap: wrap;
   }
   
+
   .testimonial {
     // Adjust width to account for the gap
-    padding: 50px 15px;
+    padding: 25px 15px 50px 15px;
     box-sizing: border-box;
     // text-align: center;
     font-size: 1.2em;
     border: 2px solid rgba(120, 84, 247, 0.3);
     border-radius: 10px; // Optional styling
+    width: 30%;
+    svg{
+        color: rgba(120, 84, 247, 0.3);
+        font-size: 34px;
+    }
 
     .parent-info{
         display: flex;
@@ -103,8 +104,15 @@
         margin: 0 auto;
     }
     
+  
+}
+
+
+
+@media (max-width: 1024px) {
     .testimonial{
         min-width: 100%;
+        margin: 0px 0px 25px 0px;
     }
 }
 

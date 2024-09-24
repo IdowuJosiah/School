@@ -1,0 +1,205 @@
+.banner-container{
+    position: relative;
+    height: 500px;
+
+    .banner-image{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    .banner-container-overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 34px;
+        color: #fff;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        letter-spacing: .5px;
+    }
+}
+
+.about-us-description{
+  
+    font-family: 'Work Sans', sans-serif;
+    line-height: 30px;
+
+    .about-header{
+        font-size: 24px;
+        font-weight: 600;
+        margin: 25px 0px 25px 0px;
+    }
+
+  
+        .drop-cap {
+          float: left;
+          font-size: 3.5rem; /* Make this significantly larger than the regular text */
+          line-height: 1;
+          padding-right: 8px;
+          font-weight: 600;
+        }
+
+        p{
+            margin: 0px 0px 35px 0px;
+        }
+      
+      
+}
+
+.members-section{
+    background: rgba(120, 84, 247, 0.05);
+    font-family: 'Work Sans', sans-serif;
+    padding: 25px 0px 35px 0px;
+
+
+    header{
+        font-size: 24px;
+        font-weight: 600;
+        margin: 0px 0px 25px 0px;
+    }
+
+    .members-container{
+        display: flex;
+        // flex-wrap: wrap;
+        justify-content: space-between;
+        font-family: 'Work Sans', sans-serif;
+
+        .member-detail{
+            // min-width: 30%;
+
+            .member-image{
+                max-width: 100%;
+                max-height: 300px;
+            }
+
+            .member-name{
+                margin: 20px 0px 15px 0px;
+                font-weight: 600;
+            }
+
+            .member-position{
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.about-student{
+    display: flex;
+    margin: 35px 0px;
+    // align-items: center;
+    justify-content: space-between;
+
+    .student-image-container{
+        // width: 45%;
+        // // padding: 25px;
+        border-radius: 10px;
+        overflow: hidden;
+        height: 450px;
+
+        .student-image{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .student-text-container{
+        // width: 50%;
+        line-height: 30px;
+
+        header{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 24px;
+            font-weight: 600;
+            margin: 0px 0px 15px 0px;
+        }
+        p{
+            font-family: 'Work Sans', sans-serif;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .members-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    // .member-detail{
+    //     width: 100%;
+    // }
+
+    .member-image{
+        margin: 25px 0px 0px 0px;
+    }
+    
+    .members-section{
+        text-align: center;
+    }
+    
+}
+
+@media (min-width: 1200px) {
+    .member-detail{
+        width: 30%;
+    }
+
+    .x{
+        margin: 25px 0px 0px 0px;
+    }
+
+    .y{
+        margin: 50px 0px 0px 0px;
+    }
+
+    .z{
+        margin: 75px 0px 0px 0px;
+    }
+
+ 
+}
+
+@media (max-width: 780px) {
+    .about-student{
+        flex-direction: column;
+    }
+
+    .student-image-container{
+        margin: 0px 0px 35px 0px;
+    }
+
+    // .banner-container{
+    //     margin: 55px 0px 0px 0px;
+    // }
+}
+
+
+@media (min-width: 780px) {
+    .student-image-container{
+        width: 45%;
+   
+    }
+
+    .student-text-container{
+        width: 50%;
+    }
+}
+
+
+
+
+@media (min-width: 720px) {
+    .slider-page-width{
+        width: calc(100% - 4rem);
+        margin: 0 auto;
+    }
+}

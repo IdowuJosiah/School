@@ -1,130 +1,85 @@
-import React from "react";
-import "../css/NurseryPrimaryComponent.css"
-
+import React from 'react'
+import AboutBannerImage from '../assets/Rectangle 12.png';
+import CaretRightImage from '../assets/Group.png';
+import CaretLeftImage from '../assets/Group (1).png';
+import ProgramImage from '../assets/WhatsApp Image 2024-09-20 at 05.46.05_80d8c0c1.png'
+import ProgramImage2 from '../assets/WhatsApp Image 2024-09-20 at 05.46.07_a35db3a1.png'
+import '../css/NurseryPrimaryComponent.scss'
+// import { FaBicycle } from 'react-icons/fa6';
+import { GiSteampunkGoggles } from 'react-icons/gi';
+import BulletTrain from '../assets/bullet-train_svgrepo.com.png'
+import Kite from '../assets/kite_svgrepo.com.png'
+import BookImage from '../assets/book_svgrepo.com.png'
+import ContentImage from '../assets/content_svgrepo.com.png'
+import VolleyBallImage from '../assets/volleyball-2_svgrepo.com.png'
+import MusicNotesImage from '../assets/music-notes_svgrepo.com.png'
+import BannerComponent from './BannerComponent';
 const NurseryPrimaryComponent = () => {
-    return(
-        <div className="school">
-            <section className="school-header school-page-width-one" >
-                <div>
-                    <img
-                        src="./PHOTO-2023-07-17-20-25-40.jpg"
-                    />
-                </div>
-            </section>
-            <section className="school-page-width school-article">
-                    <div>
-                        <p>
-                            The  Honeyrock Nursery and Primary School is well secured
-                            ,child-friendly and has a very safe learning environment  for our students.
-                        </p>
-                    </div>
-                    <div>
-                        <p>
-                            <span>Crèche</span><span>(3months-15months),</span>
-                        </p>
-                        <p>
-                            <span>Toddler Classes </span><span>(15months- 2years)</span>
-                        </p>
-                        <p>
-                            <span> Nursery classes</span><span>(3 years- 5years)</span>
-                        </p>
-                    </div>
-                    <div>
-                        <p>
-                            We know just how vital early years education is to directing children
-                            on a trajectory of growth all through their academic life.
-                        </p>
-                    </div>
-                    <div>
-                        <p>
-                            This is why at The Honeyrock nursery and primary school, we spare no
-                            cost to ensure that our students are given the best care and introduced
-                            to learning through fun, exciting, and age-appropriate activities.
-                        </p>
-                    </div>
-                    <div>
-                        <p>
-                            The School provides the best Early Childhood Education based on the
-                            Early years foundation stage Teaching Method, which helps young children
-                            develop within themselves an excellent firm foundation for future learning.
-                        </p>
-                    </div>
-                    <div>
-                        <p>
-                            We have also carefully integrated the British / Nigerian curriculum
-                            into our method of teaching at the Primary level.
-                        </p>
-                    </div>
-                    <div>
-                        <p>
-                            Our school is open from 7:00am to 5:00 pm.
-                        </p>
-                    </div>
+  return (
+  <div>
+    <BannerComponent
+      title='Nurturing Growth from Nursery to Primary'
+      image={AboutBannerImage}
+      description='Empowering Children with Knowledge, Creativity, and Confidence'
+      buttonInformation={
+        <>
+          Explore Our Programs <GiSteampunkGoggles />
+        </>
+      } 
+    />
+      <div className='page-width'>
+       
 
-            </section>
-            <section className="school-image school-page-width">
-                <div className="school-image-container">
-                    <p>
-                       <div>
-                           <img src="infant-centre.jpg"/>
-                       </div>
-                        <div className="school-aside">
-                           <aside className="aside-head">
-                               Creche Center
-                           </aside>
-                            <aside className="aside-text">
-                                For children between the ages of 3 months to 18 months
-                                . It runs from 7:00am till 6:00pm. Adult to child ratio is 1:3.
-                            </aside>
-                        </div>
-                    </p>
-                    <p>
-                        <div>
-                            <img src="PHOTO-2023-07-17-20-25-37 (2).jpg"/>
-                        </div>
-                        <div className="school-aside">
-                            <aside className="aside-head">
-                                Toddlers Community
-                            </aside>
-                            <aside className="aside-text">
-                                Montessori curriculum for children 18 months to 3 years.
-                                It runs from 8:30am to 2:00pm.
-                            </aside>
-                        </div>
-                    </p>
-                    <p>
-                        <div>
-                            <img src="PHOTO-2023-07-17-20-28-17.jpg"/>
-                        </div>
-                        <div className="school-aside">
-                            <aside className="aside-head">
-                                Nursery School
-                            </aside>
-                           <aside className="aside-text">
-                               A blend of the Montessori curriculum and the British Early
-                               Years Foundation Stage Curriculum for children aged 3 to 5 years of age
-                               . It runs from 8:30am till 2:00pm.
-                           </aside>
-                        </div>
-                    </p>
-                    <p>
-                        <div>
-                            <img src="GEORGE BUKOLA PRY 1.jpg"/>
-                        </div>
-                        <div className="school-aside">
-                            <aside className="aside-head">
-                                Primary School
-                            </aside>
-                            <aside className="aside-text">
-                                A blend of the Montessori curriculum and the British Early
-                                Years Foundation Stage Curriculum for children aged 5 to 10 years of age.
-                                It runs from 8:30am till 2:00pm.
-                            </aside>
-                        </div>
-                    </p>
-                </div>
-            </section>
+      
+        <div className='school-program-header reg'>Nursery School Program <img className='caret' src={CaretRightImage} alt='caret-right'/> </div>
+
+        <div className="school-program-container ">
+        <div className='school-program-image'>
+            
+            <img src={ProgramImage} alt='program'/>
+          </div>
+
+          <div className='school-program-text'>
+            <header className='welcome-header'>Welcome to Early Learning Adventures</header>
+            <p>At our Nursery, we believe in fostering a love for learning in the early years through a play-based, child-centered approach.</p>
+            <header className='feature-header'>Key Features</header>
+            <ul className='features'>
+                <li className='feature'><img src={BulletTrain} alt='kite'/>Play-Based Learning</li>
+                <li className='feature'><img src={BookImage} alt='kite'/>Early Literacy and Numeracy</li>
+                <li className='feature'><img src={Kite} alt='kite'/>Creative Arts and Physical Play</li>
+            </ul>
+            <button className='contact-button'>Contact Us To Learn More </button>
+          </div>
+
+          
         </div>
-    )
+
+        <div className='school-program-header alt'> <img className='caret left' src={CaretLeftImage} alt='caret-right'/> Primary School Program  </div>
+        <div className="school-program-container alt">
+        <div className='school-program-image'>
+            
+            <img src={ProgramImage2} alt='program'/>
+          </div>
+
+          <div className='school-program-text'>
+            <header className='welcome-header'>Empowering Young Minds for Tomorrow</header>
+            <p>We provide a balanced curriculum that not only focuses on academic excellence but also on the social and emotional development of each child.</p>
+            <header className='feature-header'>Key Features</header>
+            <ul className='features'>
+                <li className='feature'><img src={ContentImage} alt='kite'/>Core Subjects</li>
+                <li className='feature'><img src={MusicNotesImage} alt='kite'/>Creative Arts & Music</li>
+                <li className='feature'><img src={VolleyBallImage} alt='kite'/>Physical Education</li>
+            </ul>
+            <button className='contact-button'>Contact Us To Learn More </button>
+          </div>
+
+          
+        </div>
+        
+        </div>
+    
+  </div>
+  )
 }
+
 export default NurseryPrimaryComponent
