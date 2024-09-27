@@ -12,12 +12,16 @@
     .value-container{
         display: flex;
         // flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 20px;
         
         .value{
             padding: 35px 15px;
             border-radius: 10px;
             // background: pink;
+            flex: 0 0 auto;
+     
           
             text-align: left;
             color: rgb(0,0,0);

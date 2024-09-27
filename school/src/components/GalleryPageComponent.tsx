@@ -11,7 +11,10 @@ const GalleryPageComponent = () => {
         title='A glimpse into our school life'
         image={GalleryBannerImage}
         description="Explore the vibrant atmosphere, special moments, and everyday experiences that make our school unique. See what it's like to be part of our community"
-        buttonInformation={<>View Gallery</>}
+        buttonInformation={
+        <>
+          {/* <a href="/admission">View Gallery</a> */}
+        </>}
       />
 
       {/* Main Content */}

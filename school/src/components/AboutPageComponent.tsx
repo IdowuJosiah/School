@@ -4,6 +4,7 @@ import MemberImage from '../assets/image (3).png';
 import MemberImage2 from '../assets/image (4).png';
 import studentImage from '../assets/WhatsApp Image 2024-09-23 at 4.44.26 PM (2) 1.png';
 import '../css/AboutPageComponent.scss';
+import SchoolMission from './SchooolMission';
 
 const AboutPageComponent = () => {
   return (
@@ -16,7 +17,8 @@ const AboutPageComponent = () => {
         </div>
 
       </div>
-        <div className="about-us-description page-width">
+        <div className="about-us-description">
+          <div className="page-width">
           <header className='about-header'>Who We Are</header>
           <p className='about-us'>
           <span className='drop-cap'>H</span>oney Rock School, founded in 2013, is a nurturing educational institution dedicated to providing exceptional international education to young learners in Lagos, Nigeria.
@@ -42,8 +44,11 @@ const AboutPageComponent = () => {
 
 The Honey Rock team comprises seasoned professionals who undergo continuous local and international training, ensuring that they remain at the forefront of modern educational demands. This commitment allows us to provide unparalleled guidance and support to our students, fostering their intellectual and personal growth.
         </p>
+          </div>
         </div>
       </section>
+
+      <SchoolMission/>
 
       <div className="members-section">
         <div className="page-width">

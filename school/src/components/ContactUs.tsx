@@ -1,6 +1,7 @@
 import React, { useState, ChangeEvent, FormEvent } from "react";
 import "../css/Contact.scss"
-
+import contactBanner from '../assets/top-view-chat-bubbles-with-telephone-receiver.jpg'
+import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa6";
 interface FormData {
     name: string;
     email: string;
@@ -33,9 +34,8 @@ const ContactUs: React.FC = () => {
     return (
         <div>
             <div className="contact-us-banner">
-                <img src="./contact.jpg"/>
-            </div>
-            <div className="contact-us-container contact-page-width">
+                <img src={contactBanner} alt="#"/>
+                <div className="contact-us-container">
                 <div className="contact-details">
                     <div className="contact-details-header">
                         <h2>Contact Details</h2>
@@ -54,13 +54,13 @@ const ContactUs: React.FC = () => {
                         </div>
                     </div>
                     <div>
-                        <p>
+                        <p >
                             <strong>Nursery:</strong><br />
                             56/58, Modupe Johnson Crescent,<br />
                             Off Adeniran Ogunsanya Street,<br />
                             Surulere, Lagos.
                         </p>
-                        <p>
+                        <p className="br">
                             <strong>Primary:</strong><br />
                             68, Femi Ayantuga Crescent,<br />
                             Off Adelabu Street,<br />
@@ -69,10 +69,10 @@ const ContactUs: React.FC = () => {
                     </div>
 
                     <div className="social-icons">
-                        <a href="#"><i className="fab fa-facebook"></i></a>
-                        <a href="#"><i className="fab fa-instagram"></i></a>
-                        <a href="#"><i className="fab fa-twitter"></i></a>
-                        <a href="#"><i className="fab fa-linkedin"></i></a>
+                        <a href="/"><FaFacebook/></a>
+                        <a href="/"><FaInstagram/></a>
+                        <a href="/"><FaTwitter/></a>
+                        <a href="/"><FaLinkedin/></a>
                     </div>
                 </div>
 
@@ -80,7 +80,7 @@ const ContactUs: React.FC = () => {
                     <h2>Get in Touch</h2>
                     <form className="contact-us-form" onSubmit={handleSubmit}>
                         <div className="cuf">
-                            <label htmlFor="name">Name *</label>
+                            <label htmlFor="name">Name </label>
                             <input
                                 type="text"
                                 name="name"
@@ -90,7 +90,7 @@ const ContactUs: React.FC = () => {
                             />
                         </div>
                         <div className="cuf">
-                            <label htmlFor="email">Email *</label>
+                            <label htmlFor="email">Email </label>
                             <input
                                 type="email"
                                 name="email"
@@ -109,7 +109,7 @@ const ContactUs: React.FC = () => {
                             />
                         </div>
                         <div className="cuf">
-                            <label htmlFor="message">Message *</label>
+                            <label htmlFor="message">Message </label>
                             <textarea
                                 name="message"
                                 value={formData.message}
@@ -121,6 +121,8 @@ const ContactUs: React.FC = () => {
                     </form>
                 </div>
             </div>
+            </div>
+   
         </div>
 
     );
