@@ -56,7 +56,7 @@ const Testimonials = () => {
       <div className="testimonial-container">
       
           {testimonials.map((testimonial, idx) => (
-            <div className="testimonial" key={idx}>
+            <div className="testimonial autoShow" key={idx}>
               <FaQuoteLeft/>
               <div className="parent-info">
                 <div className="parent-details">

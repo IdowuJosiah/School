@@ -11,6 +11,7 @@
     .programmes{
         display: flex;
         justify-content: space-between;
+        // position: relative;
 
         .program{
             // width: 47%;
@@ -20,7 +21,29 @@
             background: rgba(120, 84, 247, 0.1);
             border: 2px solid rgba(120, 84, 247, 0.05);
             font-family: 'Montserrat', sans-serif;
+            position: relative;
+            z-index: 2;
 
+            .back-to-school{
+                position: absolute;
+                top: -100%;
+                right: 0;
+                width: 200px;
+                height: 200px;
+            }
+
+            .letter-image{
+                position: absolute;
+                bottom: -35%;
+                left: -5%;
+                // left: 50%;
+                // transform: translateX(-50%) ;
+                width: 100px;
+                height: 100px;
+                z-index: -1;
+            }
+
+            
 
             .program-header{
                 font-weight: 600;
@@ -50,9 +73,15 @@
                         font-size: 20px;
                     }
 
+                 
+            
+
                 }
             }
+
+  
         }
+       
     }
 }
 
@@ -88,4 +117,10 @@
   .nursery{
     margin: 0px 0px 15px 0px;
   }
+}
+
+@media (max-width: 1024px) {
+    .fun{
+        display: none;
+    }
 }

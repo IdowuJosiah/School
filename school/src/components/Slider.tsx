@@ -2,10 +2,10 @@ import { useState, useEffect } from "react";
 import { slideShow } from "../interfaces/interface";
 import "../css/Slider.css";
 import Button from "./ButtonRegister";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import sliderImage1 from  "../assets/WhatsApp Image 2024-09-23 at 4.44.31 PM 1.png";
 import sliderImage2 from  "../assets/landingpage.jpg";
-import logoImage from "../assets/School logo-Photoroom.png"; // Import the logo
+// import logoImage from "../assets/School logo-Photoroom.png"; // Import the logo
 import sliderImage3 from  "../assets/74d433cf-cebd-40d1-a999-a1e66859cba5.jpg";
 
 
@@ -55,10 +55,7 @@ const Slider = () => {
                     return (
                         <div className="slide" key={index}>
                             <img className="slide-image" src={slide.background} alt="#" />
-                            <div className='navigation-emblem'>
-                                {/* Use the imported logoImage */}
-                                <Link to="/"><img alt="logo" src={logoImage} /></Link>
-                            </div>
+                           
                             <div className="slide-overlay">
                                 <div className="slide-banner">
                                     <div className="slide-text">{slide.bannerText}</div>

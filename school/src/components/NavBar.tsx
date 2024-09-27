@@ -2,15 +2,12 @@ import { navigation } from '../interfaces/interface';
 import '../css/NavBar.scss';
 import { useState } from 'react';
 import { cloneDeep } from 'lodash';
-import { Link, useLocation } from 'react-router-dom'; // Import useLocation for conditional rendering
+import { Link } from 'react-router-dom';
 import React from 'react';
 import { GiHamburgerMenu } from "react-icons/gi";
-import logoImage from "../assets/School logo-Photoroom.png"; // Import the logo
+import logoImage from "../assets/School logo-Photoroom.png"; 
 
 const NavBar = () => {
-  const location = useLocation(); // Get the current route
-
-  // navigation items
   const navigationItems: navigation[] = [
     {
       title: 'About Us',
@@ -54,22 +51,21 @@ const NavBar = () => {
       isVisible: false,
       children: [
         { title: 'Contact Us', path: '/contact-us' },
-        { title: 'Parents Feedback', path: '/parent-feedback' },
+        // { title: 'Parents Feedback', path: '/parent-feedback' },
       ],
     },
   ];
 
   const [navItems, setNavItems] = useState<navigation[]>(navigationItems);
-  const [isAccordionOpen, setIsAccordionOpen] = useState(false); // Accordion state
+  const [isAccordionOpen, setIsAccordionOpen] = useState(false); 
 
-  // dropdown visibility
   const handleToggle = (index: number): void => {
     let clonedArray = cloneDeep(navItems);
     clonedArray = clonedArray.map((item, itemIndex) => {
       if (itemIndex === index) {
         item.isVisible = !item.isVisible;
       } else {
-        item.isVisible = false; // Close other dropdowns
+        item.isVisible = false;
       }
       return item;
     });
@@ -77,7 +73,6 @@ const NavBar = () => {
     setNavItems(clonedArray);
   };
 
-  // Toggle accordion visibility for small screens
   const toggleAccordion = () => {
     setIsAccordionOpen(!isAccordionOpen);
   };
@@ -92,23 +87,19 @@ const NavBar = () => {
         <GiHamburgerMenu />
       </button>
 
-      {location.pathname !== '/' && (
-        <Link to="/"><img alt="logo" src={logoImage} /></Link>
-      )}
+      <Link to="/"><img alt="logo" src={logoImage} /></Link>
 
       <div className="page-width">
         <div className="navigation-content">
           <ul className={`navigation-list ${isAccordionOpen ? 'active' : 'inactive'}`}>
             {navItems.map((item, index) => (
               <li key={index} className="main-list-items">
-                <li
-               
+                <div
                   onClick={() => handleToggle(index)}
-               
                   className="nav-button"
                 >
-                     <Link to={item.path}>{item.title}</Link>
-                </li>
+                  {item.title}
+                </div>
 
                 {/* Dropdown */}
                 <ul className={`dropdown-items ${item.isVisible ? 'active' : ''}`}>

@@ -12,13 +12,18 @@ $purple: rgba(120, 84, 247, 1);
     outline: 0;
     border-radius: 30px;
     cursor: pointer;
-    color: #fff;
+  
     background: $purple;
     border: 1.5px solid transparent;
     display: flex;
     align-items: center;
     text-align: center;
     font-family: 'DM Sans', sans-serif;
+
+    a{
+        text-decoration: none;
+        color: #fff;
+    }
     
     
     svg{

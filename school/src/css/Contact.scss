@@ -1,7 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 
 .contact-us-banner{
   width: 100%;
+  min-height: 100vh;
+
+
+  position: relative;
   img{
     width: 100%;
     height: 100%;
@@ -10,19 +14,29 @@
 .contact-us-container {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
-  font-family: "Lexend", sans-serif;
+  // align-items: center;
+  padding: 50px 25px;
+  // font-family: "Lexend", sans-serif;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  line-height: 25px;
+  font-family: 'Work Sans', sans-serif;
 }
-.contact-page-width{
-  width: calc(100% - 12rem);
-  padding: 50px 20px;
-  margin: 0 auto;
-}
+// .contact-page-width{
+//   width: calc(100% - 12rem);
+//   padding: 50px 20px;
+//   margin: 0 auto;
+// }
 .contact-details {
   width: 45%;
   display: flex;
   flex-direction: column;
   gap: 10px;
+  color: #ccc;
 }
 .contact-details-part-one{
   display: flex;
@@ -32,16 +46,17 @@
 .contact-details h2 {
   font-size: 24px;
   color: #8E82FF;
+  margin: 0px 0px 25px 0px;
 }
 
-.contact-details h3 {
-  color: #d10032;
-}
+// .contact-details h3 {
+//   color: #d10032;
+// }
 
 .social-icons a {
   margin-right: 10px;
   font-size: 20px;
-  color: #8E82FF;
+  color: #ccc;
 }
 
 .get-in-touch {
@@ -68,27 +83,39 @@
   flex-direction: column;
 
 }
+
+.br{
+  margin: 15px 0px;
+}
 .get-in-touch label {
-  margin-top: 10px;
+  margin-top: 25px;
   font-weight: bold;
+  color: #ccc;
 }
 
 .get-in-touch input,
 .get-in-touch textarea {
-  padding: 10px;
+  padding: 15px;
   margin-top: 5px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  border: none;
+  outline: 0;
+  resize: none;
+  font-family: 'Work Sans', sans-serif;
+  height: auto;
 }
 
 .get-in-touch button {
   margin-top: 20px;
-  padding: 10px;
+  padding: 15px;
   background-color: #8E82FF;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 16px;
 }
 
 .get-in-touch button:hover {
@@ -110,7 +137,7 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 20px;
-    font-family: "Lexend", sans-serif;
+
   }
   .contact-page-width{
     width: calc(100% - 1rem);

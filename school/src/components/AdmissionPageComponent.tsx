@@ -20,7 +20,7 @@ const AdmissionPageComponent = () => {
         description='Nursery and Primary'
         buttonInformation={
           <>
-            Enroll Now
+            <a href="/admission">Enroll Now</a>
           </>
         }
       />

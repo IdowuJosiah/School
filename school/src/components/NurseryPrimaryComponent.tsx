@@ -23,7 +23,7 @@ const NurseryPrimaryComponent = () => {
       description='Empowering Children with Knowledge, Creativity, and Confidence'
       buttonInformation={
         <>
-          Explore Our Programs <GiSteampunkGoggles />
+         <a href='/curriculum'> Explore Our Programs <GiSteampunkGoggles /></a>
         </>
       } 
     />

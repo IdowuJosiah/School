@@ -9,7 +9,7 @@ const Button = () => {
     type='submit'
     className='button'
     >
-      Enroll Now
+      <a href='/admission'>Enroll Now</a>
         
     </button>
   )

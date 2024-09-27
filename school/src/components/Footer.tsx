@@ -30,12 +30,12 @@ const Footer = () => {
 
           <div className="footer-item links">
               <header className="footer-item-header">Quick Links</header>
-              <a className='link' href='/'>About Us</a>
-              <a className='link' href='/'>Admissions</a>
-              <a className='link' href='/'>Curriculum</a>
-              <a className='link' href='/'>Programmess</a>
-              <a className='link' href='/'>Gallery</a>
-              <a className='link' href='/'>Register</a>
+              <a className='link' href='/about'>About Us</a>
+              <a className='link' href='/admission'>Admissions</a>
+              <a className='link' href='/curriculum'>Curriculum</a>
+              <a className='link' href='/'>Programmes</a>
+              <a className='link' href='/nursery-and-primary'>Gallery</a>
+              <a className='link' href='/admission'>Register</a>
           </div>
 
           <div className="footer-item">

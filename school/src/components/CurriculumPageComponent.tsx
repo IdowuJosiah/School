@@ -76,7 +76,7 @@ const CurriculumPageComponent = () => {
         description='Nurturing creativity, curiosity, and lifelong learning through a balanced and engaging curriculum'
         buttonInformation={
           <>
-            Learn More <PiBookOpenText />
+            <a href="/about">Learn More <PiBookOpenText /></a>
           </>
         }
       />
