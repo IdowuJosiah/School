@@ -109,6 +109,10 @@ const AdmissionPageComponent = () => {
                 To ensure a smooth transition, many schools host a welcoming event or orientation for new students and their families. This event allows new students to meet teachers, staff, and fellow students.
                 </p>
             </div>
+
+        </div>
+        <div className="application-button-container">
+            <button className="application-button"><a href="/apply-for-admission">Apply for Admission</a></button>
         </div>
       </div>
     </div>

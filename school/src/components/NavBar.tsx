@@ -1,9 +1,9 @@
 import { navigation } from '../interfaces/interface';
 import '../css/NavBar.scss';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { cloneDeep } from 'lodash';
 import { Link } from 'react-router-dom';
-import React from 'react';
+// import React from 'react';
 import { GiHamburgerMenu } from "react-icons/gi";
 import logoImage from "../assets/School logo-Photoroom.png"; 
 
@@ -20,7 +20,7 @@ const NavBar = () => {
     },
     {
       title: 'School',
-      path: '/school',
+      path: '/nursery-primary',
       isVisible: false,
       children: [{ title: 'Nursery - Primary', path: '/nursery-primary' }],
     },
@@ -47,7 +47,7 @@ const NavBar = () => {
     },
     {
       title: 'Contact',
-      path: '/contact',
+      path: '/contact-us',
       isVisible: false,
       children: [
         { title: 'Contact Us', path: '/contact-us' },
@@ -58,6 +58,23 @@ const NavBar = () => {
 
   const [navItems, setNavItems] = useState<navigation[]>(navigationItems);
   const [isAccordionOpen, setIsAccordionOpen] = useState(false); 
+  const [isMobileView, setIsMobileView] = useState(false);
+
+  useEffect(() => {
+    function updateView(){
+      // Set isMobileView to true if screen width is <= 720px
+      setIsMobileView(window.innerWidth <= 720);
+    };
+
+    // Set the initial view
+    updateView();
+
+    // Listen to window resize event
+    window.addEventListener('resize', updateView);
+
+    // Cleanup the event listener on unmount
+    return () => window.removeEventListener('resize', updateView);
+  }, []);
 
   const handleToggle = (index: number): void => {
     let clonedArray = cloneDeep(navItems);
@@ -94,21 +111,31 @@ const NavBar = () => {
           <ul className={`navigation-list ${isAccordionOpen ? 'active' : 'inactive'}`}>
             {navItems.map((item, index) => (
               <li key={index} className="main-list-items">
-                <div
-                  onClick={() => handleToggle(index)}
-                  className="nav-button"
-                >
-                  {item.title}
-                </div>
+                {isMobileView ? (
+                  // Render Link for mobile view
+                  <Link to={item.path} className="nav-button">
+                    {item.title}
+                  </Link>
+                ) : (
+                  // Render div with dropdown for larger screens
+                  <div
+                    onClick={() => handleToggle(index)}
+                    className="nav-button"
+                  >
+                    {item.title}
+                  </div>
+                )}
 
                 {/* Dropdown */}
-                <ul className={`dropdown-items ${item.isVisible ? 'active' : ''}`}>
-                  {item.children?.map((child, childIndex) => (
-                    <li key={childIndex}>
-                      <Link to={child.path}>{child.title}</Link>
-                    </li>
-                  ))}
-                </ul>
+                {!isMobileView && (
+                  <ul className={`dropdown-items ${item.isVisible ? 'active' : ''}`}>
+                    {item.children?.map((child, childIndex) => (
+                      <li key={childIndex}>
+                        <Link to={child.path}>{child.title}</Link>
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </li>
             ))}
           </ul>
