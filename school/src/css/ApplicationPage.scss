@@ -1,0 +1,196 @@
+.application-section {
+    .admission-header {
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 24px;
+      font-weight: 600;
+      margin: 35px 0;
+      // color: rgb(107,99,255);
+    }
+  
+    .application-form {
+      // background: rgba(120, 84, 247, 0.05);
+      border-radius: 7px;
+    //   padding: 35px 25px;
+
+      .form-footer{
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 500;
+      }
+
+      .submit-button-container{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin: 45px 0px 35px 0px;
+        .submit-button{
+            background: rgb(120, 84, 247); 
+            font-size: 15px;
+            border-radius: 30px;
+            padding: 15px 35px;
+            // margin-left: auto;
+            border: none;
+            font-weight: 500;
+            font-family: 'Work Sans', sans-serif;
+            cursor: pointer;
+            // margin-left:  auto;
+            border: 1px solid transparent;
+    
+    
+            a{
+                color: #fff;
+                text-decoration: none;
+            }
+          }
+      }
+    }
+  
+    label {
+      font-size: 15px;
+      font-weight: 600;
+      font-family: 'Montserrat', sans-serif;
+    }
+  
+    .form-section-header {
+      display: flex;
+      align-items: center;
+      margin: 0 0 25px 0;
+
+      @media screen and (max-width:720px) {
+         flex-direction: column;
+      }
+  
+      .section-header {
+        font-size: 18px;
+        font-weight: 700;
+      
+        font-family: 'Montserrat', sans-serif;
+
+        @media screen and (min-width:720px) {
+            margin: 0px 15px 0px 0px;
+         }
+
+         @media screen and (max-width:720px) {
+            margin: 0px 0px 15px 0px;
+         }
+
+
+      }
+  
+      .requirement {
+        font-size: 13px;
+        font-family: 'Work Sans', sans-serif;
+      }
+    }
+  
+    .triple-input {
+      display: flex;
+      border: 1px solid rgba(120, 84, 247, 0.2);
+      width: 100%;
+      margin: 10px 0 20px 0;
+      border-radius: 5px;
+      overflow: hidden;
+
+
+     @media screen and (max-width:720px) {
+        flex-direction: column;
+     }
+  
+      .name-part {
+        border: none;
+        // flex: 1;
+   
+        padding: 15px;
+        outline: 0;
+       
+        font-family: 'Work Sans', sans-serif;
+
+        @media screen and (max-width:720px) {
+            // font-size: 12px;
+         }
+
+         @media screen and (min-width:720px) {
+            text-align: center;
+            width: 33%;
+         }
+      }
+  
+      .name-info::placeholder {
+        font-family: 'Work Sans', sans-serif;
+        font-style: italic;
+        font-size: 13px;
+      }
+    }
+  
+    .triple-option {
+      display: flex;
+      justify-content: space-between;
+
+      @media screen and (min-width:720px) {
+        
+      }
+ 
+      @media screen and (max-width:840px) {
+         flex-direction: column;
+      }
+  
+      div {
+       
+        display: flex;
+        flex-direction: column;
+
+        @media screen and (min-width:840px) {
+            width: 30%;
+        }
+   
+        @media screen and (max-width:840px) {
+           margin: 0px 0px 20px 0px;
+        }
+      }
+  
+      .input-field {
+     
+      }
+    }
+  
+    .single-input {
+      .input-field {
+        width: 100%;
+      }
+    }
+  
+    .input-field {
+    
+      outline: 0;
+      border: 1px solid rgba(120, 84, 247, 0.2);
+      font-family: 'Work Sans', sans-serif;
+      margin: 10px 0 0 0;
+      border-radius: 5px;
+
+      @media screen and (min-width:720px) {
+        padding: 15px 35px;
+    }
+
+    @media screen and (max-width:720px) {
+       padding: 15px;
+    }
+    }
+
+ 
+  
+    .container {
+      margin: 0 0 20px 0;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+  }
+  
+  .form-section {
+    border: 2px solid rgba(120, 84, 247, 0.05);
+    margin: 0 0 45px 0;
+    padding: 35px 25px 25px 25px;
+    border-radius: 7px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.03);
+  }
+  

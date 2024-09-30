@@ -9,7 +9,7 @@ import GalleryPage from "./pages/GalleryPage";
 import ParentFeedback from "./pages/ParentFeedback";
 import {Routes, Route} from "react-router";
 import ContactPage from "./pages/ContactPage";
-
+import ApplicationPage from "./pages/ApplicationPage"
 function App() {
 
   return (
@@ -20,6 +20,7 @@ function App() {
           <Route path="nursery-primary" element={<NurseryPrimary/>}/>
           <Route path="curriculum" element={<CurriculumPage/>}/>
           <Route path="admission" element={<AdmissionPage/>}/>
+          <Route path="apply-for-admission" element={<ApplicationPage/>}/>
           <Route path="gallery" element={<GalleryPage/>}/>
           <Route path="parent-feedback" element={<ParentFeedback/>}/>
           <Route path="contact-us" element={<ContactPage/>}/>
