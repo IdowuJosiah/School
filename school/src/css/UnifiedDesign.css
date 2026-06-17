@@ -1,0 +1,226 @@
+
+.value-section,
+.school-objectives,
+.programme-section,
+.testimonial-section,
+.admission-steps-section,
+.about-us-description,
+.members-section,
+.about-student {
+  margin-block: var(--section-gap);
+}
+
+.value-section-header,
+.programme-section-header,
+.testimonial-section-header,
+.admission-header .main-header,
+.about-header,
+.members-section header,
+.student-text-container header,
+.objective-header,
+.school-program-header {
+  font-family: var(--font-display) !important;
+  color: var(--ink);
+  letter-spacing: 0;
+}
+
+.value-section-header,
+.programme-section-header,
+.testimonial-section-header,
+.admission-header .main-header {
+  font-size: clamp(1.65rem, 3vw, 2.35rem) !important;
+  line-height: 1.15;
+  margin-bottom: 1.5rem !important;
+  text-align: center;
+}
+
+.school-banner-container,
+.banner-container {
+  width: min(100% - 2rem, 1180px) !important;
+  height: clamp(380px, 48vw, 560px) !important;
+  margin: 18px auto var(--section-gap) !important;
+  border-radius: var(--radius-large) !important;
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+  background: var(--surface-muted);
+}
+
+.school-banner-container .banner-image,
+.banner-container .banner-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.school-container-overlay,
+.banner-container-overlay {
+  background:
+    linear-gradient(90deg, rgba(10, 12, 20, 0.78), rgba(10, 12, 20, 0.22)) !important;
+  align-items: flex-start !important;
+  justify-content: flex-end !important;
+  padding: clamp(2rem, 5vw, 4rem) !important;
+  color: #fff;
+  border-radius: 0 !important;
+}
+
+.school-container-overlay header,
+.banner-container-overlay {
+  width: min(650px, 100%);
+  max-width: none !important;
+  font-size: clamp(2.1rem, 4vw, 4.5rem) !important;
+  line-height: 1.02 !important;
+  font-weight: 800 !important;
+  letter-spacing: 0 !important;
+}
+
+.school-container-overlay p {
+  max-width: 560px !important;
+  margin: 1rem 0 1.75rem !important;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.7 !important;
+}
+
+.button,
+.school-container-overlay button,
+.application-button,
+.contact-button,
+.get-in-touch button {
+  min-height: 46px;
+  border-radius: 999px !important;
+  padding: 0 28px !important;
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: var(--brand) !important;
+  border: 1px solid transparent !important;
+  color: #fff !important;
+  font-family: var(--font-body) !important;
+  font-weight: 700 !important;
+  letter-spacing: 0 !important;
+  box-shadow: 0 14px 30px rgba(120, 84, 247, 0.24);
+  transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
+}
+
+.button:hover,
+.school-container-overlay button:hover,
+.application-button:hover,
+.contact-button:hover,
+.get-in-touch button:hover {
+  transform: translateY(-2px);
+  background: var(--brand-strong) !important;
+  box-shadow: 0 18px 38px rgba(120, 84, 247, 0.3);
+}
+
+.button a,
+.school-container-overlay button a,
+.application-button a {
+  color: #fff !important;
+  text-decoration: none;
+}
+
+.value-container,
+.programmes,
+.testimonial-container,
+.steps-container {
+  gap: 1.25rem !important;
+}
+
+.value,
+.program,
+.testimonial,
+.step,
+.about-us-description .page-width,
+.student-text-container {
+  border-radius: var(--radius) !important;
+  border: 1px solid rgba(120, 84, 247, 0.12) !important;
+  background: linear-gradient(180deg, #fff, var(--surface-muted)) !important;
+  box-shadow: 0 16px 42px rgba(31, 25, 61, 0.08);
+}
+
+.value,
+.program,
+.testimonial,
+.step {
+  padding: clamp(1.25rem, 3vw, 2rem) !important;
+}
+
+.value p,
+.program-description,
+.parent-feedback,
+.objective-description,
+.school-program-text p,
+.step p,
+.about-us,
+.student-text-container p {
+  color: var(--muted);
+  line-height: 1.75 !important;
+}
+
+.objective {
+  gap: clamp(2rem, 5vw, 4rem);
+  margin-block: var(--section-gap) !important;
+}
+
+.objective-header {
+  color: var(--brand) !important;
+  font-size: clamp(1.6rem, 3vw, 2.35rem) !important;
+}
+
+.objective-image,
+.student-image-container,
+.school-program-image img,
+.member-image {
+  border-radius: var(--radius-large) !important;
+  box-shadow: var(--shadow-soft);
+}
+
+.objective-image {
+  aspect-ratio: 4 / 5;
+  min-height: 0 !important;
+  height: auto;
+}
+
+.fun {
+  opacity: 0.55;
+}
+
+.footer-section {
+  margin-top: var(--section-gap);
+  background: #17141f !important;
+}
+
+@media (max-width: 720px) {
+  .page-width,
+  .slider-page-width {
+    width: min(100% - 1.25rem, 1180px) !important;
+  }
+
+  .school-banner-container,
+  .banner-container {
+    width: 100% !important;
+    margin-top: 0 !important;
+    border-radius: 0 0 var(--radius-large) var(--radius-large) !important;
+  }
+
+  .school-container-overlay,
+  .banner-container-overlay {
+    padding: 2rem 1.25rem 3rem !important;
+  }
+
+  .value-container,
+  .programmes,
+  .testimonial-container,
+  .steps-container {
+    flex-direction: column !important;
+  }
+
+  .value,
+  .program,
+  .testimonial,
+  .step {
+    width: 100% !important;
+    min-width: 0 !important;
+    margin: 0 !important;
+  }
+}

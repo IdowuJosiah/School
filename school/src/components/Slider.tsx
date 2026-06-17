@@ -5,7 +5,6 @@ import Button from "./ButtonRegister";
 // import { Link } from "react-router-dom";
 import sliderImage1 from  "../assets/WhatsApp Image 2024-09-23 at 4.44.31 PM 1.png";
 import sliderImage2 from  "../assets/landingpage.jpg";
-// import logoImage from "../assets/School logo-Photoroom.png"; // Import the logo
 import sliderImage3 from  "../assets/74d433cf-cebd-40d1-a999-a1e66859cba5.jpg";
 
 
@@ -23,7 +22,7 @@ const Slider = () => {
         },
         {
             background: sliderImage3,
-            bannerText: " Inspiring confidence & encouraging self expression",
+            bannerText: "Inspiring confidence and self expression",
             bannerTextDescription: 'At Honey Rock School we foster growth, creativity and love for learning in every child'
         },
     ];
@@ -54,7 +53,7 @@ const Slider = () => {
                 {slideShowItems.map((slide, index) => {
                     return (
                         <div className="slide" key={index}>
-                            <img className="slide-image" src={slide.background} alt="#" />
+                            <img className="slide-image" src={slide.background} alt="Honey Rock School pupils" />
                            
                             <div className="slide-overlay">
                                 <div className="slide-banner">

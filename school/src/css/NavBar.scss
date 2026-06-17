@@ -1,328 +1,209 @@
 
+.navigation-bar {
+  --nav-height: 76px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  min-height: var(--nav-height);
+  display: flex;
+  align-items: center;
+  padding: 0 clamp(1rem, 4vw, 3rem);
+  background: rgba(255, 255, 255, 0.92);
+  border-bottom: 1px solid rgba(25, 25, 25, 0.08);
+  box-shadow: 0 14px 40px rgba(24, 24, 24, 0.06);
+  backdrop-filter: blur(18px);
 
-.navigation-bar{
-    position: relative;
-
-    .accordion-toggle{
-        position: fixed;
-        top: 10px;
-        right: 10px;
-        z-index: 15;
-    
-    }
-
-    img{
-        width: 40px;
-        height: 40px;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        left: 20px;
-        // z-index: 5;
-        // margin-right: auto;
-    }
-}
-
-// Navigation Bar
-.navigation-content {
- 
-    font-family: 'Urbanist', sans-serif;
-    font-weight: 600;
-    // position: absolute;
-    // height: 100vh;
-    // transition: ease-in-out;
-    // animation: slideIn 0.4s;
-
-    @media (min-width: 1024px) {
-        justify-content: right;
-    }
-
-    @media (max-width: 1024px) {
-        justify-content: center;
-    }
-
-    @media (min-width: 720px) {
-        display: flex;
-        width: 100%;
-        align-items: center;
-        padding: 7.5px 0;
-    }
-
-    @media (max-width: 720px) {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-       
-        // background: green;
-        z-index: 10;
- 
-    }
-
-   
-}
-
-// Accordion button (visible below 720px)
-.accordion-toggle {
-    // display: none;
-    background: none;
-    border: none;
-    font-size: 34px;
-    font-weight: 800;
-    cursor: pointer;
-    padding: 10px 10px;
-    // z-index: 5;
-    color: #8E82FF;
-    // background:rgba(120, 84, 247, 0.5);
-    background: #FEFEFE;
-    border: 2px solid rgba(120, 84, 247, 0.05);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
+  > a {
+    display: inline-flex;
     align-items: center;
-    
+    flex: 0 0 auto;
+    position: relative;
+    z-index: 1002;
+  }
 
-    @media (max-width: 720px) {
-        display: block; // Accordion button visible below 720px
-    }
+  img {
+    width: 54px;
+    height: 54px;
+    display: block;
+    object-fit: contain;
+  }
+
+  .page-width {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+.navigation-content {
+  width: 100%;
+  font-family: var(--font-display);
+  font-weight: 700;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.accordion-toggle {
+  width: 46px;
+  height: 46px;
+  border: 1px solid rgba(120, 84, 247, 0.18);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--brand);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  cursor: pointer;
+  box-shadow: 0 14px 28px rgba(120, 84, 247, 0.12);
 }
 
 .navigation-list {
-    display: flex;
-    list-style: none;
-    position: relative;
-    z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: clamp(0.25rem, 1.2vw, 1rem);
+  list-style: none;
+  margin: 0;
+  padding: 0;
 
-    @media (max-width: 720px) {
-        height: 100%;
-        justify-content: center;
-        transition: ease-in-out;
-        animation: slideIn 0.5s;
-    
-    }
+  li {
+    position: relative;
+    list-style: none;
+  }
+
+  .nav-button {
+    display: inline-flex;
+    align-items: center;
+    min-height: 42px;
+    padding: 0 14px;
+    border-radius: 999px;
+    background: transparent;
+    border: 0;
+    color: var(--ink);
+    text-decoration: none;
+    font-family: var(--font-display);
+    font-size: 0.9rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: color 180ms ease, background 180ms ease, transform 180ms ease;
+  }
+
+  .nav-button:hover,
+  .main-list-items:hover .nav-button {
+    color: var(--brand);
+    background: rgba(120, 84, 247, 0.09);
+    transform: translateY(-1px);
+  }
+
+  .dropdown-items {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%) translateY(8px);
+    min-width: 190px;
+    padding: 8px;
+    display: block;
+    opacity: 0;
+    pointer-events: none;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.98);
+    border: 1px solid rgba(120, 84, 247, 0.14);
+    box-shadow: var(--shadow-soft);
+    transition: opacity 180ms ease, transform 180ms ease;
 
     li {
-        font-weight: 600;
-        cursor: pointer;
-        position: relative;
-        letter-spacing: 0.1px;
-
-        @media (min-width: 1024px) {
-            .nav-button {
-                margin: 0 25px;
-            }
-        }
-
-        @media (max-width: 1024px) {
-            .nav-button {
-                margin: 0 15px;
-            }
-        }
-
-        @media (max-width: 720px) {
-            .nav-button {
-                text-transform: uppercase;
-                font-size: 34px;
-                font-weight: 800;
-                // margin: 0px 0px 25px 0px;
-            }
-
-            .nav-button:hover{
-                color: rgba(120, 84, 247, 0.5);
-            }
-        }
-
-        @media (min-width: 720px) {
-            .nav-button {
-              
-                font-size: 14px;
-                font-weight: 600;
-            }
-        }
-
- 
-
-        .nav-button {
-            background: none;
-            font-family: 'Urbanist', sans-serif;
-            border: none;
-            text-decoration: none;
-            color: rgb(0,0,0);
-            cursor: pointer;
-
-            a{
-                text-decoration: none;
-                color: rgb(0,0,0);
-            }
-        }
+      width: 100%;
     }
 
-    .dropdown-items {
-        position: absolute;
-        top: 21px;
-        left: 20px;
-        display: none;
-        font-size: 13.5px;
-        border-radius: 5px;
-        border: 2px solid rgba(120, 84, 247, 0.05);
-        width: 150px;
-        transition: ease-in-out;
-        animation: slideInItem .2s;
-        overflow: hidden;
-        // z-index: 1000;
-
-       
-
-        li {
-            padding: 10px;
-            cursor: pointer;
-            list-style: none;
-            background-color: rgb(255, 255, 255);
-
-            a {
-                text-decoration: none;
-                color: #8E82FF;
-            }
-        }
+    a {
+      display: block;
+      padding: 11px 12px;
+      border-radius: 10px;
+      color: var(--ink);
+      text-decoration: none;
+      font-size: 0.88rem;
+      transition: background 180ms ease, color 180ms ease;
     }
+
+    a:hover {
+      color: var(--brand);
+      background: rgba(120, 84, 247, 0.09);
+    }
+  }
+
+  .dropdown-items.active,
+  .main-list-items:hover .dropdown-items {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateX(-50%) translateY(0);
+  }
 }
 
-// Accordion functionality for screens below 720px
-@media (max-width: 720px) {
+@media (max-width: 820px) {
+  .navigation-bar {
+    min-height: 68px;
+    padding: 0 1rem;
+    justify-content: space-between;
 
-   
-    .navigation-list {
-        display: none; // Hide navigation list by default
-    
-        // Show when the accordion is toggled
-        transition: ease-out;
-        animation: slideOut 0.5s;
-    
-        flex-direction: column;
-      
-        background-color: #fff; // White background for the dropdown
-    
+    img {
+      width: 48px;
+      height: 48px;
     }
+  }
 
-    .navigation-list.active {
-        display: flex; // Show when the accordion is toggled
-        transition: ease-in-out;
-        animation: slideIn 1.5s;
-    }
+  .accordion-toggle {
+    display: flex;
+    position: relative;
+    z-index: 1002;
+    order: 2;
+  }
 
+  .navigation-content {
+    position: fixed;
+    inset: 0;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.97);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-14px);
+    transition: opacity 220ms ease, transform 220ms ease;
+  }
 
-    // Adjust individual list items for mobile view
-    .main-list-items {
-        text-align: center;
-        margin: 15px 0;
-        width: 100%; // Full width
-    }
+  .navigation-list {
+    flex-direction: column;
+    align-items: stretch;
+    width: min(86vw, 420px);
+    gap: 10px;
 
-    .dropdown-items {
-        position: absolute; // Ensure dropdown doesn't overflow
-        width: 100%; // Full width for dropdown items
-    }
-
-    .dropdown-items li {
-        width: 100%;
-    }
-}
-
-// Keyframe for slide-in animation
-@keyframes slideIn {
-    0% {
-        transform: translateY(-100vh);
-    }
-
-    100% {
-        transform: translateY(0px);
-    }
-}
-
-@keyframes slideInItem {
-    0% {
-        transform: translateY(-20px);
-    }
-
-    100% {
-        transform: translateY(0px);
-    }
-}
-@keyframes slideOut {
-    0% {
-        transform: translateY(0px);
-    }
-
-    100% {
-        transform: translateY(-100vh);
-    }
-}
-// .main-list-items {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-// }
-
-
-
-@media (max-width: 720px) {
-    .dropdown-items{
-        display: none;
-    }
-
-    .page-width {
-        width: calc(100% - 4rem);
-        // padding: 15px 20px;
-        margin: 0 auto;
-    }
-
-    .dropdown-items.active{
-        display: none;
-    }
-
-    .accordion-toggle{
-        display: flex;
-    }
-
-    .navigation-bar{
-        img{
-            display: none;
-          
-        }
-    }
-
- 
-}
-
-@media (min-width: 720px) {
-
-
- 
-    .page-width {
-        width: calc(100% - 4rem);
-        padding: 15px 20px;
-        margin: 0 auto;
-    }
-
-    .accordion-toggle{
-        display: none;
+    &.active {
+      opacity: 1;
     }
 
     .main-list-items {
- 
-
-        // Dropdown initially hidden
-        .dropdown-items {
-            display: none;
-        }
-    
-        // Show dropdown when hovering over main-list-items
-      .dropdown-items.active {
-            display: block;
-         
-        }
+      width: 100%;
+      text-align: center;
     }
-    
-}
 
+    .nav-button {
+      width: 100%;
+      min-height: 54px;
+      justify-content: center;
+      font-size: 1.25rem;
+      background: rgba(120, 84, 247, 0.08);
+    }
+
+    .dropdown-items {
+      display: none;
+    }
+  }
+
+  .navigation-content:has(.navigation-list.active) {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+}

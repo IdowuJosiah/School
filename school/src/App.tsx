@@ -7,7 +7,7 @@ import CurriculumPage from "./pages/CurriculumPage";
 import AdmissionPage from "./pages/AdmissionPage"
 import GalleryPage from "./pages/GalleryPage";
 import ParentFeedback from "./pages/ParentFeedback";
-import {Routes, Route} from "react-router";
+import {Routes, Route} from "react-router-dom";
 import ContactPage from "./pages/ContactPage";
 import ApplicationPage from "./pages/ApplicationPage"
 function App() {

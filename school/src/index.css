@@ -1,14 +1,87 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Urbanist:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* body{
-  /* font-family: 'Lexend', sans-serif; */
-*/
-body.navigation-list.active{
-     overflow: hidden;
-  
+:root {
+  --brand: #7854f7;
+  --brand-strong: #5f43d6;
+  --accent: #f75457;
+  --ink: #17141f;
+  --muted: #625f70;
+  --surface: #ffffff;
+  --surface-muted: #f7f5ff;
+  --line: rgba(23, 20, 31, 0.1);
+  --radius: 16px;
+  --radius-large: 28px;
+  --shadow-soft: 0 24px 70px rgba(31, 25, 61, 0.14);
+  --section-gap: clamp(3.5rem, 7vw, 6rem);
+  --font-display: 'Montserrat', sans-serif;
+  --font-body: 'Work Sans', sans-serif;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  color: var(--ink);
+  background: #fff;
+  font-family: var(--font-body);
+}
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+
+img {
+  max-width: 100%;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.page-width,
+.slider-page-width {
+  width: min(100% - 2rem, 1180px);
+  margin-inline: auto;
+  padding: 0;
+}
+
+.main-container {
+  overflow-x: hidden;
+}
+
+.autoShow {
+  opacity: 0;
+  transform: translateY(24px);
+  animation: unifiedReveal 650ms ease forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 24%;
+}
+
+@keyframes unifiedReveal {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 1ms !important;
+  }
+
+  .autoShow {
+    opacity: 1;
+    transform: none;
+  }
 }
