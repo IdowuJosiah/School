@@ -3,31 +3,29 @@ import '../css/Values.scss'
 const Values = () => {
     const Values = [
         {
-            value: 'Truth',
-            valueDescription: 'Lorem ipsum dolor sit amet consectetur. Nunc varius viverra suscipit suspendisse adipiscing odio enim ullamcorper.'
-        },
-
-        {
             value: 'Honesty',
-            valueDescription: 'Lorem ipsum dolor sit amet consectetur. Nunc varius viverra suscipit suspendisse adipiscing odio enim ullamcorper.'
+            valueDescription: 'We tell the truth and act with integrity. We are trustworthy in words and actions.'
         },
 
         {
-            value: 'Respect',
-            valueDescription: 'Lorem ipsum dolor sit amet consectetur. Nunc varius viverra suscipit suspendisse adipiscing odio enim ullamcorper.'
+            value: 'Responsibility',
+            valueDescription: 'We own our tasks and choices. We meet deadlines and follow through on commitments.'
         },
 
         {
-          value: 'Excellence',
-          valueDescription: 'Lorem ipsum dolor sit amet consectetur. Nunc varius viverra suscipit suspendisse adipiscing odio enim ullamcorper.'
-      },
+            value: 'Excellence',
+            valueDescription: 'We strive to do our best work. We pay attention to detail and keep improving.'
+        },
 
-      {
-        value: 'Devotion',
-        valueDescription: 'Lorem ipsum dolor sit amet consectetur. Nunc varius viverra suscipit suspendisse adipiscing odio enim ullamcorper.'
-    },
+        {
+          value: 'Accountability',
+          valueDescription: 'We accept feedback and take responsibility for results. We learn from mistakes.'
+        },
 
-
+        {
+          value: 'Devotion',
+          valueDescription: 'We are committed to our school, our team, and our purpose. We show up and stay dedicated.'
+        },
     ]
   return (
     <div className='value-section'>
