@@ -14,17 +14,11 @@ const Footer = () => {
             <div className="footer-item">
               <img src={logoImage} alt='logo' className='footer-logo' />
               <p>The Honey Rock School</p>
-              <ul className="location nursery">
-                  <li>Nursery Address:</li>
-                  <li>18A Jimoh Balogun Street, Off Cmd Road, Off Aladelola Street, Ikosi-Ketu, Lagos-Nigeria</li>
-                  <li>+2348081274082</li>
-                  <li>+2348081274082</li>
-              </ul>
               <ul className="location">
-                  <li>Primary Address:</li>
-                  <li>No 37b Aladelola street, Off Ikosi Road, Ikosi-Ketu Lagos-Nigeria</li>
-                  <li>+2348081274082</li>
-                  <li>+2348081274082</li>
+                  <li>37B Aladelola Street Ikosi Ketu,</li>
+                  <li>Off Ikosi Road, Ketu, Lagos.</li>
+                  <li>+234 802 304 1259</li>
+                  <li>+234 904 995 2952</li>
               </ul>
           </div>
 
@@ -41,7 +35,7 @@ const Footer = () => {
           <div className="footer-item">
             <header className="footer-item-header">Follow Us</header>
             <div className="social-media">
-            <FaInstagram/>
+            <a href="https://www.instagram.com/the_honeyrockschool/" target="_blank" rel="noreferrer"><FaInstagram/></a>
             <FaFacebook/>
             <FaSquareXTwitter/>
             </div>

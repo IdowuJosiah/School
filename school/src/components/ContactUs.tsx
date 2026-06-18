@@ -44,33 +44,30 @@ const ContactUs: React.FC = () => {
 
                     <div className="contact-details-part-one">
                         <div>
-                            <span>email:</span> <span>info@kidscourtschool.com</span>
+                            <span>email:</span> <span>admin@thehoneyrockacademy</span>
                         </div>
                         <div>
-                            <span>tel:</span> <span>+234 818 200 5331 - Nursery School</span>
+                            <span>tel:</span> <span>+234 802 304 1259 - Nursery School</span>
                         </div>
                         <div>
-                            <span>tel:</span> <span>+234 818 200 5333 - Primary School</span>
+                            <span>tel:</span> <span>+234 904 995 2952 - Primary School</span>
+                        </div>
+                        <div>
+                            <span>tel:</span> <span>+234 904 995 2952 - Whatsapp Number</span>
                         </div>
                     </div>
                     <div>
-                        <p >
-                            <strong>Nursery:</strong><br />
-                            56/58, Modupe Johnson Crescent,<br />
-                            Off Adeniran Ogunsanya Street,<br />
-                            Surulere, Lagos.
-                        </p>
                         <p className="br">
                             <strong>Primary:</strong><br />
-                            68, Femi Ayantuga Crescent,<br />
-                            Off Adelabu Street,<br />
-                            Surulere, Lagos.
+                            37B Aladelola Street Ikosi Ketu,<br />
+                            Off Ikosi Road,<br />
+                            Ketu, Lagos.
                         </p>
                     </div>
 
                     <div className="social-icons">
                         <a href="/"><FaFacebook/></a>
-                        <a href="/"><FaInstagram/></a>
+                        <a href="https://www.instagram.com/the_honeyrockschool/" target="_blank" rel="noreferrer"><FaInstagram/></a>
                         <a href="/"><FaTwitter/></a>
                         <a href="/"><FaLinkedin/></a>
                     </div>

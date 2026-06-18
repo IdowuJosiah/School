@@ -49,7 +49,7 @@ const SchoolMission = () => {
             <div className="objective-content">
                     <header className="objective-header">Our Vision</header>
                     <p className="objective-description">
-                    To be the most preferred and trusted school for raising God fearing global changers.
+                    To be the most preferred and trusted school in raising God fearing global changers.
                     </p>
                     <ul className="missions">
                         <li className="mission"> <FiCheck/>Building children of great character</li>
