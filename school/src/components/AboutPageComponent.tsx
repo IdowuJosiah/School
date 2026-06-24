@@ -1,8 +1,8 @@
 import React from 'react';
-import AboutBannerImage from '../assets/image (6).png';
+import AboutBannerImage from '../assets/sportsday-house-banner.jpg';
 import MemberImage from '../assets/image (3).png';
 import MemberImage2 from '../assets/image (4).png';
-import studentImage from '../assets/WhatsApp Image 2024-09-23 at 4.44.26 PM (2) 1.png';
+import studentImage from '../assets/sportsday-trophy-winners.jpg';
 import '../css/AboutPageComponent.scss';
 import SchoolMission from './SchooolMission';
 
@@ -71,11 +71,14 @@ const AboutPageComponent = () => {
           <div className="student-text-container">
             <header>Our Students Are</header>
             <p>
-              Lorem ipsum dolor sit amet consectetur. Et rutrum a at ipsum nulla diam arcu egestas.
-              Sed nunc integer venenatis lacus sed consequat. Quisque tristique purus sit arcu purus neque diam.
-              Donec tellus diam donec penatibus ornare consequat. Ullamcorper varius vitae a ipsum integer lobortis vitae.
-              Magna scelerisque turpis euismod volutpat et sit purus euismod. Proin non mi diam hac eget posuere quam.
-              Laoreet venenatis eget in enim risus integer quis adipiscing. Ultricies auctor neque rhoncus turpis non consequat scelerisque gravida.
+              Confident, curious, and proud of who they are. Whether they're competing on Sports Day,
+              celebrating their achievements at graduation, or learning hands-on outside the classroom,
+              our students bring energy and enthusiasm to everything they do.
+            </p>
+
+            <p>
+              We nurture each child to discover their own strengths, work well with others, and carry
+              themselves with the kind of confidence that lasts well beyond their time at HoneyRock.
             </p>
           </div>
         </div>

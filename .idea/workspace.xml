@@ -5,7 +5,137 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b533c037-1550-4224-be30-268cdf4e815e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/School.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/School.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postcss.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/postcss.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/school/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/school/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/build.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/school/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/school/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/school/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/school/public/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/school/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/assets/3c15d55b-a063-431f-84d6-ced2f31f680d.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/assets/8abd8a28-5879-40fb-8227-5fbfdf895e45.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/assets/GEORGE BUKOLA PRY 1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/assets/GREEN TERM CALENDAR 2024-2025_064817.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/assets/IMG_6246.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/assets/IMG_6254.heic" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/assets/IMG_7634.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/assets/PHOTO-2023-07-17-20-25-37 (2).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/assets/PHOTO-2023-07-17-20-25-38.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/assets/PHOTO-2023-07-17-20-25-40.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/assets/PHOTO-2023-07-17-20-28-14 (2).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/assets/PHOTO-2023-07-17-20-28-17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/assets/PHOTO-2023-07-17-20-34-35 2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/assets/PHOTO-2023-07-17-20-49-24 10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/assets/PHOTO-2024-08-30-11-56-26.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/assets/PHOTO-2024-08-30-11-57-09 2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/assets/PHOTO-2024-08-30-11-57-09 3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/assets/PHOTO-2024-08-30-11-57-09.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/assets/PHOTO-2024-08-30-11-58-25.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/assets/PHOTO-2024-08-30-11-58-56.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/assets/PHOTO-2024-08-30-11-59-09.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/assets/PHOTO-2024-08-30-11-59-22.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/assets/School logo.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/assets/ab961ccd-3e00-468f-86ab-4c83f383a1fa.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/assets/admission.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/assets/back-to-school.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/assets/c62fe96f-d63d-44b9-bbf5-6167c6f49de2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/assets/chalkboard_8307554.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/assets/contact.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/assets/director.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/assets/education-3704026_1280.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/assets/fly.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/assets/image (1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/assets/image (2).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/assets/image (5).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/assets/indexpageimage3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/assets/infant-centre.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/assets/kenny-eliason-zFSo6bnZJTw-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/assets/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/assets/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/assets/logog.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/assets/minimalist-7561775_1280.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/assets/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/assets/woman-8499902_1280.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/components/AboutPageComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/school/src/components/AboutPageComponent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/components/AdmissionPageComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/school/src/components/AdmissionPageComponent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/components/Banner.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/components/BannerComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/school/src/components/BannerComponent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/components/ButtonApply.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/components/ButtonRegister.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/school/src/components/ButtonRegister.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/components/ButtonSlider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/school/src/components/ButtonSlider.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/components/ButtonTour.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/components/ContactUs.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/school/src/components/ContactUs.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/components/Counter.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/components/CurriculumPageComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/school/src/components/CurriculumPageComponent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/components/DirectorsMessageComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/school/src/components/DirectorsMessageComponent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/components/Faq.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/components/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/school/src/components/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/components/GalleryPageComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/school/src/components/GalleryPageComponent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/components/IndexPageApplyAdmission.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/components/IndexPageVirtualTourSection.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/components/Line.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/components/NavBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/school/src/components/NavBar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/components/NurseryPrimaryComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/school/src/components/NurseryPrimaryComponent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/components/ParentFeedbackComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/school/src/components/ParentFeedbackComponent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/components/ParentsReview.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/school/src/components/ParentsReview.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/components/Programs.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/school/src/components/Programs.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/components/SchooolMission.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/school/src/components/SchooolMission.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/components/Slider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/school/src/components/Slider.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/components/Testimonials.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/school/src/components/Testimonials.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/components/Values.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/school/src/components/Values.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/css/AboutPageComponent.scss" beforeDir="false" afterPath="$PROJECT_DIR$/school/src/css/AboutPageComponent.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/css/AdmissionPageComponent.scss" beforeDir="false" afterPath="$PROJECT_DIR$/school/src/css/AdmissionPageComponent.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/css/ApplicationPage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/school/src/css/ApplicationPage.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/css/Banner.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/css/Button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/school/src/css/Button.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/css/Contact.scss" beforeDir="false" afterPath="$PROJECT_DIR$/school/src/css/Contact.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/css/Counter.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/css/CurriculumPageComponent.scss" beforeDir="false" afterPath="$PROJECT_DIR$/school/src/css/CurriculumPageComponent.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/css/DirectorsMessageComponent.scss" beforeDir="false" afterPath="$PROJECT_DIR$/school/src/css/DirectorsMessageComponent.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/css/Faq.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/css/Footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/school/src/css/Footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/css/GalleryPageComponent.scss" beforeDir="false" afterPath="$PROJECT_DIR$/school/src/css/GalleryPageComponent.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/css/IndexPageApplyAdmission.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/css/IndexPageVirtualTourSection.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/css/Line.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/css/NavBar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/school/src/css/NavBar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/css/NurseryPrimaryComponent.scss" beforeDir="false" afterPath="$PROJECT_DIR$/school/src/css/NurseryPrimaryComponent.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/css/ParentFeedbackComponent.css" beforeDir="false" afterPath="$PROJECT_DIR$/school/src/css/ParentFeedbackComponent.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/css/ParentsReview.css" beforeDir="false" afterPath="$PROJECT_DIR$/school/src/css/ParentsReview.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/css/Programs.scss" beforeDir="false" afterPath="$PROJECT_DIR$/school/src/css/Programs.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/css/SchoolMission.scss" beforeDir="false" afterPath="$PROJECT_DIR$/school/src/css/SchoolMission.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/css/Slider.css" beforeDir="false" afterPath="$PROJECT_DIR$/school/src/css/Slider.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/css/Testimonials.scss" beforeDir="false" afterPath="$PROJECT_DIR$/school/src/css/Testimonials.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/css/Values.scss" beforeDir="false" afterPath="$PROJECT_DIR$/school/src/css/Values.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/school/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/school/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/interfaces/interface.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/school/src/interfaces/interface.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/pages/AboutPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/school/src/pages/AboutPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/pages/AdmissionPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/school/src/pages/AdmissionPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/pages/ApplicationPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/school/src/pages/ApplicationPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/pages/ContactPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/school/src/pages/ContactPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/pages/CurriculumPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/school/src/pages/CurriculumPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/pages/DirectorsMessagePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/school/src/pages/DirectorsMessagePage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/pages/GalleryPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/school/src/pages/GalleryPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/pages/IndexPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/school/src/pages/IndexPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/pages/NurseryPrimary.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/school/src/pages/NurseryPrimary.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/pages/ParentFeedback.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/school/src/pages/ParentFeedback.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/react-app-env.d 2.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/react-app-env.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/school/src/react-app-env.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/reportWebVitals.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/src/setupTests.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/school/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/school/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,14 +173,19 @@
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/IDOWU/Desktop/School&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Revamp&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/jazzthedev/Documents/School&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
     &quot;ts.external.directory.path&quot;: &quot;/Users/josiah/Documents/GitHub/School/school/node_modules/typescript/lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -59,6 +194,13 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\IDOWU\Desktop\School\school\src\css" />
     </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-WS-252.27397.92" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -89,6 +231,8 @@
       <workItem from="1718202199194" duration="607000" />
       <workItem from="1718255306186" duration="21000" />
       <workItem from="1724947564680" duration="1997000" />
+      <workItem from="1780677937670" duration="1805000" />
+      <workItem from="1781443150684" duration="1345000" />
     </task>
     <servers />
   </component>

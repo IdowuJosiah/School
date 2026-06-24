@@ -2,8 +2,8 @@ import React from 'react'
 import AboutBannerImage from '../assets/Rectangle 12.png';
 import CaretRightImage from '../assets/Group.png';
 import CaretLeftImage from '../assets/Group (1).png';
-import ProgramImage from '../assets/WhatsApp Image 2024-09-20 at 05.46.05_80d8c0c1.png'
-import ProgramImage2 from '../assets/WhatsApp Image 2024-09-20 at 05.46.07_a35db3a1.png'
+import ProgramImage from '../assets/classroom-learning-corner.jpg'
+import ProgramImage2 from '../assets/classroom-whiteboard-lesson.jpg'
 import '../css/NurseryPrimaryComponent.scss'
 // import { FaBicycle } from 'react-icons/fa6';
 import { GiSteampunkGoggles } from 'react-icons/gi';

@@ -100,11 +100,11 @@
 
   .dropdown-items {
     position: absolute;
-    top: calc(100% + 10px);
+    top: 100%;
     left: 50%;
     transform: translateX(-50%) translateY(8px);
     min-width: 190px;
-    padding: 8px;
+    padding: 10px 8px 8px;
     display: block;
     opacity: 0;
     pointer-events: none;

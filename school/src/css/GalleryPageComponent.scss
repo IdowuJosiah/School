@@ -1,5 +1,19 @@
 .gallery-section{
-  
+
+    .gallery-photo{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        border-radius: 8px;
+    }
+
+    .gallery.final.solo{
+        > .gallery-photo{
+            height: 100%;
+        }
+    }
+
     .gallery-container{
         display: flex;
         justify-content: space-between;
