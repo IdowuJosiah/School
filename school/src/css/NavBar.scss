@@ -154,6 +154,11 @@
     }
   }
 
+  .page-width {
+    flex: 0 0 0;
+    width: 0;
+  }
+
   .accordion-toggle {
     display: flex;
     position: relative;
@@ -164,6 +169,7 @@
   .navigation-content {
     position: fixed;
     inset: 0;
+    z-index: 999;
     justify-content: center;
     align-items: center;
     background: rgba(255, 255, 255, 0.97);
