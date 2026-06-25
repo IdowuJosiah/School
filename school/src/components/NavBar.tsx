@@ -1,6 +1,6 @@
 import { navigation } from '../interfaces/interface';
 import '../css/NavBar.scss';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import logoImage from '../assets/School logo-Photoroom.png';
