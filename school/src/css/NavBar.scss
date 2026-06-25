@@ -1,8 +1,11 @@
 
 .navigation-bar {
   --nav-height: 76px;
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
   z-index: 1000;
   min-height: var(--nav-height);
   display: flex;
@@ -154,9 +157,10 @@
     }
   }
 
-  .page-width {
-    flex: 0 0 0;
-    width: 0;
+  .navigation-bar .page-width {
+    flex: 0 0 0 !important;
+    width: 0 !important;
+    margin: 0 !important;
   }
 
   .accordion-toggle {
