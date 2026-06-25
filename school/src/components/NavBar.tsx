@@ -52,79 +52,64 @@ const navigationItems: navigation[] = [
 
 const NavBar = () => {
   const [navItems, setNavItems] = useState<navigation[]>(navigationItems);
-  const [isAccordionOpen, setIsAccordionOpen] = useState(false);
-  const [isMobileView, setIsMobileView] = useState(false);
-
-  useEffect(() => {
-    const updateView = () => setIsMobileView(window.innerWidth <= 820);
-
-    updateView();
-    window.addEventListener('resize', updateView);
-
-    return () => window.removeEventListener('resize', updateView);
-  }, []);
+  const [isOpen, setIsOpen] = useState(false);
 
   const handleToggle = (index: number): void => {
-    const clonedArray = navItems.map((item, itemIndex) => ({
+    setNavItems(navItems.map((item, i) => ({
       ...item,
-      isVisible: itemIndex === index ? !item.isVisible : false,
-    }));
-
-    setNavItems(clonedArray);
+      isVisible: i === index ? !item.isVisible : false,
+    })));
   };
 
-  const toggleAccordion = () => {
-    setIsAccordionOpen((isOpen) => !isOpen);
-  };
+  const closeMenu = () => setIsOpen(false);
 
   return (
-    <nav className="navigation-bar">
-      <Link to="/" aria-label="Honey Rock School home">
-        <img alt="Honey Rock School logo" src={logoImage} />
-      </Link>
+    <>
+      <nav className="navigation-bar">
+        <Link to="/" aria-label="Honey Rock School home" onClick={closeMenu}>
+          <img alt="Honey Rock School logo" src={logoImage} />
+        </Link>
 
-      <button
-        type="button"
-        className="accordion-toggle"
-        onClick={toggleAccordion}
-        aria-label="Toggle navigation menu"
-        aria-expanded={isAccordionOpen}
-      >
-        <GiHamburgerMenu />
-      </button>
+        <ul className="nav-list">
+          {navItems.map((item, index) => (
+            <li key={item.title} className="nav-item">
+              <button type="button" onClick={() => handleToggle(index)} className="nav-button">
+                {item.title}
+              </button>
+              <ul className={`dropdown ${item.isVisible ? 'open' : ''}`}>
+                {item.children?.map((child) => (
+                  <li key={child.title}>
+                    <Link to={child.path}>{child.title}</Link>
+                  </li>
+                ))}
+              </ul>
+            </li>
+          ))}
+        </ul>
 
-      <div className={`navigation-content${isAccordionOpen ? ' menu-open' : ''}`}>
-          <ul className="navigation-list">
-            {navItems.map((item, index) => (
-              <li key={item.title} className="main-list-items">
-                {isMobileView ? (
-                  <Link to={item.path} className="nav-button" onClick={() => setIsAccordionOpen(false)}>
-                    {item.title}
-                  </Link>
-                ) : (
-                  <button
-                    type="button"
-                    onClick={() => handleToggle(index)}
-                    className="nav-button"
-                  >
-                    {item.title}
-                  </button>
-                )}
+        <button
+          type="button"
+          className="hamburger"
+          onClick={() => setIsOpen(o => !o)}
+          aria-label="Toggle navigation menu"
+          aria-expanded={isOpen}
+        >
+          <GiHamburgerMenu />
+        </button>
+      </nav>
 
-                {!isMobileView && (
-                  <ul className={`dropdown-items ${item.isVisible ? 'active' : ''}`}>
-                    {item.children?.map((child) => (
-                      <li key={child.title}>
-                        <Link to={child.path}>{child.title}</Link>
-                      </li>
-                    ))}
-                  </ul>
-                )}
-              </li>
-            ))}
-          </ul>
+      <div className={`mobile-menu${isOpen ? ' open' : ''}`}>
+        <ul>
+          {navigationItems.map((item) => (
+            <li key={item.title}>
+              <Link to={item.path} onClick={closeMenu}>
+                {item.title}
+              </Link>
+            </li>
+          ))}
+        </ul>
       </div>
-    </nav>
+    </>
   );
 };
 
