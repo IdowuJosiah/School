@@ -3,6 +3,8 @@ import '../css/NavBar.scss';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { GiHamburgerMenu } from 'react-icons/gi';
+import { IoClose } from 'react-icons/io5';
+import { FiChevronRight } from 'react-icons/fi';
 import logoImage from '../assets/School logo-Photoroom.png';
 
 const navigationItems: navigation[] = [
@@ -89,12 +91,12 @@ const NavBar = () => {
 
         <button
           type="button"
-          className="hamburger"
+          className={`hamburger${isOpen ? ' is-open' : ''}`}
           onClick={() => setIsOpen(o => !o)}
           aria-label="Toggle navigation menu"
           aria-expanded={isOpen}
         >
-          <GiHamburgerMenu />
+          {isOpen ? <IoClose /> : <GiHamburgerMenu />}
         </button>
       </nav>
 
@@ -103,7 +105,8 @@ const NavBar = () => {
           {navigationItems.map((item) => (
             <li key={item.title}>
               <Link to={item.path} onClick={closeMenu}>
-                {item.title}
+                <span>{item.title}</span>
+                <FiChevronRight className="menu-arrow" />
               </Link>
             </li>
           ))}
