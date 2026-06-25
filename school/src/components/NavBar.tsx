@@ -93,9 +93,8 @@ const NavBar = () => {
         <GiHamburgerMenu />
       </button>
 
-      <div className="page-width">
-        <div className="navigation-content">
-          <ul className={`navigation-list ${isAccordionOpen ? 'active' : 'inactive'}`}>
+      <div className={`navigation-content${isAccordionOpen ? ' menu-open' : ''}`}>
+          <ul className="navigation-list">
             {navItems.map((item, index) => (
               <li key={item.title} className="main-list-items">
                 {isMobileView ? (
@@ -124,7 +123,6 @@ const NavBar = () => {
               </li>
             ))}
           </ul>
-        </div>
       </div>
     </nav>
   );
