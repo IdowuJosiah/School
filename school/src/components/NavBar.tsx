@@ -102,14 +102,37 @@ const NavBar = () => {
 
       <div className={`mobile-menu${isOpen ? ' open' : ''}`}>
         <ul>
-          {navigationItems.map((item) => (
-            <li key={item.title}>
-              <Link to={item.path} onClick={closeMenu}>
-                <span>{item.title}</span>
-                <FiChevronRight className="menu-arrow" />
-              </Link>
-            </li>
-          ))}
+          {navItems.map((item, index) => {
+            const hasMultipleChildren = item.children && item.children.length > 1;
+            return (
+              <li key={item.title} className="mobile-nav-item">
+                {hasMultipleChildren ? (
+                  <>
+                    <button
+                      type="button"
+                      className="mobile-nav-toggle"
+                      onClick={() => handleToggle(index)}
+                      aria-expanded={item.isVisible}
+                    >
+                      <span>{item.title}</span>
+                      <FiChevronRight className={`menu-arrow${item.isVisible ? ' rotated' : ''}`} />
+                    </button>
+                    <ul className={`mobile-submenu${item.isVisible ? ' open' : ''}`}>
+                      {item.children?.map((child) => (
+                        <li key={child.title}>
+                          <Link to={child.path} onClick={closeMenu}>{child.title}</Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </>
+                ) : (
+                  <Link to={item.path} className="mobile-nav-toggle" onClick={closeMenu}>
+                    <span>{item.title}</span>
+                  </Link>
+                )}
+              </li>
+            );
+          })}
         </ul>
       </div>
     </>
